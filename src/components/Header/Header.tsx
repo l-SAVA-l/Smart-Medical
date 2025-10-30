@@ -5,7 +5,7 @@ import { Search, Phone, User, Menu, MapPin, Mail, X, Users, MessageSquare, Steth
   import { Input } from "../common/SMInput/SMInput"; 
   import { useState, useEffect } from "react";
   import { motion, AnimatePresence } from "framer-motion";
-  import { useRouter } from "../SMRouter/SMRouter";
+  import { useRouter, usePathname } from "next/navigation";
   import { AuthModals } from "../SMAuthModals/SMAuthModals";
   import { useMenu } from "../SMMenuContext/SMMenuContext";
 import SMLogo from "@/icons/SMLogo";
@@ -18,7 +18,9 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const { navigate } = useRouter();
+    const  router  = useRouter();
+    const pathname = usePathname();
+
   
     useEffect(() => {
       if (isBurgerMenuOpen) {
@@ -62,7 +64,7 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
           <div className="max-w-7xl mx-auto px-4">
             <div className="hidden lg:flex items-center justify-between">
               <button
-                onClick={() => navigate("/")}
+                onClick={() => router.push("/")}
                 className="flex items-center"
               >
                 <SMLogo />
@@ -93,7 +95,7 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
             <div className="lg:hidden">
               <div className="flex items-center justify-between">
                 <button
-                  onClick={() => navigate("/")}
+                  onClick={() => router.push("/")}
                   className="flex items-center"
                 >
                   <SMMobileLogo />
@@ -156,17 +158,12 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
                   <button
                     key={item}
                     onClick={() => {
-                      if (item === "Услуги") {
-                        navigate("/services");
-                      } else if (item === "Специалисты") {
-                        navigate("/doctors");
-                      } else if (item === "Клиника") {
-                        navigate("/clinic");
-                      } else if (item === "Контакты") {
-                        navigate("/contacts");
-                      } else if (item === "Пациенту") {
-                        navigate("/patient");
-                      }
+                      if (item === "Услуги") router.push("/services");
+                      else if (item === "Специалисты") router.push("/doctors");
+                      else if (item === "Клиника") router.push("/clinic");
+                      else if (item === "Контакты") router.push("/contacts");
+                      else if (item === "Пациенту") router.push("/patient");
+                      
                     }}
                     className="px-3 py-3 lg:px-4 lg:py-4 te] hover:text-[#18A36C] hover:bg-gray-50 transition-colors text-sm lg:text-base hidden xl:block"
                   >
@@ -185,15 +182,15 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
                     key={item}
                     onClick={() => {
                       if (item === "Услуги") {
-                        navigate("/services");
+                        router.push("/services");
                       } else if (item === "Специалисты") {
-                        navigate("/doctors");
+                        router.push("/doctors");
                       } else if (item === "Клиника") {
-                        navigate("/clinic");
+                        router.push("/clinic");
                       } else if (item === "Контакты") {
-                        navigate("/contacts");
+                        router.push("/contacts");
                       } else if (item === "Пациенту") {
-                        navigate("/patient");
+                        router.push("/patient");
                       }
 
                     }}
@@ -208,7 +205,7 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
                 <div className="hidden lg:block">
                   {isAuthenticated ? (
                     <Button
-                      onClick={() => navigate("/account")}
+                      onClick={() => router.push("/account")}
                       variant="ghost"
                       size="sm"
                       className="text-[#18A36C] hover:bg-[#F4F4F4] flex items-center gap-2 px-2 lg:px-3 py-2 text-sm"
@@ -326,23 +323,23 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
                             className="w-full flex items-center gap-3 px-4 py-3 text-[#2E2E2E] hover:text-[#18A36C] hover:bg-gray-50 transition-all duration-200 group"
                             onClick={() => {
                               if (item.name === "Услуги") {
-                                navigate("/services");
+                                router.push("/services");
                               } else if (
                                 item.name === "Специалисты"
                               ) {
-                                navigate("/doctors");
+                                router.push("/doctors");
                               } else if (
                                 item.name === "Клиника"
                               ) {
-                                navigate("/clinic");
+                                router.push("/clinic");
                               } else if (
                                 item.name === "Контакты"
                               ) {
-                                navigate("/contacts");
+                                router.push("/contacts");
                               } else if (
                                 item.name === "Пациенту"
                               ) {
-                                navigate("/patient");
+                                router.push("/patient");
                               }
                               setIsBurgerMenuOpen(false);
                             }}
@@ -376,7 +373,7 @@ import SMBurgerMenuLogo from "@/icons/SMBurgerMenuLogo";
                           {isAuthenticated ? (
                             <button
                               onClick={() => {
-                                navigate("/account");
+                                router.push("/account");
                                 setIsBurgerMenuOpen(false);
                               }}
                               className="text-sm hover:text-[#18A36C]/80 transition-colors"

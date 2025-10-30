@@ -7,11 +7,11 @@ import {
   Clock,
 } from "lucide-react";
 import { Button } from "../common/SMButton/SMButton";
-import { useRouter } from "../SMRouter/SMRouter";
 import SMLogo from "@/icons/SMLogo";
+import { useRouter } from "next/navigation";
 
 export function Footer() {
-  const { navigate } = useRouter();
+  const  navigate  = useRouter();
 
   return (
     <footer className="bg-[#F8F8F8] text-[#2E2E2E]">
@@ -22,7 +22,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4 lg:mb-6">
               {/* Logo from Header */}
-              <button onClick={() => navigate("/")} className="mb-3">
+              <button onClick={() => navigate.push("/")} className="mb-3">
                 <SMLogo></SMLogo>
               </button>
 
@@ -58,7 +58,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm lg:text-base">
               <li>
                 <button
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate.push("/services")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Стоматология
@@ -66,7 +66,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate.push("/services")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Гинекология
@@ -74,7 +74,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate.push("/services")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   УЗИ диагностика
@@ -82,7 +82,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate.push("/services")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Детские услуги
@@ -90,7 +90,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate.push("/services")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Эндокринология
@@ -107,7 +107,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm lg:text-base">
               <li>
                 <button
-                  onClick={() => navigate("/doctors")}
+                  onClick={() => navigate.push("/doctors")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Наши врачи
@@ -116,7 +116,7 @@ export function Footer() {
 
               <li>
                 <button
-                  onClick={() => navigate("/clinic")}
+                  onClick={() => navigate.push("/clinic")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   О клинике
@@ -124,7 +124,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/contacts")}
+                  onClick={() => navigate.push("/contacts")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Контакты
@@ -132,7 +132,7 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/patient")}
+                  onClick={() => navigate.push("/patient")}
                   className="text-gray-600 hover:text-[#18A36C] transition-colors"
                 >
                   Пациенту
