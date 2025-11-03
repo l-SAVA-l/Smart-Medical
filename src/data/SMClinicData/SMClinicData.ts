@@ -44,9 +44,7 @@ export interface ClinicItem {
     description: string;
   }
   
-  // Partners data
   export const partnersData: Partner[] = [
-    // Medical laboratories
     {
       id: 'rnpc-oncology',
       name: 'РНПЦ онкологии',
@@ -74,7 +72,6 @@ export interface ClinicItem {
       image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop',
       category: 'medical'
     },
-    // Insurance companies
     {
       id: 'beleksimgarant',
       name: 'БЕЛЭКСИМГАРАНТ',
@@ -147,7 +144,6 @@ export interface ClinicItem {
       image: 'https://images.unsplash.com/photo-1554224154-26032fced8bd?w=400&h=300&fit=crop',
       category: 'insurance'
     },
-    // Dental laboratories
     {
       id: 'tekhden',
       name: 'Техден и Ко',
@@ -168,7 +164,6 @@ export interface ClinicItem {
     }
   ];
   
-  // Reviews data
   export const clinicReviews: Review[] = [
     {
       id: '1',
@@ -268,7 +263,6 @@ export interface ClinicItem {
     }
   ];
   
-  // Vacancies data
   export const vacanciesData: Vacancy[] = [
     {
       id: 'dentist',
@@ -334,8 +328,7 @@ export interface ClinicItem {
       description: 'Ищем ответственную медицинскую сестру для работы в дружном коллективе.'
     }
   ];
-  
-  // Main clinic menu data
+
   export const clinicMenuData: ClinicItem[] = [
     {
       id: 'licenses',
