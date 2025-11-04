@@ -195,7 +195,7 @@ export function AuthModals({
                 rememberMe: checked === true,
               })
             }
-            className="border-gray-300 data-[state=checked]:bg-[#18A36C] data-[state=checked]:border-[#18A36C]"
+            className="border-gray-300 data-[state=checked]:bg-[#18A36C] data-[state=checked]:border-[#18A36C] data-[state=checked]:text-white"
           />
           <Label
             htmlFor="remember"
@@ -519,7 +519,7 @@ export function AuthModals({
                 agreeToTerms: checked === true,
               })
             }
-            className="border-gray-300 data-[state=checked]:bg-[#18A36C] data-[state=checked]:border-[#18A36C]"
+            className="border-gray-300 data-[state=checked]:bg-[#18A36C] data-[state=checked]:border-[#18A36C] data-[state=checked]:text-white"
           />
           <Label
             htmlFor="terms"

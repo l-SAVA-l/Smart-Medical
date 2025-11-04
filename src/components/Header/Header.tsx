@@ -44,7 +44,6 @@ export function Header() {
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
-      {/* Top Bar - Desktop Only */}
       <div className="hidden md:block bg-[#18A36C] py-2 lg:py-3">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-white">
           <div className="flex items-center">
@@ -61,10 +60,8 @@ export function Header() {
         </div>
       </div>
 
-      {/* Main Header */}
       <div className="py-3 lg:py-6">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Desktop Header */}
           <div className="hidden lg:flex items-center justify-between">
             <button
               onClick={() => handleNavigation("/")}
@@ -95,7 +92,6 @@ export function Header() {
             </div>
           </div>
 
-          {/* Mobile Header */}
           <div className="lg:hidden">
             <div className="flex items-center justify-between">
               <button
@@ -148,11 +144,9 @@ export function Header() {
         </div>
       </div>
 
-      {/* Navigation Bar */}
       <div className="bg-white border-t border-[#E8E6E3]">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="flex items-center">
-            {/* Desktop Navigation */}
             <div className="flex">
               {navigationConfig.mainNavigation.map((item) => (
                 <button
@@ -165,7 +159,6 @@ export function Header() {
               ))}
             </div>
 
-            {/* User Account / Mobile Menu */}
             <div className="ml-auto flex items-center gap-2 lg:gap-4">
               <div className="hidden lg:block">
                 {isAuthenticated ? (
