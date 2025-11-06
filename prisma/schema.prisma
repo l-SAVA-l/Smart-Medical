@@ -14,4 +14,138 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Service {
+  id             Int         @id @default(autoincrement()) @map("service_id")
+  title          String
+  subtitle       String
+  price          Int
+  video_url      String
+  description    String      @db.Text
+  specialists_id Int
+  image_url      String
+  image_url_1    String
+  image_url_2    String
+  image_url_3    String
+  image_url_4    String?
+  questions_id   Int
+  reviews_id     Int
+  category_id    Int
 
+  // Отношения
+  category       Category    @relation(fields: [category_id], references: [id])
+  specialist     Specialist  @relation(fields: [specialists_id], references: [id])
+  questions      Question[]  // 1:M с вопросами
+  feedbacks      Feedback[]  // 1:M с отзывами
+
+  @@map("services")
+  @@index([category_id])
+  @@index([specialists_id])
+}
+
+model Category {
+  id          Int          @id @default(autoincrement()) @map("category_id")
+  name        String
+  services    Service[]
+  specialists Specialist[]
+  partners    Partner[]
+
+  @@map("categories")
+}
+
+model Specialist {
+  id                 Int        @id @default(autoincrement()) @map("specialists_id")
+  category_id        Int        @map("categori_id")
+  name               String
+  specialization     String
+  qualification      String
+  experience         Int
+  grade              Int
+  image_url          String
+  activity_area      String?
+  education_details  String?   @db.Text
+  conferences        String?
+
+  // relations
+  category           Category   @relation(fields: [category_id], references: [id])
+  services           Service[]
+
+  @@map("specialists")
+  @@index([category_id])
+}
+
+model Question {
+  id         Int      @id @default(autoincrement()) @map("questions_id")
+  question   String
+  answer     String?  @db.Text
+  service_id Int
+  service    Service  @relation(fields: [service_id], references: [id])
+
+  @@map("questions")
+  @@index([service_id])
+}
+
+model Feedback {
+  id         Int      @id @default(autoincrement()) @map("reviews_id")
+  name       String
+  text       String   @db.Text
+  date       DateTime @db.Date
+  grade      Int
+  image_url  String
+  service_id Int
+  service    Service  @relation(fields: [service_id], references: [id])
+
+  @@map("feedbacks")
+  @@index([service_id])
+}
+
+model Partner {
+  id           Int       @id @default(autoincrement()) @map("partners_id")
+  category_id  Int       @map("categori_id")
+  image_url    String
+  name         String
+  description  String    @db.Text
+  number       Int
+  website_url  String
+
+  category     Category  @relation(fields: [category_id], references: [id])
+
+  @@map("partners")
+  @@index([category_id])
+}
+
+model Vacancy {
+  id           Int     @id @default(autoincrement()) @map("vacancies_id")
+  name         String
+  category     String
+  description  String
+  payment      Int
+  experience   Int
+  requirements String
+
+  @@map("vacancies")
+}
+
+model Contacts {
+  id                 Int    @id @default(autoincrement()) @map("contact_id")
+  address            String
+  map_geo            String
+  work_hours_main    String
+  work_hours_sunday  String
+  phone_number       String
+  phone_number_sec   String?
+  email              String
+
+  @@map("contacts")
+}
+
+model Patient {
+  id                 Int      @id @default(autoincrement()) @map("patient_id")
+  login              String
+  email              String
+  password           String
+  name               String
+  phone              Int
+  registration_date  DateTime @db.Date
+
+  @@map("patients")
+}
