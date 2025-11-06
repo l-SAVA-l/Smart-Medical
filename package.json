@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prisma:migrate": "npx dotenv-cli -e .env -- npx prisma migrate dev",
+    "prisma:generate": "npx dotenv-cli -e .env -- npx prisma generate",
+    "prisma:studio": "npx dotenv-cli -e .env -- npx prisma studio"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -37,6 +40,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^11.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.0",
     "tailwindcss": "^4",
