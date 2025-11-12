@@ -45,7 +45,7 @@ async function main() {
 
   const specialistPetrova = await prisma.specialist.create({
     data: {
-      category_id: cardiology.id,
+      category_id: dentistry.id,
       name: 'Петрова Анна Сергеевна',
       specialization: 'Кардиолог',
       qualification: 'Кандидат медицинских наук',

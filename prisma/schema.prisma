@@ -141,10 +141,10 @@ model Contacts {
 model Patient {
   id                 Int      @id @default(autoincrement()) @map("patient_id")
   login              String
-  email              String
+  email              String @unique
   password           String
   name               String
-  phone              String
+  phone              String @unique
   registration_date  DateTime @db.Date
 
   @@map("patients")
