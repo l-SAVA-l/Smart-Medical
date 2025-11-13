@@ -1,33 +1,11 @@
-// Маппинг между названиями категорий в БД и ID в меню
-export const categoryNameToMenuId: Record<string, string> = {
-  'Стоматология': 'dentistry',
-  'Кардиология': 'cardiology',
-  'Детская стоматология': 'pediatric-dentistry',
-  'Гинекология': 'gynecology',
-  'Эндокринология': 'endocrinology',
-  'Онкология': 'oncology',
-  'Урология': 'urology',
-  'Анестезиология': 'anesthesiology',
-  'УЗИ': 'ultrasound',
-  'Дневной стационар': 'day-hospital',
-};
-
-export const menuIdToCategoryName: Record<string, string> = Object.fromEntries(
-  Object.entries(categoryNameToMenuId).map(([name, id]) => [id, name])
-);
-
-export function getCategoryIdByMenuId(menuId: string, categories: Array<{ id: number; name: string }>): number | null {
-  const categoryName = menuIdToCategoryName[menuId];
-  if (!categoryName) return null;
-  
-  const category = categories.find(cat => cat.name === categoryName);
+// Теперь используем slug напрямую из БД
+export function getCategoryIdBySlug(slug: string, categories: Array<{ id: number; slug: string }>): number | null {
+  const category = categories.find(cat => cat.slug === slug);
   return category ? category.id : null;
 }
 
-export function getMenuIdByCategoryId(categoryId: number, categories: Array<{ id: number; name: string }>): string | null {
+export function getSlugByCategoryId(categoryId: number, categories: Array<{ id: number; slug: string }>): string | null {
   const category = categories.find(cat => cat.id === categoryId);
-  if (!category) return null;
-  
-  return categoryNameToMenuId[category.name] || null;
+  return category ? category.slug : null;
 }
 

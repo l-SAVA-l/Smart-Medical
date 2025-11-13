@@ -21,7 +21,7 @@ export default function Doctors() {
             <NavigableDoctorsMenu />
             <div className="flex-1">
                 {categoryId && doctorId ? (
-                    <DoctorPage doctorId={doctorId} categoryId={categoryId} />
+                    <DoctorPage doctorId={doctorId} categorySlug={categoryId} />
                 ) : (
                     <DoctorsContent />
                 )}

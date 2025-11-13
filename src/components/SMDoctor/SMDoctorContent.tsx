@@ -5,7 +5,7 @@ import { Button } from '../common/SMButton/SMButton';
 import { Card } from '../common/SMCard/SMCard';
 import { useRouter } from '@/components/SMRouter/SMRouter';
 import { ImageWithFallback } from '../SMImage/ImageWithFallback';
-import { getCategoryIdByMenuId, menuIdToCategoryName } from '@/utils/categoryMapper';
+import { getCategoryIdBySlug } from '@/utils/categoryMapper';
 
 interface Specialist {
   id: number;
@@ -18,15 +18,20 @@ interface Specialist {
   activity_area: string | null;
   education_details: string | null;
   conferences: string | null;
+  specializations: string[];
+  education: string[];
+  work_examples: Array<{ title: string; images: string[] }> | null;
   category: {
     id: number;
     name: string;
+    slug: string;
   };
 }
 
 interface Category {
   id: number;
   name: string;
+  slug: string;
 }
 
 export function DoctorsContent() {
@@ -43,6 +48,7 @@ export function DoctorsContent() {
         const response = await fetch('/api/categories');
         if (!response.ok) throw new Error('Failed to fetch categories');
         const data = await response.json();
+        console.log('Fetched categories:', data);
         setCategories(data);
       } catch (err) {
         console.error('Error fetching categories:', err);
@@ -73,8 +79,10 @@ export function DoctorsContent() {
       setError(null);
 
       try {
-        const categoryId = getCategoryIdByMenuId(selectedCategory, categories);
+        // selectedCategory теперь это slug из URL
+        const categoryId = getCategoryIdBySlug(selectedCategory, categories);
         if (!categoryId) {
+          console.warn(`Category not found for slug: ${selectedCategory}`, categories);
           setSpecialists([]);
           setLoading(false);
           return;
@@ -83,6 +91,7 @@ export function DoctorsContent() {
         const response = await fetch(`/api/specialists?categoryId=${categoryId}`);
         if (!response.ok) throw new Error('Failed to fetch specialists');
         const data = await response.json();
+        console.log('Fetched specialists:', data);
         setSpecialists(data);
       } catch (err) {
         console.error('Error fetching specialists:', err);
@@ -97,11 +106,19 @@ export function DoctorsContent() {
   }, [selectedCategory, categories]);
 
   const selectedCategoryData = selectedCategory
-    ? {
-        id: selectedCategory,
-        name: menuIdToCategoryName[selectedCategory] || selectedCategory,
-      }
+    ? categories.find(cat => cat.slug === selectedCategory) || null
     : null;
+
+  // Обновляем title страницы
+  useEffect(() => {
+    if (selectedCategoryData) {
+      document.title = `${selectedCategoryData.name} - Специалисты | Медицинский центр Doctor Family`;
+    } else if (selectedCategory) {
+      document.title = `Специалисты | Медицинский центр Doctor Family`;
+    } else {
+      document.title = 'Специалисты | Медицинский центр Doctor Family';
+    }
+  }, [selectedCategoryData, selectedCategory]);
 
   const handleDoctorClick = (doctorId: number) => {
     navigate(`/doctors/${selectedCategory}/${doctorId}`);
@@ -223,7 +240,7 @@ export function DoctorsContent() {
         >
           <div className="mb-6">
             <h1 className="text-2xl lg:text-3xl text-[#2E2E2E] mb-2">
-              {selectedCategoryData?.name}
+              {selectedCategoryData?.name ?? 'Специалисты'}
             </h1>
             <p className="text-gray-600">
               {specialists.length} {specialists.length === 1 ? 'специалист' : specialists.length < 5 ? 'специалиста' : 'специалистов'}

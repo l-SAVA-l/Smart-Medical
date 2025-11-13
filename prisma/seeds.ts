@@ -17,13 +17,15 @@ async function main() {
   // Categories
   const dentistry = await prisma.category.create({
     data: {
-      name: 'Стоматология'
+      name: 'Стоматология',
+      slug: 'dentistry' 
     }
   });
 
   const cardiology = await prisma.category.create({
     data: {
-      name: 'Кардиология'
+      name: 'Кардиология',
+      slug: 'cardiology'
     }
   });
 
@@ -39,13 +41,33 @@ async function main() {
       image_url: '/images/doctor_ivanov.jpg',
       activity_area: 'Лечение кариеса, реставрация зубов',
       education_details: 'МГМСУ, интернатура по терапевтической стоматологии',
-      conferences: 'StomExpo 2023, DentalTech 2024'
+      conferences: 'StomExpo 2023, DentalTech 2024',
+      specializations: [
+        'Лечение кариеса',
+        'Реставрация зубов',
+        'Эндодонтическое лечение',
+        'Профессиональная гигиена'
+      ],
+      education: [
+        'МГМСУ им. А.И. Евдокимова, стоматологический факультет, 2013г.',
+        'Интернатура по терапевтической стоматологии, 2014г.',
+        'Курсы повышения квалификации по эндодонтии, 2020г.'
+      ],
+      work_examples: [
+        {
+          title: 'Эстетическая реставрация фронтальных зубов',
+          images: [
+            '/images/services/caries_1.jpg',
+            '/images/services/caries_2.jpg'
+          ]
+        }
+      ]
     }
   });
 
   const specialistPetrova = await prisma.specialist.create({
     data: {
-      category_id: dentistry.id,
+      category_id: cardiology.id,
       name: 'Петрова Анна Сергеевна',
       specialization: 'Кардиолог',
       qualification: 'Кандидат медицинских наук',
@@ -54,7 +76,19 @@ async function main() {
       image_url: '/images/doctor_petrova.jpg',
       activity_area: 'Диагностика и лечение сердечно-сосудистых заболеваний',
       education_details: 'РНИМУ им. Пирогова, ординатура по кардиологии',
-      conferences: 'CardioForum 2024'
+      conferences: 'CardioForum 2024',
+      specializations: [
+        'Диагностика сердечно-сосудистых заболеваний',
+        'Эхокардиография',
+        'Лечение артериальной гипертензии',
+        'Реабилитация после инфаркта'
+      ],
+      education: [
+        'РНИМУ им. Н.И. Пирогова, лечебный факультет, 2011г.',
+        'Ординатура по кардиологии, 2013г.',
+        'Кандидатская диссертация по кардиологии, 2018г.'
+      ],
+      work_examples: null
     }
   });
 
@@ -207,7 +241,7 @@ async function main() {
         email: 'patient1@example.com',
         password: 'password123',
         name: 'Смирнов Пётр',
-        phone: 79001234567,
+        phone: '79001234567',
         registration_date: new Date('2024-01-15')
       },
       {
@@ -215,7 +249,7 @@ async function main() {
         email: 'patient2@example.com',
         password: 'password123',
         name: 'Иванова Мария',
-        phone: 79007654321,
+        phone: '79007654321',
         registration_date: new Date('2024-02-10')
       }
     ]

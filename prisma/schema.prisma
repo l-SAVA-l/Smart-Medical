@@ -5,8 +5,7 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client"
-  output   = "../src/generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -45,11 +44,13 @@ model Service {
 model Category {
   id          Int          @id @default(autoincrement()) @map("category_id")
   name        String
+  slug       String       @unique
   services    Service[]
   specialists Specialist[]
   partners    Partner[]
 
   @@map("categories")
+  @@index([slug])
 }
 
 model Specialist {
@@ -64,6 +65,10 @@ model Specialist {
   activity_area      String?
   education_details  String?   @db.Text
   conferences        String?
+  // Поля для структуры about
+  specializations    String[]   @default([])
+  education          String[]   @default([])
+  work_examples      Json?      // Для хранения массива { title: string; images: string[] }[]
 
   // relations
   category           Category   @relation(fields: [category_id], references: [id])
