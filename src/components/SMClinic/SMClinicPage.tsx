@@ -6,7 +6,7 @@ import { Card } from '../common/SMCard/SMCard';
 import { Badge } from '../common/SMBadge/SMBadge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/common/SMAccordion/SMAccordion';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/common/SMPagination/SMPagination';
-import { getClinicItemById, getPartnersByCategory, getPartnerById, clinicReviews, vacanciesData, getVacancyById, ClinicItem, Partner, Review, Vacancy } from '../../data/SMClinicData/SMClinicData';
+import { getClinicItemById, getPartnersByCategory, getPartnerById, clinicReviews, ClinicItem, Partner, Review, Vacancy } from '../../data/SMClinicData/SMClinicData';
 import { useRouter } from '@/components/SMRouter/SMRouter';
 import { Breadcrumb } from '../SMBreadcrumb/SMBreadcrumb';
 import { ImageWithFallback } from '../SMImage/ImageWithFallback';
@@ -21,6 +21,12 @@ const REVIEWS_PER_PAGE = 10;
 export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
   const [activeTab, setActiveTab] = useState('info');
   const [currentPage, setCurrentPage] = useState(1);
+  const [vacancies, setVacancies] = useState<Vacancy[]>([]);
+  const [vacancy, setVacancy] = useState<Vacancy | null>(null);
+  const [loadingVacancies, setLoadingVacancies] = useState(false);
+  const [loadingVacancy, setLoadingVacancy] = useState(false);
+  const [errorVacancies, setErrorVacancies] = useState<string | null>(null);
+  const [errorVacancy, setErrorVacancy] = useState<string | null>(null);
   const { navigate, currentRoute } = useRouter();
 
   const clinicItem = getClinicItemById(itemId);
@@ -29,6 +35,67 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [itemId, categoryId]);
+
+  // Загрузка списка вакансий
+  useEffect(() => {
+    if (itemId === 'vacancies') {
+      setVacancy(null); // Сбрасываем состояние отдельной вакансии
+      const fetchVacancies = async () => {
+        setLoadingVacancies(true);
+        setErrorVacancies(null);
+        try {
+          const response = await fetch('/api/vacancies');
+          if (!response.ok) throw new Error('Failed to fetch vacancies');
+          const data = await response.json();
+          setVacancies(data);
+        } catch (err) {
+          console.error('Error fetching vacancies:', err);
+          setErrorVacancies('Не удалось загрузить вакансии');
+          setVacancies([]);
+        } finally {
+          setLoadingVacancies(false);
+        }
+      };
+      fetchVacancies();
+    }
+  }, [itemId]);
+
+  // Загрузка отдельной вакансии
+  useEffect(() => {
+    if (currentRoute.includes('/clinic/vacancies/') && itemId !== 'vacancies') {
+      setVacancies([]); // Сбрасываем состояние списка вакансий
+      const fetchVacancy = async () => {
+        setLoadingVacancy(true);
+        setErrorVacancy(null);
+        try {
+          const id = parseInt(itemId);
+          if (isNaN(id)) {
+            setErrorVacancy('Неверный ID вакансии');
+            setLoadingVacancy(false);
+            return;
+          }
+          const response = await fetch(`/api/vacancies/${id}`);
+          if (!response.ok) {
+            if (response.status === 404) {
+              setErrorVacancy('Вакансия не найдена');
+            } else {
+              throw new Error('Failed to fetch vacancy');
+            }
+            setLoadingVacancy(false);
+            return;
+          }
+          const data = await response.json();
+          setVacancy(data);
+        } catch (err) {
+          console.error('Error fetching vacancy:', err);
+          setErrorVacancy('Не удалось загрузить данные вакансии');
+        } finally {
+          setLoadingVacancy(false);
+        }
+      };
+      fetchVacancy();
+    }
+  }, [itemId, currentRoute]);
 
   if (!clinicItem) {
     return (
@@ -411,8 +478,22 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
               </div>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {vacanciesData.map((vacancy) => (
+            {loadingVacancies ? (
+              <div className="text-center py-8">
+                <div className="animate-pulse">Загрузка вакансий...</div>
+              </div>
+            ) : errorVacancies ? (
+              <div className="text-center py-8">
+                <p className="text-red-600 mb-4">{errorVacancies}</p>
+                <Button onClick={() => window.location.reload()}>Попробовать снова</Button>
+              </div>
+            ) : vacancies.length === 0 ? (
+              <div className="text-center py-8">
+                <p className="text-gray-600">Вакансии не найдены</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {vacancies.map((vacancy) => (
             <Card key={vacancy.id} className="p-6 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -464,8 +545,9 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
                 </Button>
               </div>
             </Card>
-          ))}
-          </div>
+                ))}
+              </div>
+            )}
 
           {/* Ask Question Footer */}
           <div className="mt-8 p-6 bg-gradient-to-r from-[#F4F4F4] to-white rounded-2xl border border-gray-100">
@@ -489,13 +571,23 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
 
   // Handle individual vacancy page
   if (currentRoute.includes('/clinic/vacancies/') && itemId !== 'vacancies') {
-    const vacancy = getVacancyById(itemId);
-    
-    if (!vacancy) {
+    if (loadingVacancy) {
+      return (
+        <div className="p-4 lg:p-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="animate-pulse">Загрузка...</div>
+          </div>
+        </div>
+      );
+    }
+
+    if (errorVacancy || !vacancy) {
       return (
         <div className="p-4 lg:p-8">
           <div className="text-center">
-            <h1 className="text-2xl text-[#212121] mb-4">Вакансия не найдена</h1>
+            <h1 className="text-2xl text-[#212121] mb-4">
+              {errorVacancy || 'Вакансия не найдена'}
+            </h1>
             <Button onClick={() => navigate('/clinic/vacancies')}>
               Вернуться к вакансиям
             </Button>
