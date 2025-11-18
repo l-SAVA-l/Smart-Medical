@@ -6,7 +6,7 @@ import { Card } from '../common/SMCard/SMCard';
 import { Badge } from '../common/SMBadge/SMBadge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/common/SMAccordion/SMAccordion';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/common/SMPagination/SMPagination';
-import { getClinicItemById, getPartnersByCategory, getPartnerById, clinicReviews, vacanciesData, getVacancyById, ClinicItem, Partner, Review, Vacancy } from '../../data/SMClinicData/SMClinicData';
+import { getClinicItemById, clinicReviews, vacanciesData, getVacancyById, ClinicItem, Review, Vacancy } from '../../data/SMClinicData/SMClinicData';
 import { useRouter } from '@/components/SMRouter/SMRouter';
 import { Breadcrumb } from '../SMBreadcrumb/SMBreadcrumb';
 import { ImageWithFallback } from '../SMImage/ImageWithFallback';
@@ -16,11 +16,38 @@ interface ClinicPageProps {
   categoryId: string;
 }
 
+interface PartnerFromDB {
+  id: number;
+  category_id: number;
+  image_url: string;
+  name: string;
+  description: string;
+  number: number;
+  website_url: string;
+  category: {
+    id: number;
+    name: string;
+    slug: string;
+  };
+}
+
 const REVIEWS_PER_PAGE = 10;
+
+// Маппинг между itemId и slug категорий из базы данных
+const itemIdToCategorySlugs: Record<string, string[]> = {
+  'medical-labs': ['ultrasound', 'diagnostics', 'cardiology', 'gynecology'],
+  'insurance': [], // Страховые компании могут быть в отдельной категории или без категории
+  'dental-labs': ['dentistry', 'pediatric-dentistry']
+};
 
 export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
   const [activeTab, setActiveTab] = useState('info');
   const [currentPage, setCurrentPage] = useState(1);
+  const [partners, setPartners] = useState<PartnerFromDB[]>([]);
+  const [partner, setPartner] = useState<PartnerFromDB | null>(null);
+  const [loadingPartners, setLoadingPartners] = useState(false);
+  const [loadingPartner, setLoadingPartner] = useState(false);
+  const [categories, setCategories] = useState<Array<{ id: number; slug: string }>>([]);
   const { navigate, currentRoute } = useRouter();
 
   const clinicItem = getClinicItemById(itemId);
@@ -29,6 +56,21 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [itemId, categoryId]);
+
+  // Загрузка категорий
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch('/api/categories');
+        if (!response.ok) throw new Error('Failed to fetch categories');
+        const data = await response.json();
+        setCategories(data);
+      } catch (err) {
+        console.error('Error fetching categories:', err);
+      }
+    };
+    fetchCategories();
+  }, []);
 
   if (!clinicItem) {
     return (
@@ -50,16 +92,90 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     { label: clinicItem.title, href: currentRoute }
   ];
 
+  // Загрузка партнеров по категории
+  useEffect(() => {
+    const fetchPartners = async () => {
+      if (!['medical-labs', 'insurance', 'dental-labs'].includes(itemId) || categories.length === 0) {
+        setPartners([]);
+        return;
+      }
+
+      setLoadingPartners(true);
+      try {
+        const categorySlugs = itemIdToCategorySlugs[itemId] || [];
+        if (categorySlugs.length === 0) {
+          // Для insurance загружаем всех партнеров (или можно создать отдельную категорию)
+          const response = await fetch('/api/partners');
+          if (!response.ok) throw new Error('Failed to fetch partners');
+          const data = await response.json();
+          setPartners(data);
+        } else {
+          // Находим ID категорий по slug
+          const categoryIds = categorySlugs
+            .map(slug => categories.find(cat => cat.slug === slug)?.id)
+            .filter((id): id is number => id !== undefined);
+
+          // Загружаем партнеров для каждой категории
+          const allPartners: PartnerFromDB[] = [];
+          for (const categoryId of categoryIds) {
+            const response = await fetch(`/api/partners?categoryId=${categoryId}`);
+            if (!response.ok) continue;
+            const data = await response.json();
+            allPartners.push(...data);
+          }
+          setPartners(allPartners);
+        }
+      } catch (err) {
+        console.error('Error fetching partners:', err);
+      } finally {
+        setLoadingPartners(false);
+      }
+    };
+
+    fetchPartners();
+  }, [itemId, categories]);
+
+  // Загрузка одного партнера
+  useEffect(() => {
+    const fetchPartner = async () => {
+      if (!currentRoute.includes('/clinic/partners/') || ['medical-labs', 'insurance', 'dental-labs'].includes(itemId)) {
+        setPartner(null);
+        return;
+      }
+
+      const partnerId = itemId;
+      const id = parseInt(partnerId);
+      if (isNaN(id)) {
+        setPartner(null);
+        return;
+      }
+
+      setLoadingPartner(true);
+      try {
+        const response = await fetch(`/api/partners/${id}`);
+        if (!response.ok) {
+          if (response.status === 404) {
+            setPartner(null);
+          } else {
+            throw new Error('Failed to fetch partner');
+          }
+        } else {
+          const data = await response.json();
+          setPartner(data);
+        }
+      } catch (err) {
+        console.error('Error fetching partner:', err);
+        setPartner(null);
+      } finally {
+        setLoadingPartner(false);
+      }
+    };
+
+    fetchPartner();
+  }, [itemId, currentRoute]);
+
   // Handle partners page
   if (itemId === 'medical-labs' || itemId === 'insurance' || itemId === 'dental-labs') {
-    const categoryMap: Record<string, string> = {
-      'medical-labs': 'medical',
-      'insurance': 'insurance',
-      'dental-labs': 'dental'
-    };
-    
-    const partners = getPartnersByCategory(categoryMap[itemId]);
-    
     return (
       <>
         <Breadcrumb items={breadcrumbItems} />
@@ -76,55 +192,67 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {partners.map((partner) => (
-            <Card 
-              key={partner.id} 
-              className="group hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 hover:border-[#18A36C]/20 h-full"
-              onClick={() => navigate(`/clinic/partners/${partner.id}`)}
-            >
-              <div className="p-6 h-full flex flex-col">
-                <div className="mb-4">
-                  <ImageWithFallback
-                    src={partner.image}
-                    alt={partner.name}
-                    className="w-full h-32 object-cover rounded-lg"
-                  />
-                </div>
-                <h3 className="text-lg text-[#2E2E2E] mb-2 group-hover:text-[#18A36C] transition-colors duration-300">
-                  {partner.name}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
-                  {partner.description}
-                </p>
-                
-                <div className="space-y-2 mb-4">
-                  {partner.phone && (
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <Phone className="w-4 h-4" />
-                      {partner.phone}
-                    </div>
-                  )}
-                  {partner.website && (
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <Globe className="w-4 h-4" />
-                      {partner.website}
-                    </div>
-                  )}
-                </div>
-                
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-[#18A36C] hover:text-[#18A36C]/80 hover:bg-[#18A36C]/5 p-0 h-auto group-hover:translate-x-1 transition-all duration-300 w-full justify-start"
-                >
-                  Подробнее
-                  <ExternalLink className="w-4 h-4 ml-[2.5px]" />
-                </Button>
+            {loadingPartners ? (
+              <div className="text-center py-8">
+                <div className="animate-pulse">Загрузка партнеров...</div>
               </div>
-            </Card>
-          ))}
-          </div>
+            ) : partners.length === 0 ? (
+              <div className="text-center py-8">
+                <p className="text-gray-600">Партнеры не найдены</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {partners.map((partner) => (
+                  <Card 
+                    key={partner.id} 
+                    className="group hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 hover:border-[#18A36C]/20 h-full"
+                    onClick={() => navigate(`/clinic/partners/${partner.id}`)}
+                  >
+                    <div className="p-6 h-full flex flex-col">
+                      <div className="mb-4">
+                        <ImageWithFallback
+                          src={partner.image_url}
+                          alt={partner.name}
+                          className="w-full h-32 object-cover rounded-lg"
+                        />
+                      </div>
+                      <h3 className="text-lg text-[#2E2E2E] mb-2 group-hover:text-[#18A36C] transition-colors duration-300">
+                        {partner.name}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
+                        {partner.description}
+                      </p>
+                      
+                      <div className="space-y-2 mb-4">
+                        {partner.website_url && (
+                          <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <Globe className="w-4 h-4" />
+                            <a 
+                              href={partner.website_url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-[#18A36C] hover:text-[#18A36C]/80 hover:underline truncate"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              {partner.website_url}
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                      
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="text-[#18A36C] hover:text-[#18A36C]/80 hover:bg-[#18A36C]/5 p-0 h-auto group-hover:translate-x-1 transition-all duration-300 w-full justify-start"
+                      >
+                        Подробнее
+                        <ExternalLink className="w-4 h-4 ml-[2.5px]" />
+                      </Button>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            )}
 
           <div className="mt-8 p-6 bg-gradient-to-r from-[#F4F4F4] to-white rounded-2xl border border-gray-100">
             <div className="text-center">
@@ -147,7 +275,15 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
 
   // Handle individual partner page
   if (currentRoute.includes('/clinic/partners/') && !['medical-labs', 'insurance', 'dental-labs'].includes(itemId)) {
-    const partner = getPartnerById(itemId);
+    if (loadingPartner) {
+      return (
+        <div className="p-4 lg:p-8">
+          <div className="text-center">
+            <div className="animate-pulse">Загрузка партнера...</div>
+          </div>
+        </div>
+      );
+    }
     
     if (!partner) {
       return (
@@ -178,7 +314,7 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
               <Card className="p-6">
                 <div className="mb-4">
                   <ImageWithFallback
-                    src={partner.image}
+                    src={partner.image_url}
                     alt={partner.name}
                     className="w-full h-48 object-cover rounded-lg"
                   />
@@ -186,23 +322,23 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
                 <h1 className="text-xl text-[#2E2E2E] mb-4">{partner.name}</h1>
                 
                 <div className="space-y-3">
-                  {partner.phone && (
-                    <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-[#18A36C]" />
-                      <span className="text-sm">{partner.phone}</span>
-                    </div>
-                  )}
-                  {partner.website && (
+                  {partner.website_url && (
                     <div className="flex items-center gap-3">
                       <Globe className="w-5 h-5 text-[#18A36C]" />
                       <a 
-                        href={partner.website} 
+                        href={partner.website_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-sm text-[#18A36C] hover:text-[#18A36C]/80 hover:underline"
                       >
-                        {partner.website}
+                        {partner.website_url}
                       </a>
+                    </div>
+                  )}
+                  {partner.category && (
+                    <div className="flex items-center gap-3">
+                      <Building2 className="w-5 h-5 text-[#18A36C]" />
+                      <span className="text-sm">{partner.category.name}</span>
                     </div>
                   )}
                 </div>
