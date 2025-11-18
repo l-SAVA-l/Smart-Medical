@@ -33,7 +33,6 @@ interface PartnerFromDB {
 
 const REVIEWS_PER_PAGE = 10;
 
-// Маппинг между itemId и slug категорий из базы данных
 const itemIdToCategorySlugs: Record<string, string[]> = {
   'medical-labs': ['ultrasound', 'diagnostics', 'cardiology', 'gynecology'],
   'insurance': [], // Страховые компании могут быть в отдельной категории или без категории
@@ -57,7 +56,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     window.scrollTo(0, 0);
   }, [itemId, categoryId]);
 
-  // Загрузка категорий
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -92,7 +90,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     { label: clinicItem.title, href: currentRoute }
   ];
 
-  // Загрузка партнеров по категории
   useEffect(() => {
     const fetchPartners = async () => {
       if (!['medical-labs', 'insurance', 'dental-labs'].includes(itemId) || categories.length === 0) {
@@ -135,7 +132,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     fetchPartners();
   }, [itemId, categories]);
 
-  // Загрузка одного партнера
   useEffect(() => {
     const fetchPartner = async () => {
       if (!currentRoute.includes('/clinic/partners/') || ['medical-labs', 'insurance', 'dental-labs'].includes(itemId)) {
@@ -174,7 +170,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     fetchPartner();
   }, [itemId, currentRoute]);
 
-  // Handle partners page
   if (itemId === 'medical-labs' || itemId === 'insurance' || itemId === 'dental-labs') {
     return (
       <>
@@ -273,7 +268,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     );
   }
 
-  // Handle individual partner page
   if (currentRoute.includes('/clinic/partners/') && !['medical-labs', 'insurance', 'dental-labs'].includes(itemId)) {
     if (loadingPartner) {
       return (
@@ -623,7 +617,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     );
   }
 
-  // Handle individual vacancy page
   if (currentRoute.includes('/clinic/vacancies/') && itemId !== 'vacancies') {
     const vacancy = getVacancyById(itemId);
     
@@ -758,7 +751,6 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     );
   }
 
-  // Default page layout for other items
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
