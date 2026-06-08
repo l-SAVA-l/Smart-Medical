@@ -27,7 +27,7 @@ async function parseCardsInMessage(message: string) {
             specialization: true,
             image_url: true,
             education: true,
-            category: {
+            serviceCategory: {
               select: {
                 slug: true,
               },
@@ -40,7 +40,7 @@ async function parseCardsInMessage(message: string) {
             type: "specialist",
             data: {
               ...specialist,
-              categorySlug: specialist.category?.slug || "specialists",
+              categorySlug: specialist.serviceCategory?.slug || "specialists",
             },
             placeholder: fullMatch,
           });
@@ -53,7 +53,7 @@ async function parseCardsInMessage(message: string) {
             id: true,
             title: true,
             description: true,
-            category: {
+            serviceCategory: {
               select: {
                 name: true,
                 slug: true,
@@ -67,8 +67,8 @@ async function parseCardsInMessage(message: string) {
           // Нормализуем данные: category из объекта в строку + добавляем slug
           const normalizedService = {
             ...service,
-            category: service.category?.name || "Не указано",
-            categorySlug: service.category?.slug || "services",
+            category: service.serviceCategory?.name || "Не указано",
+            categorySlug: service.serviceCategory?.slug || "services",
           };
           cards.push({
             type: "service",
@@ -94,7 +94,7 @@ async function getClinicContext() {
         id: true,
         title: true,
         description: true,
-        category: {
+        serviceCategory: {
           select: {
             name: true,
           },
@@ -115,7 +115,7 @@ async function getClinicContext() {
     // Нормализуем данные: преобразуем вложенные объекты в строки
     const normalizedServices = services.map((s) => ({
       ...s,
-      category: s.category?.name || "Не указано",
+      category: s.serviceCategory?.name || "Не указано",
     }));
 
     return {

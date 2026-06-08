@@ -286,13 +286,6 @@ async function GET(request) {
         }
         const specialists = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].specialist.findMany({
             include: {
-                category: {
-                    select: {
-                        id: true,
-                        name: true,
-                        slug: true
-                    }
-                },
                 serviceCategory: {
                     select: {
                         id: true,
@@ -327,7 +320,6 @@ async function POST(request) {
         const data = await request.json();
         console.log('Creating specialist with data:', {
             ...data,
-            category_id: data.category_id ? parseInt(data.category_id) : null,
             service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null
         });
         const specialist = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].specialist.create({
@@ -344,11 +336,9 @@ async function POST(request) {
                 specializations: data.specializations || [],
                 education: data.education || [],
                 work_examples: data.work_examples || null,
-                category_id: data.category_id ? parseInt(data.category_id) : null,
                 service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null
             },
             include: {
-                category: true,
                 serviceCategory: true
             }
         });

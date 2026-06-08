@@ -1,0 +1,150 @@
+Сущность	Атрибут	Описание атрибута
+Service	id	Первичный ключ (service_id)
+Service	title	Название услуги
+Service	subtitle	Подзаголовок
+Service	price	Цена (целое число)
+Service	video_url	URL видео
+Service	description	Описание (TEXT)
+Service	image_url	Основное изображение
+Service	image_url_1	Доп. изображение 1
+Service	image_url_2	Доп. изображение 2
+Service	image_url_3	Доп. изображение 3
+Service	image_url_4	Доп. изображение 4 (nullable)
+Service	service_category_id	FK на ServiceCategory (обязательно)
+Service	questions_id	Устаревшее служебное поле
+Service	reviews_id	Устаревшее служебное поле
+ServiceSpecialist	service_id	FK на Service (часть PK)
+ServiceSpecialist	specialist_id	FK на Specialist (часть PK)
+Category	id	Первичный ключ (category_id)
+Category	name	Название
+Category	slug	Уникальный slug
+ServiceCategory	id	Первичный ключ (service_category_id)
+ServiceCategory	name	Название категории меню
+ServiceCategory	slug	Уникальный slug
+ServiceCategory	icon	Иконка (nullable)
+ServiceCategory	description	Описание (nullable)
+ServiceCategory	parent_id	FK на родителя (nullable = корень)
+ServiceCategory	order	Порядок сортировки
+ServiceCategory	is_active	Активность
+ServiceCategory	created_at	Дата создания
+ServiceCategory	updated_at	Дата обновления
+Specialist	id	Первичный ключ (specialists_id)
+Specialist	service_category_id	FK на ServiceCategory (обязательно)
+Specialist	name	ФИО
+Specialist	specialization	Специализация
+Specialist	qualification	Квалификация
+Specialist	experience	Опыт (лет)
+Specialist	grade	Рейтинг
+Specialist	image_url	URL фото
+Specialist	activity_area	Область деятельности (nullable)
+Specialist	education_details	Образование TEXT (nullable)
+Specialist	conferences	Массив строк
+Specialist	specializations	Массив специализаций
+Specialist	education	Массив образования
+Specialist	work_examples	JSON примеров работ (nullable)
+QuestionCategory	id	Первичный ключ
+QuestionCategory	name	Название
+QuestionCategory	slug	Slug
+QuestionCategory	description	Описание (nullable)
+QuestionCategory	order	Порядок
+QuestionCategory	is_active	Активность
+QuestionCategory	created_at	Дата создания
+QuestionCategory	updated_at	Дата обновления
+Question	id	Первичный ключ
+Question	question	Текст вопроса
+Question	answer	Ответ (nullable)
+Question	service_id	FK на Service (nullable)
+Question	question_category_id	FK на QuestionCategory (nullable)
+Feedback	id	Первичный ключ (reviews_id)
+Feedback	name	Имя автора
+Feedback	text	Текст отзыва
+Feedback	date	Дата
+Feedback	grade	Оценка
+Feedback	image_url	Изображение
+Feedback	verified	Верифицирован
+Feedback	service_id	FK на Service (nullable)
+Partner	id	Первичный ключ
+Partner	category_id	FK на Category
+Partner	image_url	Логотип
+Partner	name	Название
+Partner	description	Описание
+Partner	number	Номер
+Partner	website_url	Сайт
+Vacancy	id	Первичный ключ
+Vacancy	name	Название вакансии
+Vacancy	category	Категория (строка)
+Vacancy	description	Описание
+Vacancy	payment	Оплата
+Vacancy	experience	Опыт
+Vacancy	requirements	Требования
+Contacts	id	Первичный ключ
+Contacts	address	Адрес
+Contacts	map_geo	Карта/координаты
+Contacts	work_hours_main	Часы работы
+Contacts	work_hours_sunday	Часы в воскресенье
+Contacts	phone_number	Телефон
+Contacts	phone_number_sec	Доп. телефон (nullable)
+Contacts	email	Email
+Patient	id	Первичный ключ (patient_id)
+Patient	login	Логин
+Patient	email	Email (unique)
+Patient	password	Хэш пароля
+Patient	name	ФИО
+Patient	phone	Телефон (unique)
+Patient	registration_date	Дата регистрации
+Patient	avatar_url	Аватар (nullable)
+Patient	role	Enum Role
+Patient	is_messages_blocked	Блокировка писем
+Material	id	Первичный ключ
+Material	title	Заголовок
+Material	content	Контент
+Material	detailed_content	Подробный текст (nullable)
+Material	image_url	Изображение
+Material	date	Дата
+Material	year	Год
+Material	is_active	Активен
+Material	created_at	Создан
+Material	updated_at	Обновлён
+Letter	id	Первичный ключ
+Letter	patient_id	FK на Patient
+Letter	subject	Тема
+Letter	content	Текст
+Letter	created_at	Создано
+Letter	reply	Первый ответ (nullable)
+Letter	replied_at	Дата ответа (nullable)
+Letter	is_read	Прочитано врачом
+Letter	is_reply_read	Ответ прочитан пациентом
+Letter	has_new_patient_message	Новое от пациента
+LetterMessage	id	Первичный ключ
+LetterMessage	letter_id	FK на Letter
+LetterMessage	sender_type	patient | chief_doctor
+LetterMessage	content	Текст
+LetterMessage	created_at	Время
+LetterMessage	is_read	Прочитано
+OperatorChat	id	Первичный ключ
+OperatorChat	patient_id	FK на Patient
+OperatorChat	operator_id	FK на Patient оператор (nullable)
+OperatorChat	status	Enum ChatStatus
+OperatorChat	created_at	Создан
+OperatorChat	updated_at	Обновлён
+OperatorChat	last_message_at	Последнее сообщение (nullable)
+OperatorChat	has_unread_operator	Непрочитано у оператора
+OperatorChat	has_unread_patient	Непрочитано у пациента
+OperatorChatMessage	id	Первичный ключ
+OperatorChatMessage	chat_id	FK на OperatorChat
+OperatorChatMessage	sender_id	FK на Patient
+OperatorChatMessage	sender_type	patient | operator
+OperatorChatMessage	content	Текст
+OperatorChatMessage	created_at	Время
+OperatorChatMessage	is_read	Прочитано
+Appointment	id	Первичный ключ (appointment_id)
+Appointment	patient_id	FK на Patient
+Appointment	specialist_id	FK на Specialist
+Appointment	service_id	FK на Service (nullable)
+Appointment	scheduled_at	Дата и время приёма
+Appointment	duration_minutes	Длительность (мин)
+Appointment	status	pending | confirmed | cancelled | completed | no_show
+Appointment	note	Комментарий пациента (nullable)
+Appointment	admin_comment	Комментарий админа для ЛК (nullable)
+Appointment	created_at	Создание
+Appointment	updated_at	Обновление

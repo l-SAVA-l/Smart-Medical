@@ -62,7 +62,24 @@ export const authOptions: NextAuthOptions = {
     callbacks: {
         async jwt({ token, user }) {
             if (user) {
-                token.id = user.id;
+                const email = user.email ?? (token.email as string | undefined);
+                if (email) {
+                    try {
+                        const patient = await prisma.patient.findUnique({
+                            where: { email },
+                            select: { id: true },
+                        });
+                        if (patient) {
+                            token.id = patient.id.toString();
+                        } else {
+                            token.id = user.id;
+                        }
+                    } catch {
+                        token.id = user.id;
+                    }
+                } else {
+                    token.id = user.id;
+                }
                 token.role = user.role;
                 token.picture = user.image;
             }

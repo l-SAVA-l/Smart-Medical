@@ -19,6 +19,11 @@ interface Specialist {
     name: string;
     slug: string;
   };
+  serviceCategory?: {
+    id: number;
+    name: string;
+    slug: string;
+  };
 }
 
 interface SpecialistCardProps {
@@ -37,7 +42,7 @@ export function SpecialistCard({
   const router = useRouter();
 
   const handleCardClick = () => {
-    const categorySlug = specialist.category?.slug || 'other';
+    const categorySlug = specialist.serviceCategory?.slug || specialist.category?.slug || 'other';
     router.push(`/doctors/${categorySlug}/${specialist.id}`);
   };
 

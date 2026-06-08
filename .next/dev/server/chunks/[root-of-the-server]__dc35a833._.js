@@ -299,6 +299,13 @@ async function GET(request, { params }) {
                         name: true,
                         slug: true
                     }
+                },
+                serviceCategory: {
+                    select: {
+                        id: true,
+                        name: true,
+                        slug: true
+                    }
                 }
             }
         });
@@ -348,10 +355,12 @@ async function PUT(request, { params }) {
                 specializations: data.specializations || [],
                 education: data.education || [],
                 work_examples: data.work_examples || null,
-                category_id: parseInt(data.category_id)
+                category_id: data.category_id ? parseInt(data.category_id) : null,
+                service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null
             },
             include: {
-                category: true
+                category: true,
+                serviceCategory: true
             }
         });
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(specialist);

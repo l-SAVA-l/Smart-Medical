@@ -5,12 +5,9 @@ import { getServicesMenuFromDB } from '@/lib/getServicesMenu';
 export async function GET() {
   try {
     const menuData = await getServicesMenuFromDB();
-    return NextResponse.json({ menuData });
+    return NextResponse.json({ menuData: menuData ?? [] });
   } catch (error) {
     console.error('Error fetching services menu:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch services menu' },
-      { status: 500 }
-    );
+    return NextResponse.json({ menuData: [] }, { status: 200 });
   }
 }

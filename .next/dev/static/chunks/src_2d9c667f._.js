@@ -3783,7 +3783,7 @@ function EditProfileModal({ isOpen, onClose, user, onProfileUpdate }) {
         ]
     }, void 0, true);
 }
-_s(EditProfileModal, "JrVoVvgm0MoJsiwnK140dj/0LVk=", false, function() {
+_s(EditProfileModal, "TnbrXLnEnSIuFjSyrjWd4n88l5A=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMAlert$2f$AlertProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAlert"]
     ];
@@ -8683,7 +8683,7 @@ function AccountContent() {
     // Default: show welcome dashboard
     return renderWelcomeDashboard();
 }
-_s(AccountContent, "Fq5r4Kp26eNyZFsEi65X0DfhqW0=", false, function() {
+_s(AccountContent, "grMfY6uaA4g/XFE8TuSzcgkdX3U=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMRouter$2f$SMRouter$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSession"],

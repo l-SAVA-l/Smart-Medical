@@ -43,8 +43,6 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
   
   const isRouteActive = currentRoute.includes(`/doctors/${item.id}`);
   
-  const paddingLeft = level === 0 ? 'pl-4' : level === 1 ? 'pl-8' : 'pl-12';
-  
   return (
     <div className="px-2">
       <Button
@@ -132,7 +130,6 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
 export function NavigableDoctorsMenu() {
   const [categories, setCategories] = useState<ServiceCategory[]>([]);
   const [activeItem, setActiveItem] = useState<string | null>(null);
-  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -173,10 +170,10 @@ export function NavigableDoctorsMenu() {
 
   const menuItems = useMemo<MenuItem[]>(() => {
     return categories.map((category) => {
-      // Используем иконку из категории или fallback
-      const IconComponent = category.icon && iconMap[category.icon as IconName]
-        ? iconMap[category.icon as IconName]
-        : Users;
+      const IconComponent =
+        category.icon && iconMap[category.icon as IconName]
+          ? iconMap[category.icon as IconName]
+          : Users;
 
       return {
         id: category.slug,
@@ -189,16 +186,6 @@ export function NavigableDoctorsMenu() {
   const handleItemClick = (itemId: string, _item: MenuItem) => {
     setActiveItem(itemId);
     navigate(`/doctors/${itemId}`);
-  };
-
-  const handleToggleExpand = (itemId: string) => {
-    const newExpanded = new Set(expandedItems);
-    if (newExpanded.has(itemId)) {
-      newExpanded.delete(itemId);
-    } else {
-      newExpanded.add(itemId);
-    }
-    setExpandedItems(newExpanded);
   };
 
   const MenuContent = ({ onItemClick: onItemClickProp }: { onItemClick?: (itemId: string, item: MenuItem) => void }) => (
@@ -217,7 +204,10 @@ export function NavigableDoctorsMenu() {
       </div>
 
       {/* Scrollable Menu Items */}
-      <div className="flex-1 overflow-y-auto py-2">
+      <div
+        className="flex-1 overflow-y-scroll py-2"
+        style={{ scrollbarGutter: 'stable' }}
+      >
         {isLoading ? (
           <MenuSkeleton itemCount={8} showHeader={false} showFooter={false} />
         ) : error ? (
@@ -230,8 +220,8 @@ export function NavigableDoctorsMenu() {
               level={0}
               activeItem={activeItem}
               onItemClick={onItemClickProp || handleItemClick}
-              expandedItems={expandedItems}
-              onToggleExpand={handleToggleExpand}
+              expandedItems={new Set()}
+              onToggleExpand={() => {}}
               currentRoute={currentRoute}
             />
           ))
@@ -258,7 +248,10 @@ export function NavigableDoctorsMenu() {
 
   return (
     <>
-      <div className="hidden lg:block w-72 bg-white border-r border-[#E8E6E3] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)]">
+      <div
+        className="hidden lg:block w-72 bg-white border-r border-[#E8E6E3] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-scroll"
+        style={{ scrollbarGutter: 'stable' }}
+      >
         <MenuContent />
       </div>
 

@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
-import { Shield, Users, ChevronRight, Home, FileText, Handshake, Briefcase, HelpCircle, MessageSquare, ShoppingBag, Phone, Mail, UserCog, MessagesSquare, FolderTree } from 'lucide-react';
+import { Shield, Users, ChevronRight, Home, FileText, Handshake, Briefcase, HelpCircle, MessageSquare, ShoppingBag, Phone, Mail, UserCog, MessagesSquare, FolderTree, Calendar } from 'lucide-react';
 import { Button } from '../common/SMButton/SMButton';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '../common/SMSheet/SMSheet';
 import { useUnreadCountsContext } from '@/contexts/UnreadCountsContext';
@@ -72,6 +72,12 @@ const allMenuItems: MenuItem[] = [
     title: 'Категории вопросов',
     icon: <FolderTree className="w-4 h-4" />,
     href: '/admin/question-categories',
+  },
+  {
+    id: 'appointments',
+    title: 'Записи',
+    icon: <Calendar className="w-4 h-4" />,
+    href: '/admin/appointments',
   },
   {
     id: 'feedbacks',

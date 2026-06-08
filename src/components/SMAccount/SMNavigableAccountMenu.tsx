@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ChevronRight, ChevronDown, Settings, FileText, MessageSquare, LogOut, Menu, X, User } from 'lucide-react';
+import { ChevronRight, ChevronDown, Settings, FileText, MessageSquare, LogOut, Menu, X, User, CalendarDays } from 'lucide-react';
 import { Button } from '../common/SMButton/SMButton';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger, SheetClose } from '../common/SMSheet/SMSheet';
 import {
@@ -24,6 +24,12 @@ interface MenuItem {
 }
 
 const menuData: MenuItem[] = [
+  {
+    id: 'appointments',
+    title: 'Записи',
+    icon: <CalendarDays className="w-4 h-4" />,
+    children: []
+  },
   {
     id: 'materials',
     title: 'Материалы',
@@ -150,7 +156,7 @@ export function NavigableAccountMenu() {
   if (pathParts[0] === 'account') {
     sectionFromUrl = pathParts[1] || '';
   }
-  const selectedItem = sectionFromUrl && ['materials', 'contact'].includes(sectionFromUrl)
+  const selectedItem = sectionFromUrl && ['appointments', 'materials', 'contact'].includes(sectionFromUrl)
     ? sectionFromUrl
     : null;
 

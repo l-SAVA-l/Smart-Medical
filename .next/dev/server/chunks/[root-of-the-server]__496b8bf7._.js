@@ -75,60 +75,42 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/prisma.ts [app-route] (ecmascript)");
 ;
-// Функция для построения меню с услугами как подпунктами
-function buildMenuWithServices(categories) {
-    return categories.map((category)=>{
-        const menuItem = {
+function buildCategoryTree(categories, parentId = null) {
+    const levelItems = categories.filter((category)=>category.parent_id === parentId).sort((a, b)=>{
+        if (a.order !== b.order) return a.order - b.order;
+        return a.name.localeCompare(b.name, 'ru');
+    });
+    return levelItems.map((category)=>{
+        const children = buildCategoryTree(categories, category.id);
+        const item = {
             id: category.slug,
-            title: category.name
+            title: category.name,
+            ...category.icon ? {
+                icon: category.icon
+            } : {},
+            ...children.length > 0 ? {
+                children
+            } : {}
         };
-        // Добавляем иконку для категории
-        if (category.icon) {
-            menuItem.icon = category.icon;
-        }
-        // Добавляем услуги как подпункты категории
-        if (category.services && category.services.length > 0) {
-            menuItem.children = category.services.map((service)=>({
-                    id: `${category.slug}/${service.id}`,
-                    title: service.title
-                }));
-        }
-        return menuItem;
+        return item;
     });
 }
 async function getServicesMenuFromDB() {
     try {
-        // @ts-ignore - ServiceCategory будет доступна после npx prisma generate
         const categories = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findMany({
             where: {
-                is_active: true,
-                parent_id: null
+                is_active: true
             },
-            orderBy: [
-                {
-                    order: 'asc'
-                },
-                {
-                    name: 'asc'
-                }
-            ],
-            include: {
-                services: {
-                    orderBy: [
-                        {
-                            title: 'asc'
-                        }
-                    ],
-                    select: {
-                        id: true,
-                        title: true,
-                        subtitle: true,
-                        service_category_id: true
-                    }
-                }
+            select: {
+                id: true,
+                name: true,
+                slug: true,
+                icon: true,
+                parent_id: true,
+                order: true
             }
         });
-        return buildMenuWithServices(categories);
+        return buildCategoryTree(categories);
     } catch (error) {
         console.error('Error fetching services menu from DB:', error);
         return [];
@@ -150,14 +132,14 @@ async function GET() {
     try {
         const menuData = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$getServicesMenu$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getServicesMenuFromDB"])();
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            menuData
+            menuData: menuData ?? []
         });
     } catch (error) {
         console.error('Error fetching services menu:', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            error: 'Failed to fetch services menu'
+            menuData: []
         }, {
-            status: 500
+            status: 200
         });
     }
 }

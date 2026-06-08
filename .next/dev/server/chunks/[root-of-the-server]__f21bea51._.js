@@ -326,55 +326,72 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$serviceMappi
 async function GET(request, { params }) {
     try {
         const { categorySlug, serviceId } = await params;
-        // Сначала пытаемся найти в новой структуре ServiceCategory
-        // @ts-ignore
         const serviceCategory = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findUnique({
             where: {
                 slug: categorySlug
             }
         });
-        // Если не нашли в ServiceCategory, ищем в старой структуре Category
-        const category = serviceCategory ? null : await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].category.findUnique({
-            where: {
-                slug: categorySlug
-            }
-        });
-        if (!serviceCategory && !category) {
+        if (!serviceCategory) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: 'Category not found'
             }, {
                 status: 404
             });
         }
-        // Определяем какой category_id использовать для поиска услуг
-        const categoryIdForSearch = serviceCategory ? serviceCategory.id : category?.id;
+        // Для новой структуры учитываем не только выбранную категорию,
+        // но и ее дочерние категории (вплоть до 2 уровней).
+        let allowedServiceCategoryIds = [];
+        if (serviceCategory) {
+            const children = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findMany({
+                where: {
+                    parent_id: serviceCategory.id,
+                    is_active: true
+                },
+                select: {
+                    id: true
+                }
+            });
+            const childIds = children.map((c)=>c.id);
+            let grandChildIds = [];
+            if (childIds.length > 0) {
+                const grandChildren = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findMany({
+                    where: {
+                        parent_id: {
+                            in: childIds
+                        },
+                        is_active: true
+                    },
+                    select: {
+                        id: true
+                    }
+                });
+                grandChildIds = grandChildren.map((c)=>c.id);
+            }
+            allowedServiceCategoryIds = [
+                serviceCategory.id,
+                ...childIds,
+                ...grandChildIds
+            ];
+        }
         // Пытаемся определить, является ли serviceId числом (id) или строкой (название)
         const serviceIdNumber = parseInt(serviceId);
         const isNumericId = !isNaN(serviceIdNumber);
         let service;
         if (isNumericId) {
-            // Если serviceId - число, ищем по id
-            // Ищем либо по category_id (старая структура) либо по service_category_id (новая структура)
             service = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].service.findFirst({
                 where: {
                     id: serviceIdNumber,
-                    OR: [
-                        {
-                            category_id: category?.id
-                        },
-                        {
-                            service_category_id: serviceCategory?.id
-                        }
-                    ].filter((condition)=>Object.values(condition)[0] !== undefined)
+                    service_category_id: {
+                        in: allowedServiceCategoryIds
+                    }
                 },
                 include: {
-                    category: true,
                     serviceCategory: true,
                     specialists: {
                         include: {
                             specialist: {
                                 include: {
-                                    category: true
+                                    serviceCategory: true
                                 }
                             }
                         }
@@ -397,26 +414,19 @@ async function GET(request, { params }) {
         } else {
             // Если serviceId - строка, сначала пытаемся получить точное название из маппинга
             const serviceTitle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$serviceMapping$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getServiceTitleByServiceId"])(categorySlug, serviceId);
-            // Получаем все услуги категории
             const servicesRaw = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].service.findMany({
                 where: {
-                    OR: [
-                        {
-                            category_id: category?.id
-                        },
-                        {
-                            service_category_id: serviceCategory?.id
-                        }
-                    ].filter((condition)=>Object.values(condition)[0] !== undefined)
+                    service_category_id: {
+                        in: allowedServiceCategoryIds
+                    }
                 },
                 include: {
-                    category: true,
                     serviceCategory: true,
                     specialists: {
                         include: {
                             specialist: {
                                 include: {
-                                    category: true
+                                    serviceCategory: true
                                 }
                             }
                         }

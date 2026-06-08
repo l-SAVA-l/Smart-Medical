@@ -2,6 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getToken } from "next-auth/jwt";
 
+const CLINIC_FAQ_SLUGS = [
+  "children-teeth",
+  "girls-hygiene",
+  "boys-hygiene",
+  "girls-puberty",
+  "culdocentesis",
+  "stomatology",
+  "polyp-removal",
+  "ultrasound",
+  "womens-health",
+  "curettage",
+];
+
 async function checkAdmin(request: NextRequest) {
   const token = await getToken({
     req: request,
@@ -23,6 +36,29 @@ async function checkAdmin(request: NextRequest) {
   }
 
   return { isAdmin: true };
+}
+
+async function validateQuestionScope(serviceId: number | null, questionCategoryId: number | null) {
+  if (!serviceId && !questionCategoryId) {
+    return "Укажите либо услугу (service_id), либо категорию вопросов клиники (question_category_id)";
+  }
+
+  if (serviceId && questionCategoryId) {
+    return "Вопрос не может одновременно относиться и к услуге, и к категории FAQ клиники";
+  }
+
+  if (questionCategoryId) {
+    const category = await prisma.questionCategory.findUnique({
+      where: { id: questionCategoryId },
+      select: { slug: true, is_active: true },
+    });
+
+    if (!category || !category.is_active || !CLINIC_FAQ_SLUGS.includes(category.slug)) {
+      return "Выбрана недопустимая категория FAQ для раздела Клиника";
+    }
+  }
+
+  return null;
 }
 
 // GET - Получить все вопросы
@@ -91,14 +127,20 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await request.json();
+    const serviceId = data.service_id ? parseInt(data.service_id) : null;
+    const questionCategoryId = data.question_category_id ? parseInt(data.question_category_id) : null;
+
+    const scopeError = await validateQuestionScope(serviceId, questionCategoryId);
+    if (scopeError) {
+      return NextResponse.json({ error: scopeError }, { status: 400 });
+    }
 
     const question = await prisma.question.create({
       data: {
         question: data.question,
         answer: data.answer || null,
-        category: data.category || null,
-        service_id: data.service_id ? parseInt(data.service_id) : null,
-        question_category_id: data.question_category_id ? parseInt(data.question_category_id) : null,
+        service_id: serviceId,
+        question_category_id: questionCategoryId,
       },
       include: {
         service: {

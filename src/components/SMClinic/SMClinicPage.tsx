@@ -42,6 +42,12 @@ interface Partner {
   };
 }
 
+interface PartnerCategorySummary {
+  slug: string;
+  name: string;
+  count: number;
+}
+
 interface Vacancy {
   id: number;
   name: string;
@@ -92,6 +98,7 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
   const [vacancies, setVacancies] = useState<Vacancy[]>([]);
   const [vacanciesTotal, setVacanciesTotal] = useState(0);
   const [singlePartner, setSinglePartner] = useState<Partner | null>(null);
+  const [partnerCategories, setPartnerCategories] = useState<PartnerCategorySummary[]>([]);
   const [singleVacancy, setSingleVacancy] = useState<Vacancy | null>(null);
   const [clinicReviewsData, setClinicReviewsData] = useState<ClinicReview[]>([]);
   const [clinicFaqsData, setClinicFaqsData] = useState<ClinicFaq[]>([]);
@@ -109,6 +116,9 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
 
   const clinicItem = getClinicItemById(itemId);
   const categoryItem = categoryId !== itemId ? getClinicItemById(categoryId) : null;
+  const isPartnerCategoryRoute =
+    categoryId === 'partners' && itemId !== 'partners' && isNaN(Number(itemId));
+  const selectedPartnerCategory = partnerCategories.find((c) => c.slug === itemId) || null;
 
   useEffect(() => {
     // Проверяем наличие якоря в URL
@@ -133,17 +143,43 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     }
   }, [itemId, categoryId]);
 
-  // Load partners for partner category pages (NOT for main partners page)
+  // Load partner categories dynamically from DB
   useEffect(() => {
-    const isPartnerCategoryPage = ['medical-labs', 'insurance', 'dental-labs'].includes(itemId);
-    if (isPartnerCategoryPage) {
+    const shouldLoadPartnerCategories =
+      itemId === 'partners' || categoryId === 'partners' || currentRoute.includes('/clinic/partners');
+
+    if (!shouldLoadPartnerCategories) return;
+
+    fetch('/api/partners')
+      .then(res => res.json())
+      .then((data: Partner[]) => {
+        const grouped = new Map<string, PartnerCategorySummary>();
+        for (const partner of data) {
+          const slug = partner.category?.slug;
+          const name = partner.category?.name;
+          if (!slug || !name) continue;
+          const existing = grouped.get(slug);
+          if (existing) {
+            existing.count += 1;
+          } else {
+            grouped.set(slug, { slug, name, count: 1 });
+          }
+        }
+        setPartnerCategories(Array.from(grouped.values()).sort((a, b) => a.name.localeCompare(b.name, 'ru')));
+      })
+      .catch(() => setPartnerCategories([]));
+  }, [itemId, categoryId, currentRoute]);
+
+  // Load partners for partner category pages
+  useEffect(() => {
+    if (isPartnerCategoryRoute) {
       setLoading(true);
       fetch(`/api/partners?category=${itemId}`)
         .then(res => res.json())
         .then(data => setPartners(data))
         .finally(() => setLoading(false));
     }
-  }, [itemId]);
+  }, [itemId, isPartnerCategoryRoute]);
 
   // Load single partner
   useEffect(() => {
@@ -214,7 +250,7 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     }
   }, [itemId, categoryId]);
 
-  if (!clinicItem) {
+  if (!clinicItem && !isPartnerCategoryRoute) {
     return (
       <div className="p-4 lg:p-8">
         <div className="text-center">
@@ -234,8 +270,8 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     { label: clinicItem.title, href: currentRoute }
   ];
 
-  // Handle partners page
-  if (itemId === 'medical-labs' || itemId === 'insurance' || itemId === 'dental-labs') {
+  // Handle partner category page (dynamic slug)
+  if (isPartnerCategoryRoute) {
     return (
       <>
         <div className="p-4 lg:p-8">
@@ -243,9 +279,11 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
             <div
               className="mb-8"
             >
-              <h1 className="text-2xl lg:text-3xl text-[#212121] mb-4">{clinicItem.title}</h1>
+              <h1 className="text-2xl lg:text-3xl text-[#212121] mb-4">
+                {selectedPartnerCategory?.name || 'Партнёры'}
+              </h1>
               <p className="text-[#212121] leading-relaxed text-sm lg:text-base">
-                {clinicItem.fullDescription}
+                Партнёры выбранной категории
               </p>
             </div>
 
@@ -830,7 +868,7 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     );
   }
 
-  // Handle partners category page - show subcategories as cards ONLY
+  // Handle partners root page - show dynamic subcategories from DB
   if (itemId === 'partners' && clinicItem?.children) {
     return (
       <>
@@ -845,18 +883,18 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
 
             {/* Категории партнёров */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {clinicItem.children.map((category) => (
+              {partnerCategories.map((category) => (
                 <Card
-                  key={category.id}
+                  key={category.slug}
                   className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#18A36C] cursor-pointer"
-                  onClick={() => navigate(`/clinic/partners/${category.id}`)}
+                  onClick={() => navigate(`/clinic/partners/${category.slug}`)}
                 >
                   <div className="p-6">
                     <h3 className="text-xl text-[#2E2E2E] mb-3 group-hover:text-[#18A36C] transition-colors duration-300">
-                      {category.title}
+                      {category.name}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
-                      {category.description}
+                      {category.count} {category.count === 1 ? 'партнёр' : category.count < 5 ? 'партнёра' : 'партнёров'}
                     </p>
                   </div>
                 </Card>

@@ -19,6 +19,7 @@ import { LoginData, RegisterData } from "../SMAuthModals/SMAuthModals.styles";
 import { useContacts } from "@/hooks/useContacts";
 import { useAlert } from "../common/SMAlert/AlertProvider";
 import { NavigationModal } from "./NavigationModal";
+import { openBookingModal } from "@/components/SMBookingModal/BookingModalProvider";
 
 // Компонент скелетона для текста
 function TextSkeleton({ className = '' }: { className?: string }) {
@@ -261,9 +262,9 @@ export function Header() {
                 <Button
                   size="lg"
                   className="bg-[#18A36C] hover:bg-[#18A36C]/90 text-white px-8 h-12"
-                  onClick={() => handleNavigation("/contacts")}
+                  onClick={() => (session ? openBookingModal() : handleNavigation("/contacts"))}
                 >
-                  {contactsConfig.onlineBookingText}
+                  {session ? "Запись онлайн" : contactsConfig.onlineBookingText}
                 </Button>
               </div>
             </div>
@@ -287,10 +288,10 @@ export function Header() {
                     <Search className="w-5 h-5" />
                   </Button>
                   <Button
-                    onClick={() => handleNavigation("/contacts")}
+                    onClick={() => (session ? openBookingModal() : handleNavigation("/contacts"))}
                     className="bg-[#18A36C] hover:bg-[#18A36C]/90 text-white px-4 text-sm h-9"
                   >
-                    Связаться с нами
+                    {session ? "Запись онлайн" : "Связаться с нами"}
                   </Button>
                 </div>
               </div>

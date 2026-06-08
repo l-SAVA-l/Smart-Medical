@@ -89,7 +89,6 @@ export async function GET(request: NextRequest) {
           ],
         },
         include: {
-          category: true,
           serviceCategory: true,
         },
         take: 50,
@@ -105,7 +104,7 @@ export async function GET(request: NextRequest) {
           ],
         },
         include: {
-          category: true,
+          serviceCategory: true,
         },
         take: 50,
       }),
@@ -192,8 +191,8 @@ export async function GET(request: NextRequest) {
 
     // Форматируем услуги
     services.forEach((service) => {
-      const categorySlug = service.serviceCategory?.slug || service.category?.slug || 'services';
-      const categoryName = service.serviceCategory?.name || service.category?.name || 'Услуги';
+      const categorySlug = service.serviceCategory?.slug || 'services';
+      const categoryName = service.serviceCategory?.name || 'Услуги';
 
       results.push({
         id: `service-${service.id}`,
@@ -207,8 +206,8 @@ export async function GET(request: NextRequest) {
 
     // Форматируем специалистов
     specialists.forEach((specialist) => {
-      const categorySlug = specialist.category?.slug || 'doctors';
-      const categoryName = specialist.category?.name || 'Специалисты';
+      const categorySlug = specialist.serviceCategory?.slug || 'doctors';
+      const categoryName = specialist.serviceCategory?.name || 'Специалисты';
 
       results.push({
         id: `specialist-${specialist.id}`,

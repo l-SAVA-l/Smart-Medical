@@ -27,18 +27,16 @@ model Service {
   image_url_4          String?
   questions_id         Int
   reviews_id           Int
-  category_id          Int
-  service_category_id  Int?                  // Связь с ServiceCategory (новая структура)
+  service_category_id  Int                   // Связь с ServiceCategory
 
   // Отношения
-  category             Category              @relation(fields: [category_id], references: [id])
-  serviceCategory      ServiceCategory?      @relation(fields: [service_category_id], references: [id])
+  serviceCategory      ServiceCategory       @relation(fields: [service_category_id], references: [id])
   specialists          ServiceSpecialist[]   // M:N со специалистами
   questions            Question[]            // 1:M с вопросами
   feedbacks            Feedback[]            // 1:M с отзывами
+  appointments         Appointment[]         // записи на приём
 
   @@map("services")
-  @@index([category_id])
   @@index([service_category_id])
 }
 
@@ -58,8 +56,6 @@ model Category {
   id          Int          @id @default(autoincrement()) @map("category_id")
   name        String
   slug        String       @unique
-  services    Service[]
-  specialists Specialist[]
   partners    Partner[]
 
   @@map("categories")
@@ -94,8 +90,7 @@ model ServiceCategory {
 
 model Specialist {
   id                   Int                  @id @default(autoincrement()) @map("specialists_id")
-  category_id          Int?                 @map("categori_id") // Теперь необязательное (для обратной совместимости)
-  service_category_id  Int?                 // Новое поле для привязки к категории услуг
+  service_category_id  Int                  // Привязка к категории услуг
   name                 String
   specialization       String
   qualification        String
@@ -111,12 +106,11 @@ model Specialist {
   work_examples        Json?                // Для хранения массива { title: string; images: string[] }[]
 
   // relations
-  category             Category?            @relation(fields: [category_id], references: [id])
-  serviceCategory      ServiceCategory?     @relation(fields: [service_category_id], references: [id])
+  serviceCategory      ServiceCategory      @relation(fields: [service_category_id], references: [id])
   services             ServiceSpecialist[]  // M:N с услугами
+  appointments         Appointment[]
 
   @@map("specialists")
-  @@index([category_id])
   @@index([service_category_id])
 }
 
@@ -143,7 +137,6 @@ model Question {
   id                    Int                @id @default(autoincrement()) @map("questions_id")
   question              String
   answer                String?            @db.Text
-  category              String?            // Старое поле (будет удалено после миграции)
   service_id            Int?               // Для привязки к услуге
   question_category_id  Int?               // Для привязки к категории вопросов клиники
 
@@ -152,7 +145,6 @@ model Question {
 
   @@map("questions")
   @@index([service_id])
-  @@index([category])
   @@index([question_category_id])
 }
 
@@ -234,6 +226,7 @@ model Patient {
   operator_chats       OperatorChat[]          // Чаты с операторами (как пациент)
   assigned_chats       OperatorChat[]          @relation("OperatorChats") // Чаты где этот пользователь - оператор
   chat_messages        OperatorChatMessage[]   // Сообщения в чатах
+  appointments         Appointment[]           // Записи на приём
 
   @@map("patients")
 }
@@ -341,4 +334,29 @@ model OperatorChatMessage {
   @@index([sender_id])
   @@index([is_read])
   @@index([created_at])
+}
+
+// Записи на приём
+model Appointment {
+  id                 Int         @id @default(autoincrement()) @map("appointment_id")
+  patient_id         Int         @map("patient_id")
+  specialist_id      Int         @map("specialists_id")
+  service_id         Int?        @map("service_id")
+  scheduled_at       DateTime    @map("scheduled_at")
+  duration_minutes   Int         @default(30) @map("duration_minutes")
+  status             String      @default("pending") // pending | confirmed | cancelled | completed | no_show
+  note               String?     @db.Text // комментарий пациента при записи
+  admin_comment      String?     @db.Text @map("admin_comment") // комментарий админа, виден пациенту
+  created_at         DateTime    @default(now()) @map("created_at")
+  updated_at         DateTime    @updatedAt @map("updated_at")
+
+  patient            Patient     @relation(fields: [patient_id], references: [id], onDelete: Cascade)
+  specialist         Specialist  @relation(fields: [specialist_id], references: [id], onDelete: Restrict)
+  service            Service?    @relation(fields: [service_id], references: [id], onDelete: SetNull)
+
+  @@map("appointments")
+  @@index([patient_id])
+  @@index([specialist_id])
+  @@index([scheduled_at])
+  @@index([status])
 }

@@ -43,13 +43,7 @@ interface Specialist {
   specializations: string[];
   education: string[];
   work_examples: Array<{ title: string; images: string[] }> | null;
-  category_id: number | null; // Теперь необязательное
   service_category_id: number | null;
-  category?: {
-    id: number;
-    name: string;
-    slug: string;
-  } | null;
   serviceCategory?: {
     id: number;
     name: string;
@@ -97,8 +91,7 @@ export default function AdminPage() {
     conferences: '',
     specializations: '',
     education: '',
-    category_id: '',
-    service_category_id: '', // Новое поле для категории услуг
+    service_category_id: '',
   });
 
   // Check user role when session is verified
@@ -165,7 +158,6 @@ export default function AdminPage() {
       (s) =>
         s.name.toLowerCase().includes(query) ||
         s.specialization.toLowerCase().includes(query) ||
-        s.category?.name.toLowerCase().includes(query) ||
         s.serviceCategory?.name.toLowerCase().includes(query)
     );
   }, [specialists, searchQuery]);
@@ -195,8 +187,7 @@ export default function AdminPage() {
       conferences: '',
       specializations: '',
       education: '',
-      category_id: '',
-      service_category_id: '', // Сбрасываем новое поле
+      service_category_id: '',
     });
     setEditingSpecialist(null);
     setIsModalOpen(false);
@@ -221,7 +212,6 @@ export default function AdminPage() {
       conferences: specialist.conferences.join('\n'),
       specializations: specialist.specializations.join('\n'),
       education: specialist.education.join('\n'),
-      category_id: specialist.category_id ? specialist.category_id.toString() : '',
       service_category_id: specialist.service_category_id ? specialist.service_category_id.toString() : '',
     });
     setIsModalOpen(true);

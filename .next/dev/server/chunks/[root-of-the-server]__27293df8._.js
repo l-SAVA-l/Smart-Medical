@@ -80,10 +80,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__
 async function GET(request, { params }) {
     try {
         const { slug } = await params;
-        // @ts-ignore - ServiceCategory будет доступна после npx prisma generate
-        const category = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findUnique({
+        const category = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findFirst({
             where: {
-                slug: slug,
+                slug,
                 is_active: true
             },
             include: {
@@ -114,28 +113,6 @@ async function GET(request, { params }) {
                             ]
                         }
                     }
-                },
-                services: {
-                    orderBy: {
-                        title: 'asc'
-                    },
-                    include: {
-                        specialists: {
-                            include: {
-                                specialist: true
-                            }
-                        },
-                        questions: {
-                            orderBy: {
-                                id: 'asc'
-                            }
-                        },
-                        feedbacks: {
-                            orderBy: {
-                                date: 'desc'
-                            }
-                        }
-                    }
                 }
             }
         });
@@ -146,7 +123,47 @@ async function GET(request, { params }) {
                 status: 404
             });
         }
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(category);
+        const collectCategoryIds = (node)=>{
+            const ids = [
+                node.id
+            ];
+            for (const child of node.children){
+                ids.push(...collectCategoryIds(child));
+            }
+            return ids;
+        };
+        const categoryIds = collectCategoryIds(category);
+        const services = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].service.findMany({
+            where: {
+                service_category_id: {
+                    in: categoryIds
+                }
+            },
+            orderBy: {
+                title: 'asc'
+            },
+            include: {
+                specialists: {
+                    include: {
+                        specialist: true
+                    }
+                },
+                questions: {
+                    orderBy: {
+                        id: 'asc'
+                    }
+                },
+                feedbacks: {
+                    orderBy: {
+                        date: 'desc'
+                    }
+                }
+            }
+        });
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            ...category,
+            services
+        });
     } catch (error) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: 'Failed to fetch service category',

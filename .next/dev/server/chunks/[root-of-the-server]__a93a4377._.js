@@ -202,7 +202,6 @@ async function GET(request) {
         const services = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].service.findMany({
             where: whereCondition,
             include: {
-                category: true,
                 serviceCategory: true,
                 specialists: {
                     include: {
@@ -256,15 +255,6 @@ async function POST(request) {
                 status: 400
             });
         }
-        // Получаем первую категорию для совместимости (category_id not nullable в БД)
-        const firstCategory = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].category.findFirst();
-        if (!firstCategory) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: 'Не найдена категория по умолчанию'
-            }, {
-                status: 500
-            });
-        }
         const service = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].service.create({
             data: {
                 title,
@@ -279,7 +269,6 @@ async function POST(request) {
                 image_url_4: image_url_4 || null,
                 questions_id: 1,
                 reviews_id: 1,
-                category_id: firstCategory.id,
                 service_category_id: parseInt(service_category_id),
                 specialists: {
                     create: specialist_ids.map((id)=>({
@@ -288,7 +277,6 @@ async function POST(request) {
                 }
             },
             include: {
-                category: true,
                 serviceCategory: true,
                 specialists: {
                     include: {

@@ -60,7 +60,6 @@ export async function GET(request: NextRequest) {
     const services = await prisma.service.findMany({
       where: whereCondition,
       include: {
-        category: true,
         serviceCategory: true,
         specialists: {
           include: {
@@ -125,15 +124,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Получаем первую категорию для совместимости (category_id not nullable в БД)
-    const firstCategory = await prisma.category.findFirst();
-    if (!firstCategory) {
-      return NextResponse.json(
-        { error: 'Не найдена категория по умолчанию' },
-        { status: 500 }
-      );
-    }
-
     const service = await prisma.service.create({
       data: {
         title,
@@ -148,7 +138,6 @@ export async function POST(request: NextRequest) {
         image_url_4: image_url_4 || null,
         questions_id: 1,
         reviews_id: 1,
-        category_id: firstCategory.id, // Используем первую категорию для совместимости
         service_category_id: parseInt(service_category_id),
         specialists: {
           create: specialist_ids.map((id: string) => ({
@@ -157,7 +146,6 @@ export async function POST(request: NextRequest) {
         },
       },
       include: {
-        category: true,
         serviceCategory: true,
         specialists: {
           include: {

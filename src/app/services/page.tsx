@@ -215,15 +215,21 @@ export function ServicePage({ serviceId, categoryId }: ServicePageProps) {
       setLoading(true);
       setServiceData(null); // Clear previous data to show skeleton
 
-      // Пытаемся получить услугу из API
-      const response = await fetch(`/api/services/by-category/${categoryId}/${serviceId}`);
+      try {
+        // Пытаемся получить услугу из API
+        const response = await fetch(`/api/services/by-category/${categoryId}/${serviceId}`);
 
-      if (response.ok) {
-        const serviceFromDB: ServiceFromDB = await response.json();
-        const mappedData = mapServiceFromDBToServiceData(serviceFromDB);
-        setServiceData(mappedData);
-      } else {
-        // Если услуга не найдена в БД, используем статический fallback
+        if (response.ok) {
+          const serviceFromDB: ServiceFromDB = await response.json();
+          const mappedData = mapServiceFromDBToServiceData(serviceFromDB);
+          setServiceData(mappedData);
+        } else {
+          // Если услуга не найдена в БД, используем статический fallback
+          const fallbackData = getServiceData(serviceId, categoryId);
+          setServiceData(fallbackData);
+        }
+      } catch (error) {
+        console.error('Failed to load service data:', error);
         const fallbackData = getServiceData(serviceId, categoryId);
         setServiceData(fallbackData);
       }

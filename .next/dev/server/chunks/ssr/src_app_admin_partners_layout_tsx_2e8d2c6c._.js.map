@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Study/commercial-projects/smartmedical/src/app/admin/partners/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Партнеры\",\n};\n\nexport default function PartnersLayout({ children }: { children: React.ReactNode }) {\n  return children;\n}\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;AACT;AAEe,SAAS,eAAe,EAAE,QAAQ,EAAiC;IAChF,OAAO;AACT","debugId":null}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/admin/partners/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Партнеры\",\r\n};\r\n\r\nexport default function PartnersLayout({ children }: { children: React.ReactNode }) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;AACT;AAEe,SAAS,eAAe,EAAE,QAAQ,EAAiC;IAChF,OAAO;AACT","debugId":null}}]
 }

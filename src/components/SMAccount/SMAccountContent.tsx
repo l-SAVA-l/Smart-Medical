@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { useAppointmentsRealtime } from "@/hooks/useAppointmentsRealtime";
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+import { SMAppointmentCard, type AppointmentCardData } from './SMAppointmentCard';
 import {
   Card,
   CardContent,
@@ -25,6 +29,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from "../common/SMDialog/SMDialog";
 import {
   CalendarDays,
@@ -48,6 +53,7 @@ import {
   ChevronDown,
   ChevronUp,
   Ban,
+  Calendar,
 } from "lucide-react";
 import {
   accountData,
@@ -68,6 +74,7 @@ import {
   ContactSkeleton,
 } from "./SMAccountSkeleton";
 import { validateLetter } from "@/utils/validation";
+import { openBookingModal } from "@/components/SMBookingModal/BookingModalProvider";
 
 interface UserData {
   id: number;
@@ -137,7 +144,7 @@ export function AccountContent() {
   }
 
   const [activeSection, setActiveSection] = useState<string>(
-    sectionFromUrl && ['materials', 'contact'].includes(sectionFromUrl)
+    sectionFromUrl && ['appointments', 'materials', 'contact'].includes(sectionFromUrl)
       ? sectionFromUrl
       : ''
   );
@@ -160,6 +167,47 @@ export function AccountContent() {
   const [letterErrors, setLetterErrors] = useState<Record<string, string>>({});
   const [replyMessage, setReplyMessage] = useState('');
   const [sendingReply, setSendingReply] = useState(false);
+
+  // Appointments state
+  type AppointmentItem = AppointmentCardData;
+  const [appointmentsList, setAppointmentsList] = useState<AppointmentItem[]>([]);
+  const [appointmentsLoading, setAppointmentsLoading] = useState(false);
+  const [cancellingAppointmentId, setCancellingAppointmentId] = useState<number | null>(null);
+  const [sendingTalonEmailId, setSendingTalonEmailId] = useState<number | null>(null);
+  const [emailConfigured, setEmailConfigured] = useState(true);
+
+  const loadAppointments = useCallback(async (silent = false) => {
+    if (!silent) setAppointmentsLoading(true);
+    try {
+      const res = await fetch('/api/appointments');
+      if (res.ok) {
+        const data = await res.json();
+        setAppointmentsList(data.appointments || []);
+      } else if (!silent) {
+        setAppointmentsList([]);
+      }
+    } catch {
+      if (!silent) setAppointmentsList([]);
+    } finally {
+      if (!silent) setAppointmentsLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (activeSection === 'appointments' && session) {
+      loadAppointments();
+      fetch('/api/email/status')
+        .then((r) => r.json())
+        .then((d) => setEmailConfigured(Boolean(d.configured)))
+        .catch(() => setEmailConfigured(false));
+    }
+  }, [activeSection, session, loadAppointments]);
+
+  useAppointmentsRealtime({
+    enabled: activeSection === 'appointments' && Boolean(session),
+    mode: 'patient',
+    onUpdate: () => loadAppointments(true),
+  });
 
   // Validate letter field
   const validateLetterField = (field: 'subject' | 'content', value: string) => {
@@ -206,6 +254,100 @@ export function AccountContent() {
     } catch (error) {
     } finally {
       setLettersLoading(false);
+    }
+  };
+
+  const sendTalonEmail = async (appointmentId: number, email: string) => {
+    setSendingTalonEmailId(appointmentId);
+    try {
+      const res = await fetch(`/api/appointments/${appointmentId}/send-talon`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        alert.success(data.message || `Талон отправлен на ${data.sentTo}`, 'Почта');
+      } else {
+        alert.error(data.error || 'Не удалось отправить талон', 'Ошибка');
+      }
+    } catch {
+      alert.error('Ошибка отправки на почту', 'Ошибка');
+    } finally {
+      setSendingTalonEmailId(null);
+    }
+  };
+
+  const downloadTalon = async (a: AppointmentItem) => {
+    // Создаем временный элемент для рендеринга талона
+    const element = document.createElement('div');
+    element.style.padding = '40px';
+    element.style.width = '400px';
+    element.style.background = '#fff';
+    element.style.position = 'absolute';
+    element.style.left = '-9999px'; // Прячем за экран
+  
+    // Верстка талона (шаблон)
+    element.innerHTML = `
+      <div style="font-family: Arial, sans-serif; border: 2px solid #18A36C; padding: 20px; border-radius: 10px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <h1 style="color: #18A36C; margin: 0;">ТАЛОН НА ПРИЕМ</h1>
+          <p style="color: #666;">Номер записи: #${a.id}</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <strong style="color: #888; text-transform: uppercase; font-size: 12px;">Специалист</strong>
+          <div style="font-size: 18px; font-weight: bold;">${a.specialist.name}</div>
+          <div style="color: #444;">${a.specialist.specialization}</div>
+        </div>
+  
+        <div style="margin-bottom: 15px;">
+          <strong style="color: #888; text-transform: uppercase; font-size: 12px;">Услуга</strong>
+          <div style="font-size: 16px;">${a.service?.title || 'Консультация'}</div>
+        </div>
+  
+        <div style="display: flex; justify-content: space-between; border-top: 1px solid #eee; pt: 15px; margin-top: 20px; padding-top: 15px;">
+          <div>
+            <strong style="color: #888; text-transform: uppercase; font-size: 12px;">Дата</strong>
+            <div style="font-size: 16px; font-weight: bold;">
+              ${new Date(a.scheduled_at).toLocaleDateString('ru-RU')}
+            </div>
+          </div>
+          <div>
+            <strong style="color: #888; text-transform: uppercase; font-size: 12px;">Время</strong>
+            <div style="font-size: 16px; font-weight: bold;">
+              ${new Date(a.scheduled_at).toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' })}
+            </div>
+          </div>
+        </div>
+  
+        <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #999;">
+          <p>Пожалуйста, предъявите данный талон при посещении.<br/>Приходите за 10 минут до начала приема.</p>
+        </div>
+        <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #999;">
+          <p>Г.Минск, ул. Пушкина, 123</p>
+        </div>
+      </div>
+    `;
+  
+    document.body.appendChild(element);
+  
+    try {
+      const canvas = await html2canvas(element, { scale: 2 });
+      const imgData = canvas.toDataURL('image/png');
+      
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'px',
+        format: [canvas.width / 2, canvas.height / 2]
+      });
+  
+      pdf.addImage(imgData, 'PNG', 0, 0, canvas.width / 2, canvas.height / 2);
+      pdf.save(`Talon_${a.id}_${a.specialist.name.replace(/\s/g, '_')}.pdf`);
+    } catch (error) {
+      console.error('Ошибка при генерации PDF:', error);
+    } finally {
+      document.body.removeChild(element); // Удаляем временный элемент
     }
   };
 
@@ -300,7 +442,7 @@ export function AccountContent() {
   }, [materialsPage, alert]);
 
   useEffect(() => {
-    if (sectionFromUrl && ['materials', 'contact'].includes(sectionFromUrl)) {
+    if (sectionFromUrl && ['appointments', 'materials', 'contact'].includes(sectionFromUrl)) {
       setActiveSection(sectionFromUrl);
     } else {
       setActiveSection('');
@@ -1114,6 +1256,94 @@ export function AccountContent() {
     </div>
   );
 
+  const renderAppointments = () => (
+    <div className="p-3 sm:p-4 lg:p-8 max-w-7xl mx-auto space-y-4 sm:space-y-6">
+      <div className="bg-gradient-to-br from-[#18A36C]/15 via-white to-white border border-[#18A36C]/20 rounded-xl p-4 sm:p-6 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#18A36C] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-[#18A36C]/25">
+              <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-800">Мои записи</h2>
+              <p className="text-sm sm:text-base text-gray-600">
+                {appointmentsLoading
+                  ? 'Загрузка…'
+                  : appointmentsList.length > 0
+                    ? `${appointmentsList.length} ${appointmentsList.length === 1 ? 'запись' : appointmentsList.length < 5 ? 'записи' : 'записей'}`
+                    : 'Записи на приём к специалистам'}
+              </p>
+            </div>
+          </div>
+          <Button
+            onClick={openBookingModal}
+            className="w-full sm:w-auto bg-[#18A36C] hover:bg-[#18A36C]/90 text-white rounded-xl shadow-sm"
+          >
+            <Calendar className="w-4 h-4 mr-2" />
+            Новая запись
+          </Button>
+        </div>
+      </div>
+
+      {appointmentsLoading ? (
+        <div className="flex flex-col items-center justify-center py-12">
+          <Loader2 className="w-8 h-8 animate-spin text-[#18A36C]" />
+          <p className="text-gray-600 mt-2">Загрузка записей...</p>
+        </div>
+      ) : appointmentsList.length === 0 ? (
+        <Card className="border border-dashed border-[#18A36C]/30 bg-gradient-to-br from-[#18A36C]/5 to-white rounded-xl">
+          <CardContent className="p-8 sm:p-10 text-center">
+            <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-[#18A36C]/10 flex items-center justify-center">
+              <Calendar className="w-7 h-7 text-[#18A36C]" />
+            </div>
+            <p className="text-gray-700 font-medium mb-1">Пока нет записей</p>
+            <p className="text-gray-500 text-sm mb-5">Запишитесь к специалисту онлайн за пару минут</p>
+            <Button onClick={openBookingModal} className="bg-[#18A36C] hover:bg-[#18A36C]/90 text-white rounded-xl">
+              Записаться
+            </Button>
+          </CardContent>
+        </Card>
+      ) : (
+        <div className="space-y-4">
+          {appointmentsList.map((a) => (
+            <SMAppointmentCard
+              key={a.id}
+              appointment={a}
+              cancelling={cancellingAppointmentId === a.id}
+              sendingEmail={sendingTalonEmailId === a.id}
+              emailEnabled={emailConfigured}
+              accountEmail={user?.email || session?.user?.email || ''}
+              onDownloadTalon={downloadTalon}
+              onSendTalonEmail={sendTalonEmail}
+              onCancel={async (id) => {
+                if (!confirm('Отменить запись?')) return;
+                setCancellingAppointmentId(id);
+                try {
+                  const res = await fetch(`/api/appointments/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ status: 'cancelled' }),
+                  });
+                  if (res.ok) {
+                    alert.success('Запись отменена', 'Успех');
+                    await loadAppointments();
+                  } else {
+                    const d = await res.json();
+                    alert.error(d.error || 'Ошибка отмены', 'Ошибка');
+                  }
+                } catch {
+                  alert.error('Ошибка отмены записи', 'Ошибка');
+                } finally {
+                  setCancellingAppointmentId(null);
+                }
+              }}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+
   // Modern Welcome Dashboard
   const renderWelcomeDashboard = () => (
     <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-8">
@@ -1269,6 +1499,31 @@ export function AccountContent() {
 
       {/* Quick Actions Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <Card
+          className="group cursor-pointer hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#18A36C]"
+          onClick={() => navigate("/account/appointments")}
+        >
+          <CardContent className="p-4 sm:p-6">
+            <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#18A36C] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                <Calendar className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="text-base sm:text-lg text-gray-800 mb-0.5 sm:mb-1">
+                  Записи
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  Мои записи на приём
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center text-xs sm:text-sm text-[#18A36C]">
+              <span>Перейти к записям</span>
+              <ChevronRight className="w-4 h-4 ml-[2.5px] group-hover:translate-x-1 transition-transform" />
+            </div>
+          </CardContent>
+        </Card>
+
         <Card
           className="group cursor-pointer hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#18A36C]"
           onClick={() => navigate("/account/materials")}
@@ -1533,6 +1788,9 @@ export function AccountContent() {
   }
 
   // Render based on activeSection
+  if (activeSection === "appointments") {
+    return renderAppointments();
+  }
   if (activeSection === "materials") {
     return renderMaterials();
   }

@@ -205,7 +205,28 @@ const authOptions = {
     callbacks: {
         async jwt ({ token, user }) {
             if (user) {
-                token.id = user.id;
+                const email = user.email ?? token.email;
+                if (email) {
+                    try {
+                        const patient = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].patient.findUnique({
+                            where: {
+                                email
+                            },
+                            select: {
+                                id: true
+                            }
+                        });
+                        if (patient) {
+                            token.id = patient.id.toString();
+                        } else {
+                            token.id = user.id;
+                        }
+                    } catch  {
+                        token.id = user.id;
+                    }
+                } else {
+                    token.id = user.id;
+                }
                 token.role = user.role;
                 token.picture = user.image;
             }
@@ -233,72 +254,42 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/prisma.ts [app-route] (ecmascript)");
 ;
-// Функция для рекурсивного построения дерева меню
-function buildMenuTree(categories) {
-    return categories.map((category)=>{
-        const menuItem = {
+function buildCategoryTree(categories, parentId = null) {
+    const levelItems = categories.filter((category)=>category.parent_id === parentId).sort((a, b)=>{
+        if (a.order !== b.order) return a.order - b.order;
+        return a.name.localeCompare(b.name, 'ru');
+    });
+    return levelItems.map((category)=>{
+        const children = buildCategoryTree(categories, category.id);
+        const item = {
             id: category.slug,
-            title: category.name
+            title: category.name,
+            ...category.icon ? {
+                icon: category.icon
+            } : {},
+            ...children.length > 0 ? {
+                children
+            } : {}
         };
-        // Добавляем иконку только для корневых элементов
-        if (!category.parent_id && category.icon) {
-            menuItem.icon = category.icon;
-        }
-        // Добавляем только подкатегории в меню
-        if (category.children && category.children.length > 0) {
-            menuItem.children = buildMenuTree(category.children);
-        }
-        return menuItem;
+        return item;
     });
 }
 async function getServicesMenuFromDB() {
     try {
-        // @ts-ignore - ServiceCategory будет доступна после npx prisma generate
         const categories = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findMany({
             where: {
-                is_active: true,
-                parent_id: null
+                is_active: true
             },
-            orderBy: [
-                {
-                    order: 'asc'
-                },
-                {
-                    name: 'asc'
-                }
-            ],
-            include: {
-                children: {
-                    where: {
-                        is_active: true
-                    },
-                    orderBy: [
-                        {
-                            order: 'asc'
-                        },
-                        {
-                            name: 'asc'
-                        }
-                    ],
-                    include: {
-                        children: {
-                            where: {
-                                is_active: true
-                            },
-                            orderBy: [
-                                {
-                                    order: 'asc'
-                                },
-                                {
-                                    name: 'asc'
-                                }
-                            ]
-                        }
-                    }
-                }
+            select: {
+                id: true,
+                name: true,
+                slug: true,
+                icon: true,
+                parent_id: true,
+                order: true
             }
         });
-        return buildMenuTree(categories);
+        return buildCategoryTree(categories);
     } catch (error) {
         console.error('Error fetching services menu from DB:', error);
         return [];
@@ -397,7 +388,6 @@ async function GET(request) {
                     ]
                 },
                 include: {
-                    category: true,
                     serviceCategory: true
                 },
                 take: 50
@@ -427,7 +417,7 @@ async function GET(request) {
                     ]
                 },
                 include: {
-                    category: true
+                    serviceCategory: true
                 },
                 take: 50
             }),
@@ -480,6 +470,14 @@ async function GET(request) {
                             }
                         }
                     ]
+                },
+                include: {
+                    questionCategory: {
+                        select: {
+                            slug: true,
+                            name: true
+                        }
+                    }
                 },
                 take: 50
             }),
@@ -569,8 +567,8 @@ async function GET(request) {
         const results = [];
         // Форматируем услуги
         services.forEach((service)=>{
-            const categorySlug = service.serviceCategory?.slug || service.category?.slug || 'services';
-            const categoryName = service.serviceCategory?.name || service.category?.name || 'Услуги';
+            const categorySlug = service.serviceCategory?.slug || 'services';
+            const categoryName = service.serviceCategory?.name || 'Услуги';
             results.push({
                 id: `service-${service.id}`,
                 title: service.title,
@@ -582,8 +580,8 @@ async function GET(request) {
         });
         // Форматируем специалистов
         specialists.forEach((specialist)=>{
-            const categorySlug = specialist.category?.slug || 'doctors';
-            const categoryName = specialist.category?.name || 'Специалисты';
+            const categorySlug = specialist.serviceCategory?.slug || 'doctors';
+            const categoryName = specialist.serviceCategory?.name || 'Специалисты';
             results.push({
                 id: `specialist-${specialist.id}`,
                 title: specialist.name,
@@ -606,13 +604,16 @@ async function GET(request) {
         });
         // Форматируем FAQ
         faqs.forEach((faq)=>{
-            const faqCategory = faq.category || 'general';
+            // Если есть категория - используем новый формат URL
+            const categorySlug = faq.questionCategory?.slug;
+            const categoryName = faq.questionCategory?.name || "Общие вопросы";
+            const url = categorySlug ? `/clinic/questions/${categorySlug}#faq-${faq.id}` : `/clinic/questions`;
             results.push({
                 id: `faq-${faq.id}`,
                 title: faq.question,
                 description: faq.answer || "Ответ скоро будет добавлен",
-                category: faq.category || "Общие вопросы",
-                url: `/clinic/faq/${faqCategory}#faq-${faq.id}`,
+                category: categoryName,
+                url: url,
                 type: "faq"
             });
         });

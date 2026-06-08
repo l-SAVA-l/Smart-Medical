@@ -93,7 +93,6 @@ async function GET(request, { params }) {
                 id
             },
             include: {
-                category: true,
                 serviceCategory: true,
                 services: true
             }

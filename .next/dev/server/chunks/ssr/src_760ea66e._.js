@@ -1769,7 +1769,7 @@ const accountData = {
     contact: {
         id: 'contact',
         title: 'Написать глав.врачу',
-        description: 'Если у вас возникли вопросы по поводу работы наших сотрудников или компании в целом, а также если вы хотите сказать слова благодарности, напишите сообщение и оно придет директору лично',
+        description: 'Если у вас возникли вопросы по поводу работы наших врачей или клиники в целом, а также если вы хотите сказать слова благодарности, напишите сообщение и оно придет главному врачу лично',
         form: {
             name: '',
             subject: '',
@@ -1868,8 +1868,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMDialog/SMDialog.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMButton/SMButton.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMInput/SMInput.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMLabel/SMLabel.tsx [app-ssr] (ecmascript)");
@@ -1878,9 +1878,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock.js [app-ssr] (ecmascript) <export default as Lock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-ssr] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMAlert$2f$AlertProvider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMAlert/AlertProvider.tsx [app-ssr] (ecmascript)");
 'use client';
-;
 ;
 ;
 ;
@@ -1999,470 +1999,490 @@ function ChangePasswordModal({ isOpen, onClose }) {
         };
     };
     const strength = passwordStrength(newPassword);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
-        open: isOpen,
-        onOpenChange: handleClose,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
-            className: "sm:max-w-md border-gray-200 bg-white",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "fixed inset-0 z-[120] flex items-center justify-center p-4",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        initial: {
-                            opacity: 0,
-                            y: -20
-                        },
-                        animate: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-center mb-4",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    initial: {
-                                        scale: 0
-                                    },
-                                    animate: {
-                                        scale: 1
-                                    },
-                                    transition: {
-                                        delay: 0.2,
-                                        type: 'spring',
-                                        stiffness: 200
-                                    },
-                                    className: "inline-flex items-center justify-center w-16 h-16 rounded-lg bg-[#18A36C]/10",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
-                                        className: "w-8 h-8 text-[#18A36C]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                        lineNumber: 148,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 138,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                lineNumber: 137,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
-                                className: "text-center text-[#2E2E2E] text-2xl",
-                                children: "Смена пароля"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                lineNumber: 151,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
-                                className: "text-center text-gray-600 mt-2",
-                                children: "Введите текущий пароль и новый пароль для подтверждения"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                lineNumber: 154,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                        lineNumber: 132,
-                        columnNumber: 11
-                    }, this)
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                    initial: {
+                        opacity: 0
+                    },
+                    animate: {
+                        opacity: 1
+                    },
+                    exit: {
+                        opacity: 0
+                    },
+                    onClick: handleClose,
+                    className: "absolute inset-0 bg-black/50 backdrop-blur-sm"
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                    lineNumber: 131,
-                    columnNumber: 9
+                    lineNumber: 126,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
                         opacity: 0,
+                        scale: 0.95,
                         y: 20
                     },
                     animate: {
                         opacity: 1,
+                        scale: 1,
                         y: 0
                     },
-                    transition: {
-                        duration: 0.3,
-                        delay: 0.1
+                    exit: {
+                        opacity: 0,
+                        scale: 0.95,
+                        y: 20
                     },
-                    className: "space-y-5 mt-6",
+                    transition: {
+                        duration: 0.2
+                    },
+                    className: "relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                    htmlFor: "oldPassword",
-                                    className: "text-[#2E2E2E]",
-                                    children: "Текущий пароль"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 168,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                            className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 172,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                            id: "oldPassword",
-                                            type: showOldPassword ? 'text' : 'password',
-                                            placeholder: "Введите текущий пароль",
-                                            value: oldPassword,
-                                            onChange: (e)=>setOldPassword(e.target.value),
-                                            className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 173,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            onClick: ()=>setShowOldPassword(!showOldPassword),
-                                            className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
-                                            children: showOldPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 187,
-                                                columnNumber: 19
-                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 189,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 181,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 171,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                            lineNumber: 167,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                    htmlFor: "newPassword",
-                                    className: "text-[#2E2E2E]",
-                                    children: "Новый пароль"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 197,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                            className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 201,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                            id: "newPassword",
-                                            type: showNewPassword ? 'text' : 'password',
-                                            placeholder: "Введите новый пароль",
-                                            value: newPassword,
-                                            onChange: (e)=>setNewPassword(e.target.value),
-                                            className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 202,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            onClick: ()=>setShowNewPassword(!showNewPassword),
-                                            className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
-                                            children: showNewPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 216,
-                                                columnNumber: 19
-                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 218,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 210,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 200,
-                                    columnNumber: 13
-                                }, this),
-                                newPassword && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    initial: {
-                                        opacity: 0,
-                                        height: 0
-                                    },
-                                    animate: {
-                                        opacity: 1,
-                                        height: 'auto'
-                                    },
-                                    className: "space-y-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center justify-between text-xs",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-600",
-                                                    children: "Надежность пароля"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                    lineNumber: 231,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: `font-medium ${strength.color.replace('bg-', 'text-')}`,
-                                                    children: strength.text
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                    lineNumber: 232,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 230,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "h-2 bg-gray-200 rounded-full overflow-hidden",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                initial: {
-                                                    width: 0
-                                                },
-                                                animate: {
-                                                    width: `${strength.strength}%`
-                                                },
-                                                transition: {
-                                                    duration: 0.3
-                                                },
-                                                className: `h-full ${strength.color} rounded-full`
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 237,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 236,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 225,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                            lineNumber: 196,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                    htmlFor: "confirmPassword",
-                                    className: "text-[#2E2E2E]",
-                                    children: "Подтверждение пароля"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 250,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                            className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 254,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                            id: "confirmPassword",
-                                            type: showConfirmPassword ? 'text' : 'password',
-                                            placeholder: "Повторите новый пароль",
-                                            value: confirmPassword,
-                                            onChange: (e)=>setConfirmPassword(e.target.value),
-                                            className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 255,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            onClick: ()=>setShowConfirmPassword(!showConfirmPassword),
-                                            className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
-                                            children: showConfirmPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 269,
-                                                columnNumber: 19
-                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
-                                                className: "w-5 h-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 271,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                            lineNumber: 263,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 253,
-                                    columnNumber: 13
-                                }, this),
-                                confirmPassword && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    initial: {
-                                        opacity: 0
-                                    },
-                                    animate: {
-                                        opacity: 1
-                                    },
-                                    className: "flex items-center gap-2",
-                                    children: newPassword === confirmPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                            className: "bg-[#18A36C] px-6 py-4 flex-shrink-0",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center justify-between",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                className: "w-4 h-4 text-green-500"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
+                                                className: "w-6 h-6 text-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 285,
-                                                columnNumber: 21
+                                                lineNumber: 146,
+                                                columnNumber: 19
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-green-600",
-                                                children: "Пароли совпадают"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-xl font-semibold text-white",
+                                                children: "Смена пароля"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                                lineNumber: 286,
-                                                columnNumber: 21
+                                                lineNumber: 147,
+                                                columnNumber: 19
                                             }, this)
                                         ]
-                                    }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xs text-red-600",
-                                        children: "Пароли не совпадают"
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 145,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: handleClose,
+                                        disabled: isLoading,
+                                        className: "p-1.5 hover:bg-white/20 rounded-lg cursor-pointer transition-colors disabled:opacity-50",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                            className: "w-5 h-5 text-white"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                            lineNumber: 154,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                        lineNumber: 289,
-                                        columnNumber: 19
+                                        lineNumber: 149,
+                                        columnNumber: 17
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 278,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                lineNumber: 144,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                            lineNumber: 249,
-                            columnNumber: 11
+                            lineNumber: 143,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-3 pt-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                    onClick: handleClose,
-                                    variant: "outline",
-                                    className: "flex-1 h-12 border-gray-300 text-gray-700 hover:bg-gray-50",
-                                    disabled: isLoading,
-                                    children: "Отмена"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 297,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                    onClick: handleSubmit,
-                                    disabled: isLoading || !oldPassword || !newPassword || !confirmPassword,
-                                    className: "flex-1 h-12 bg-[#18A36C] hover:bg-[#18A36C]/90 text-white",
-                                    children: isLoading ? 'Изменение...' : 'Изменить пароль'
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 305,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            className: "p-6 overflow-y-auto flex-1",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-5",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                htmlFor: "oldPassword",
+                                                className: "text-[#2E2E2E]",
+                                                children: "Текущий пароль"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 164,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative group",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                        className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 168,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                        id: "oldPassword",
+                                                        type: showOldPassword ? 'text' : 'password',
+                                                        placeholder: "Введите текущий пароль",
+                                                        value: oldPassword,
+                                                        onChange: (e)=>setOldPassword(e.target.value),
+                                                        className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 169,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        type: "button",
+                                                        onClick: ()=>setShowOldPassword(!showOldPassword),
+                                                        className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
+                                                        children: showOldPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 183,
+                                                            columnNumber: 19
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 185,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 177,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 167,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                htmlFor: "newPassword",
+                                                className: "text-[#2E2E2E]",
+                                                children: "Новый пароль"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 193,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative group",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                        className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 197,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                        id: "newPassword",
+                                                        type: showNewPassword ? 'text' : 'password',
+                                                        placeholder: "Введите новый пароль",
+                                                        value: newPassword,
+                                                        onChange: (e)=>setNewPassword(e.target.value),
+                                                        className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 198,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        type: "button",
+                                                        onClick: ()=>setShowNewPassword(!showNewPassword),
+                                                        className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
+                                                        children: showNewPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 212,
+                                                            columnNumber: 19
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 214,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 206,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 196,
+                                                columnNumber: 13
+                                            }, this),
+                                            newPassword && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                initial: {
+                                                    opacity: 0,
+                                                    height: 0
+                                                },
+                                                animate: {
+                                                    opacity: 1,
+                                                    height: 'auto'
+                                                },
+                                                className: "space-y-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between text-xs",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-gray-600",
+                                                                children: "Надежность пароля"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                                lineNumber: 227,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: `font-medium ${strength.color.replace('bg-', 'text-')}`,
+                                                                children: strength.text
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                                lineNumber: 228,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 226,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "h-2 bg-gray-200 rounded-full overflow-hidden",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            initial: {
+                                                                width: 0
+                                                            },
+                                                            animate: {
+                                                                width: `${strength.strength}%`
+                                                            },
+                                                            transition: {
+                                                                duration: 0.3
+                                                            },
+                                                            className: `h-full ${strength.color} rounded-full`
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 233,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 232,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 221,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 192,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                htmlFor: "confirmPassword",
+                                                className: "text-[#2E2E2E]",
+                                                children: "Подтверждение пароля"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 246,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative group",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                        className: "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-[#18A36C] transition-colors"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 250,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                        id: "confirmPassword",
+                                                        type: showConfirmPassword ? 'text' : 'password',
+                                                        placeholder: "Повторите новый пароль",
+                                                        value: confirmPassword,
+                                                        onChange: (e)=>setConfirmPassword(e.target.value),
+                                                        className: "pl-12 pr-12 h-12 border-gray-300 focus:border-[#18A36C] transition-all duration-200 rounded-lg"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 251,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        type: "button",
+                                                        onClick: ()=>setShowConfirmPassword(!showConfirmPassword),
+                                                        className: "absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#18A36C] transition-colors",
+                                                        children: showConfirmPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 265,
+                                                            columnNumber: 19
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
+                                                            className: "w-5 h-5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 267,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                        lineNumber: 259,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 249,
+                                                columnNumber: 13
+                                            }, this),
+                                            confirmPassword && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                initial: {
+                                                    opacity: 0
+                                                },
+                                                animate: {
+                                                    opacity: 1
+                                                },
+                                                className: "flex items-center gap-2",
+                                                children: newPassword === confirmPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                            className: "w-4 h-4 text-green-500"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 281,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs text-green-600",
+                                                            children: "Пароли совпадают"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                            lineNumber: 282,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-xs text-red-600",
+                                                    children: "Пароли не совпадают"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                    lineNumber: 285,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 274,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 245,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-3 pt-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                onClick: handleClose,
+                                                variant: "outline",
+                                                className: "flex-1 h-12 border-gray-300 text-gray-700 hover:bg-gray-50",
+                                                disabled: isLoading,
+                                                children: "Отмена"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                onClick: handleSubmit,
+                                                disabled: isLoading || !oldPassword || !newPassword || !confirmPassword,
+                                                className: "flex-1 h-12 bg-[#18A36C] hover:bg-[#18A36C]/90 text-white",
+                                                children: isLoading ? 'Изменение...' : 'Изменить пароль'
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 301,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 292,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-center text-xs text-gray-600 mt-4 p-3 bg-[#F4F4F4] rounded-lg",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
+                                                className: "w-4 h-4 inline mr-1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                                lineNumber: 312,
+                                                columnNumber: 19
+                                            }, this),
+                                            "Для безопасности используйте пароль длиной минимум 8 символов с буквами и цифрами"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                        lineNumber: 311,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
+                                lineNumber: 161,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                            lineNumber: 296,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center text-xs text-gray-600 mt-4 p-3 bg-[#F4F4F4] rounded-lg",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
-                                    className: "w-4 h-4 inline mr-1"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                                    lineNumber: 316,
-                                    columnNumber: 13
-                                }, this),
-                                "Для безопасности используйте пароль длиной минимум 8 символов с буквами и цифрами"
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                            lineNumber: 315,
-                            columnNumber: 11
+                            lineNumber: 160,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-                    lineNumber: 160,
-                    columnNumber: 9
+                    lineNumber: 135,
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-            lineNumber: 130,
-            columnNumber: 7
+            lineNumber: 124,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/SMAccount/SMChangePasswordModal.tsx",
-        lineNumber: 129,
+        lineNumber: 122,
         columnNumber: 5
     }, this);
 }
@@ -2905,7 +2925,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMDialog/SMDialog.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMButton/SMButton.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMInput/SMInput.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMLabel/SMLabel.tsx [app-ssr] (ecmascript)");
@@ -2918,6 +2939,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/save.js [app-ssr] (ecmascript) <export default as Save>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-ssr] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock.js [app-ssr] (ecmascript) <export default as Lock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMAlert$2f$AlertProvider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/SMAlert/AlertProvider.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMAvatarCropModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SMAccount/SMAvatarCropModal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMChangePasswordModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SMAccount/SMChangePasswordModal.tsx [app-ssr] (ecmascript)");
@@ -3094,425 +3116,492 @@ function EditProfileModal({ isOpen, onClose, user, onProfileUpdate }) {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
-                open: isOpen,
-                onOpenChange: onClose,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
-                    className: "sm:max-w-lg max-h-[90vh] overflow-y-auto",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                children: isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "fixed inset-0 z-[110] flex items-center justify-center p-4",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
-                                    className: "text-xl text-[#2E2E2E]",
-                                    children: "Редактирование профиля"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 222,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
-                                    className: "text-gray-600",
-                                    children: "Измените данные вашего профиля"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 225,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0
+                            },
+                            animate: {
+                                opacity: 1
+                            },
+                            exit: {
+                                opacity: 0
+                            },
+                            onClick: onClose,
+                            className: "absolute inset-0 bg-black/50 backdrop-blur-sm"
+                        }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                            lineNumber: 221,
-                            columnNumber: 11
+                            lineNumber: 217,
+                            columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-6 py-4",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                scale: 0.95,
+                                y: 20
+                            },
+                            animate: {
+                                opacity: 1,
+                                scale: 1,
+                                y: 0
+                            },
+                            exit: {
+                                opacity: 0,
+                                scale: 0.95,
+                                y: 20
+                            },
+                            transition: {
+                                duration: 0.2
+                            },
+                            className: "relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-col items-center gap-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-24 h-24 aspect-square rounded-full bg-[#18A36C] flex items-center justify-center overflow-hidden border-4 border-gray-100 shadow-lg flex-shrink-0",
-                                                    children: avatarUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                        src: avatarUrl,
-                                                        alt: "Avatar",
-                                                        className: "w-full h-full object-cover rounded-full"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                        lineNumber: 236,
-                                                        columnNumber: 21
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-3xl text-white font-medium",
-                                                        children: getInitials()
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                        lineNumber: 242,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 234,
-                                                    columnNumber: 17
-                                                }, this),
-                                                isUploadingAvatar && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-black/50 rounded-full flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                                        className: "w-6 h-6 text-white animate-spin"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                        lineNumber: 249,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 248,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 233,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                    ref: fileInputRef,
-                                                    type: "file",
-                                                    accept: "image/jpeg,image/png,image/gif,image/webp",
-                                                    className: "hidden",
-                                                    onChange: handleFileSelect
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 255,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                    type: "button",
-                                                    variant: "outline",
-                                                    size: "sm",
-                                                    onClick: ()=>fileInputRef.current?.click(),
-                                                    disabled: isUploadingAvatar,
-                                                    className: "border-[#18A36C] text-[#18A36C]",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
-                                                            className: "w-4 h-4 mr-2"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 270,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "Загрузить фото"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 262,
-                                                    columnNumber: 17
-                                                }, this),
-                                                avatarUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                    type: "button",
-                                                    variant: "outline",
-                                                    size: "sm",
-                                                    onClick: handleAvatarDelete,
-                                                    disabled: isUploadingAvatar,
-                                                    className: "border-red-300 text-red-600 hover:bg-red-50",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
-                                                        className: "w-4 h-4"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                        lineNumber: 282,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 274,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 254,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 232,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                                    htmlFor: "name",
-                                                    className: "text-gray-700 flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                            className: "w-4 h-4 text-[#18A36C]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 292,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "ФИО"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 291,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                                    id: "name",
-                                                    value: formData.name,
-                                                    onChange: (e)=>handleInputChange('name', e.target.value),
-                                                    placeholder: "Иванов Иван Иванович",
-                                                    className: "border-gray-300"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 295,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 290,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                                    htmlFor: "login",
-                                                    className: "text-gray-700 flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$at$2d$sign$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AtSign$3e$__["AtSign"], {
-                                                            className: "w-4 h-4 text-[#18A36C]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 306,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "Логин"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 305,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                                    id: "login",
-                                                    value: formData.login,
-                                                    onChange: (e)=>handleInputChange('login', e.target.value),
-                                                    placeholder: "Ваш логин",
-                                                    className: "border-gray-300"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 309,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 304,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                                    htmlFor: "email",
-                                                    className: "text-gray-700 flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                            className: "w-4 h-4 text-gray-400"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 320,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "Email",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs text-gray-400",
-                                                            children: "(нельзя изменить)"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 322,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 319,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                                    id: "email",
-                                                    type: "email",
-                                                    value: formData.email,
-                                                    disabled: true,
-                                                    className: "border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 324,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 318,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
-                                                    htmlFor: "phone",
-                                                    className: "text-gray-700 flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                            className: "w-4 h-4 text-gray-400"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 335,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "Телефон",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs text-gray-400",
-                                                            children: "(нельзя изменить)"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                            lineNumber: 337,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 334,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                                    id: "phone",
-                                                    type: "tel",
-                                                    value: formData.phone,
-                                                    disabled: true,
-                                                    className: "border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                    lineNumber: 339,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                            lineNumber: 333,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 289,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pt-2 border-t border-gray-200",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                        type: "button",
-                                        variant: "outline",
-                                        onClick: ()=>setShowChangePasswordModal(true),
-                                        className: "w-full border-gray-300 text-gray-700 hover:bg-gray-50",
+                                    className: "bg-[#18A36C] px-6 py-4 flex-shrink-0",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-between",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                                className: "w-4 h-4 mr-2"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-xl font-semibold text-white",
+                                                children: "Редактирование профиля"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                lineNumber: 357,
-                                                columnNumber: 17
+                                                lineNumber: 236,
+                                                columnNumber: 19
                                             }, this),
-                                            "Сменить пароль"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: onClose,
+                                                disabled: isLoading,
+                                                className: "p-1.5 hover:bg-white/20 rounded-lg cursor-pointer transition-colors disabled:opacity-50",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                                    className: "w-5 h-5 text-white"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 242,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                lineNumber: 237,
+                                                columnNumber: 19
+                                            }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                        lineNumber: 351,
-                                        columnNumber: 15
+                                        lineNumber: 235,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 350,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                            lineNumber: 230,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
-                            className: "flex flex-col sm:flex-row gap-3 sm:gap-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                    variant: "outline",
-                                    onClick: onClose,
-                                    className: "w-full sm:w-auto border-gray-300",
-                                    children: "Отмена"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 364,
-                                    columnNumber: 13
+                                    lineNumber: 234,
+                                    columnNumber: 15
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                    onClick: handleSubmit,
-                                    disabled: isLoading,
-                                    className: "w-full sm:w-auto bg-[#18A36C] hover:bg-[#18A36C]/90 text-white",
-                                    children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                                className: "w-4 h-4 mr-2 animate-spin"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                lineNumber: 378,
-                                                columnNumber: 19
-                                            }, this),
-                                            "Сохранение..."
-                                        ]
-                                    }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
-                                                className: "w-4 h-4 mr-2"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                                lineNumber: 383,
-                                                columnNumber: 19
-                                            }, this),
-                                            "Сохранить"
-                                        ]
-                                    }, void 0, true)
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-6 overflow-y-auto flex-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex flex-col items-center gap-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "w-24 h-24 aspect-square rounded-full bg-[#18A36C] flex items-center justify-center overflow-hidden border-4 border-gray-100 shadow-lg flex-shrink-0",
+                                                                    children: avatarUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                        src: avatarUrl,
+                                                                        alt: "Avatar",
+                                                                        className: "w-full h-full object-cover rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                        lineNumber: 255,
+                                                                        columnNumber: 21
+                                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-3xl text-white font-medium",
+                                                                        children: getInitials()
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                        lineNumber: 261,
+                                                                        columnNumber: 21
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 253,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                isUploadingAvatar && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "absolute inset-0 bg-black/50 rounded-full flex items-center justify-center",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                                        className: "w-6 h-6 text-white animate-spin"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                        lineNumber: 268,
+                                                                        columnNumber: 21
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 267,
+                                                                    columnNumber: 19
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 252,
+                                                            columnNumber: 15
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex gap-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    ref: fileInputRef,
+                                                                    type: "file",
+                                                                    accept: "image/jpeg,image/png,image/gif,image/webp",
+                                                                    className: "hidden",
+                                                                    onChange: handleFileSelect
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 274,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                                    type: "button",
+                                                                    variant: "outline",
+                                                                    size: "sm",
+                                                                    onClick: ()=>fileInputRef.current?.click(),
+                                                                    disabled: isUploadingAvatar,
+                                                                    className: "border-[#18A36C] text-[#18A36C]",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
+                                                                            className: "w-4 h-4 mr-2"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 289,
+                                                                            columnNumber: 19
+                                                                        }, this),
+                                                                        "Загрузить фото"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 281,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                avatarUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                                    type: "button",
+                                                                    variant: "outline",
+                                                                    size: "sm",
+                                                                    onClick: handleAvatarDelete,
+                                                                    disabled: isUploadingAvatar,
+                                                                    className: "border-red-300 text-red-600 hover:bg-red-50",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                                        className: "w-4 h-4"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                        lineNumber: 301,
+                                                                        columnNumber: 21
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 293,
+                                                                    columnNumber: 19
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 273,
+                                                            columnNumber: 15
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 251,
+                                                    columnNumber: 13
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "space-y-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                                    htmlFor: "name",
+                                                                    className: "text-gray-700 flex items-center gap-2",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                                                            className: "w-4 h-4 text-[#18A36C]"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 311,
+                                                                            columnNumber: 19
+                                                                        }, this),
+                                                                        "ФИО"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 310,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                                    id: "name",
+                                                                    value: formData.name,
+                                                                    onChange: (e)=>handleInputChange('name', e.target.value),
+                                                                    placeholder: "Иванов Иван Иванович",
+                                                                    className: "border-gray-300"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 314,
+                                                                    columnNumber: 17
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 309,
+                                                            columnNumber: 15
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                                    htmlFor: "login",
+                                                                    className: "text-gray-700 flex items-center gap-2",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$at$2d$sign$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AtSign$3e$__["AtSign"], {
+                                                                            className: "w-4 h-4 text-[#18A36C]"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 325,
+                                                                            columnNumber: 19
+                                                                        }, this),
+                                                                        "Логин"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 324,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                                    id: "login",
+                                                                    value: formData.login,
+                                                                    onChange: (e)=>handleInputChange('login', e.target.value),
+                                                                    placeholder: "Ваш логин",
+                                                                    className: "border-gray-300"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 328,
+                                                                    columnNumber: 17
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 323,
+                                                            columnNumber: 15
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                                    htmlFor: "email",
+                                                                    className: "text-gray-700 flex items-center gap-2",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                                            className: "w-4 h-4 text-gray-400"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 339,
+                                                                            columnNumber: 19
+                                                                        }, this),
+                                                                        "Email",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-xs text-gray-400",
+                                                                            children: "(нельзя изменить)"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 341,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 338,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                                    id: "email",
+                                                                    type: "email",
+                                                                    value: formData.email,
+                                                                    disabled: true,
+                                                                    className: "border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 343,
+                                                                    columnNumber: 17
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 337,
+                                                            columnNumber: 15
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMLabel$2f$SMLabel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+                                                                    htmlFor: "phone",
+                                                                    className: "text-gray-700 flex items-center gap-2",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                                            className: "w-4 h-4 text-gray-400"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 354,
+                                                                            columnNumber: 19
+                                                                        }, this),
+                                                                        "Телефон",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-xs text-gray-400",
+                                                                            children: "(нельзя изменить)"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                            lineNumber: 356,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 353,
+                                                                    columnNumber: 17
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                                    id: "phone",
+                                                                    type: "tel",
+                                                                    value: formData.phone,
+                                                                    disabled: true,
+                                                                    className: "border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                    lineNumber: 358,
+                                                                    columnNumber: 17
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                            lineNumber: 352,
+                                                            columnNumber: 15
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 308,
+                                                    columnNumber: 13
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "pt-2 border-t border-gray-200",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                        type: "button",
+                                                        variant: "outline",
+                                                        onClick: ()=>setShowChangePasswordModal(true),
+                                                        className: "w-full border-gray-300 text-gray-700 hover:bg-gray-50",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                                className: "w-4 h-4 mr-2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                lineNumber: 376,
+                                                                columnNumber: 17
+                                                            }, this),
+                                                            "Сменить пароль"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                        lineNumber: 370,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 369,
+                                                    columnNumber: 13
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                            lineNumber: 249,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t border-gray-200",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                    variant: "outline",
+                                                    onClick: onClose,
+                                                    className: "w-full sm:w-auto border-gray-300",
+                                                    children: "Отмена"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 384,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                    onClick: handleSubmit,
+                                                    disabled: isLoading,
+                                                    className: "w-full sm:w-auto bg-[#18A36C] hover:bg-[#18A36C]/90 text-white",
+                                                    children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                                className: "w-4 h-4 mr-2 animate-spin"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                lineNumber: 398,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            "Сохранение..."
+                                                        ]
+                                                    }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
+                                                                className: "w-4 h-4 mr-2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                                lineNumber: 403,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            "Сохранить"
+                                                        ]
+                                                    }, void 0, true)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                                    lineNumber: 391,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
+                                            lineNumber: 383,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                                    lineNumber: 371,
-                                    columnNumber: 13
+                                    lineNumber: 248,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                            lineNumber: 363,
-                            columnNumber: 11
+                            lineNumber: 226,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                    lineNumber: 220,
-                    columnNumber: 9
+                    lineNumber: 215,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                lineNumber: 219,
+                lineNumber: 213,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMAvatarCropModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarCropModal"], {
@@ -3525,7 +3614,7 @@ function EditProfileModal({ isOpen, onClose, user, onProfileUpdate }) {
                 imageFile: selectedFile
             }, void 0, false, {
                 fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                lineNumber: 393,
+                lineNumber: 416,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMChangePasswordModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChangePasswordModal"], {
@@ -3533,7 +3622,7 @@ function EditProfileModal({ isOpen, onClose, user, onProfileUpdate }) {
                 onClose: ()=>setShowChangePasswordModal(false)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMAccount/SMEditProfileModal.tsx",
-                lineNumber: 404,
+                lineNumber: 427,
                 columnNumber: 7
             }, this)
         ]
@@ -3698,7 +3787,7 @@ function MaterialDetailModal({ isOpen, onClose, material }) {
                                     transition: {
                                         delay: 0.1
                                     },
-                                    className: "relative h-64 rounded-xl overflow-hidden shadow-md",
+                                    className: "relative h-96 rounded-xl overflow-hidden shadow-md",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMImage$2f$ImageWithFallback$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImageWithFallback"], {
                                         src: material.image,
                                         alt: material.title,
@@ -6333,29 +6422,36 @@ function AccountContent() {
                     ]
                 }, void 0, true),
                 !materialsLoading && filteredMaterials.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center py-8 sm:py-12",
+                    className: "text-center py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
-                            className: "w-12 h-12 sm:w-16 sm:h-16 text-gray-300 mx-auto mb-3 sm:mb-4"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-16 h-16 sm:w-20 sm:h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                className: "w-8 h-8 sm:w-10 sm:h-10 text-gray-400"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                                lineNumber: 740,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
                             lineNumber: 739,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "text-base sm:text-lg text-gray-800 mb-2",
-                            children: "Материалы не найдены"
+                            className: "text-lg sm:text-xl text-gray-800 mb-2",
+                            children: materials.length === 0 ? 'Материалы отсутствуют' : 'Материалы не найдены'
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 740,
+                            lineNumber: 742,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-sm sm:text-base text-gray-600",
-                            children: "В выбранном периоде нет доступных материалов"
+                            className: "text-sm sm:text-base text-gray-600 max-w-md mx-auto",
+                            children: materials.length === 0 ? 'В данный момент нет доступных материалов. Они появятся здесь, как только будут опубликованы.' : 'В выбранном периоде нет доступных материалов. Попробуйте выбрать другой период.'
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 743,
+                            lineNumber: 745,
                             columnNumber: 11
                         }, this)
                     ]
@@ -6373,7 +6469,7 @@ function AccountContent() {
                     material: selectedMaterial
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 750,
+                    lineNumber: 754,
                     columnNumber: 7
                 }, this)
             ]
@@ -6396,12 +6492,12 @@ function AccountContent() {
                                     className: "w-5 h-5 sm:w-6 sm:h-6 text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 766,
+                                    lineNumber: 770,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 765,
+                                lineNumber: 769,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6411,7 +6507,7 @@ function AccountContent() {
                                         children: "Написать глав.врачу"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 769,
+                                        lineNumber: 773,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6419,24 +6515,24 @@ function AccountContent() {
                                         children: "Свяжитесь с руководством клиники"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 772,
+                                        lineNumber: 776,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 768,
+                                lineNumber: 772,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 764,
+                        lineNumber: 768,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 763,
+                    lineNumber: 767,
                     columnNumber: 7
                 }, this),
                 user?.is_messages_blocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -6452,12 +6548,12 @@ function AccountContent() {
                                         className: "w-5 h-5 sm:w-6 sm:h-6 text-red-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 785,
+                                        lineNumber: 789,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 784,
+                                    lineNumber: 788,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6467,7 +6563,7 @@ function AccountContent() {
                                             children: "Отправка сообщений заблокирована"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 788,
+                                            lineNumber: 792,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6475,29 +6571,29 @@ function AccountContent() {
                                             children: "Вы не можете отправлять письма главному врачу. Если вы считаете, что это ошибка, обратитесь в клинику по телефону."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 789,
+                                            lineNumber: 793,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 787,
+                                    lineNumber: 791,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 783,
+                            lineNumber: 787,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 782,
+                        lineNumber: 786,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 781,
+                    lineNumber: 785,
                     columnNumber: 9
                 }, this),
                 !user?.is_messages_blocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -6512,12 +6608,12 @@ function AccountContent() {
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$SMAccountData$2f$SMAccountData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["accountData"].contact.description
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 803,
+                                    lineNumber: 807,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 802,
+                                lineNumber: 806,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6536,13 +6632,13 @@ function AccountContent() {
                                                         children: "(мин. 3 символа)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 814,
+                                                        lineNumber: 818,
                                                         columnNumber: 31
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 810,
+                                                lineNumber: 814,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMInput$2f$SMInput$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -6558,7 +6654,7 @@ function AccountContent() {
                                                 className: `border-gray-300 ${letterErrors.subject ? 'border-red-500' : ''}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 816,
+                                                lineNumber: 820,
                                                 columnNumber: 17
                                             }, this),
                                             letterErrors.subject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6566,13 +6662,13 @@ function AccountContent() {
                                                 children: letterErrors.subject
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 831,
+                                                lineNumber: 835,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 809,
+                                        lineNumber: 813,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6588,13 +6684,13 @@ function AccountContent() {
                                                         children: "(мин. 10 символов)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 840,
+                                                        lineNumber: 844,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 836,
+                                                lineNumber: 840,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTextarea$2f$SMTextarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -6610,7 +6706,7 @@ function AccountContent() {
                                                 className: `border-gray-200 focus:border-[#18A36C] focus:ring-[#18A36C] focus:border-1${letterErrors.content ? 'border-red-500' : ''}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 842,
+                                                lineNumber: 846,
                                                 columnNumber: 17
                                             }, this),
                                             letterErrors.content && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6618,7 +6714,7 @@ function AccountContent() {
                                                 children: letterErrors.content
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 857,
+                                                lineNumber: 861,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6629,19 +6725,19 @@ function AccountContent() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 859,
+                                                lineNumber: 863,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 835,
+                                        lineNumber: 839,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 808,
+                                lineNumber: 812,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6654,7 +6750,7 @@ function AccountContent() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 879,
+                                            lineNumber: 883,
                                             columnNumber: 19
                                         }, this),
                                         "Отправка..."
@@ -6665,7 +6761,7 @@ function AccountContent() {
                                             className: "w-4 h-4 mr-2"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 884,
+                                            lineNumber: 888,
                                             columnNumber: 19
                                         }, this),
                                         "Отправить письмо"
@@ -6673,7 +6769,7 @@ function AccountContent() {
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 865,
+                                lineNumber: 869,
                                 columnNumber: 13
                             }, this),
                             submitStatus === "success" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6683,7 +6779,7 @@ function AccountContent() {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 892,
+                                        lineNumber: 896,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6691,24 +6787,24 @@ function AccountContent() {
                                         children: "Письмо успешно отправлено!"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 893,
+                                        lineNumber: 897,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 891,
+                                lineNumber: 895,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 801,
+                        lineNumber: 805,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 800,
+                    lineNumber: 804,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6721,7 +6817,7 @@ function AccountContent() {
                                     className: "w-4 h-4 sm:w-5 sm:h-5 text-[#18A36C]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 905,
+                                    lineNumber: 909,
                                     columnNumber: 11
                                 }, this),
                                 "Мои письма",
@@ -6733,13 +6829,13 @@ function AccountContent() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 908,
+                                    lineNumber: 912,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 904,
+                            lineNumber: 908,
                             columnNumber: 9
                         }, this),
                         lettersLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6749,7 +6845,7 @@ function AccountContent() {
                                     className: "w-6 h-6 sm:w-8 sm:h-8 animate-spin text-[#18A36C] mx-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 916,
+                                    lineNumber: 920,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6757,13 +6853,13 @@ function AccountContent() {
                                     children: "Загрузка писем..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 917,
+                                    lineNumber: 921,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 915,
+                            lineNumber: 919,
                             columnNumber: 11
                         }, this) : letters.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
                             className: "border border-gray-200",
@@ -6774,7 +6870,7 @@ function AccountContent() {
                                         className: "w-10 h-10 sm:w-12 sm:h-12 text-gray-300 mx-auto mb-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 922,
+                                        lineNumber: 926,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6782,18 +6878,18 @@ function AccountContent() {
                                         children: "У вас пока нет отправленных писем"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 923,
+                                        lineNumber: 927,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 921,
+                                lineNumber: 925,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 920,
+                            lineNumber: 924,
                             columnNumber: 11
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-2 sm:space-y-3",
@@ -6826,7 +6922,7 @@ function AccountContent() {
                                                                         children: letter.subject
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 953,
+                                                                        lineNumber: 957,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     letter.reply ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMBadge$2f$SMBadge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -6834,7 +6930,7 @@ function AccountContent() {
                                                                         children: "Ответ"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 957,
+                                                                        lineNumber: 961,
                                                                         columnNumber: 27
                                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMBadge$2f$SMBadge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
                                                                         className: "bg-amber-500 text-white text-xs flex items-center gap-1",
@@ -6843,7 +6939,7 @@ function AccountContent() {
                                                                                 className: "w-3 h-3"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                                lineNumber: 962,
+                                                                                lineNumber: 966,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6851,26 +6947,26 @@ function AccountContent() {
                                                                                 children: "Ожидает"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                                lineNumber: 963,
+                                                                                lineNumber: 967,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 961,
+                                                                        lineNumber: 965,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     letter.reply && !letter.is_reply_read && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "w-2 h-2 bg-red-500 rounded-full flex-shrink-0"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 967,
+                                                                        lineNumber: 971,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 952,
+                                                                lineNumber: 956,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6884,13 +6980,13 @@ function AccountContent() {
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 970,
+                                                                lineNumber: 974,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 951,
+                                                        lineNumber: 955,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6901,24 +6997,24 @@ function AccountContent() {
                                                             className: "w-4 h-4 sm:w-5 sm:h-5 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 982,
+                                                            lineNumber: 986,
                                                             columnNumber: 25
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                             className: "w-4 h-4 sm:w-5 sm:h-5 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 984,
+                                                            lineNumber: 988,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 980,
+                                                        lineNumber: 984,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 938,
+                                                lineNumber: 942,
                                                 columnNumber: 19
                                             }, this),
                                             expandedLetterId === letter.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6931,7 +7027,7 @@ function AccountContent() {
                                                                 children: "Ваше письмо:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 994,
+                                                                lineNumber: 998,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6941,12 +7037,12 @@ function AccountContent() {
                                                                     children: letter.content
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 996,
+                                                                    lineNumber: 1000,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 995,
+                                                                lineNumber: 999,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6959,13 +7055,13 @@ function AccountContent() {
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1000,
+                                                                lineNumber: 1004,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 993,
+                                                        lineNumber: 997,
                                                         columnNumber: 23
                                                     }, this),
                                                     letter.reply && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6977,14 +7073,14 @@ function AccountContent() {
                                                                         className: "w-3 h-3"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 1014,
+                                                                        lineNumber: 1018,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     "Ответ главного врача"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1013,
+                                                                lineNumber: 1017,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6994,12 +7090,12 @@ function AccountContent() {
                                                                     children: letter.reply
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1018,
+                                                                    lineNumber: 1022,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1017,
+                                                                lineNumber: 1021,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7012,13 +7108,13 @@ function AccountContent() {
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1022,
+                                                                lineNumber: 1026,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1012,
+                                                        lineNumber: 1016,
                                                         columnNumber: 25
                                                     }, this),
                                                     letter.messages && letter.messages.map((msg)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7031,7 +7127,7 @@ function AccountContent() {
                                                                                 className: "w-3 h-3"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                                lineNumber: 1039,
+                                                                                lineNumber: 1043,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             "Ответ главного врача"
@@ -7039,7 +7135,7 @@ function AccountContent() {
                                                                     }, void 0, true) : 'Ваше сообщение'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1036,
+                                                                    lineNumber: 1040,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7049,12 +7145,12 @@ function AccountContent() {
                                                                         children: msg.content
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                        lineNumber: 1047,
+                                                                        lineNumber: 1051,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1046,
+                                                                    lineNumber: 1050,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7067,13 +7163,13 @@ function AccountContent() {
                                                                     })
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1051,
+                                                                    lineNumber: 1055,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, msg.id, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1035,
+                                                            lineNumber: 1039,
                                                             columnNumber: 25
                                                         }, this)),
                                                     letter.reply && !user?.is_messages_blocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7084,7 +7180,7 @@ function AccountContent() {
                                                                 children: "Продолжить переписку:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1065,
+                                                                lineNumber: 1069,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTextarea$2f$SMTextarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -7094,7 +7190,7 @@ function AccountContent() {
                                                                 className: "min-h-[70px] sm:min-h-[80px] text-xs sm:text-sm border-gray-200 focus:border-[#18A36C] focus:ring-[#18A36C] focus:border-1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1066,
+                                                                lineNumber: 1070,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7109,7 +7205,7 @@ function AccountContent() {
                                                                                 className: "w-4 h-4 mr-2 animate-spin"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                                lineNumber: 1080,
+                                                                                lineNumber: 1084,
                                                                                 columnNumber: 35
                                                                             }, this),
                                                                             "Отправка..."
@@ -7120,7 +7216,7 @@ function AccountContent() {
                                                                                 className: "w-4 h-4 mr-2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                                lineNumber: 1085,
+                                                                                lineNumber: 1089,
                                                                                 columnNumber: 35
                                                                             }, this),
                                                                             "Отправить"
@@ -7128,18 +7224,18 @@ function AccountContent() {
                                                                     }, void 0, true)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1073,
+                                                                    lineNumber: 1077,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                lineNumber: 1072,
+                                                                lineNumber: 1076,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1064,
+                                                        lineNumber: 1068,
                                                         columnNumber: 25
                                                     }, this),
                                                     letter.reply && user?.is_messages_blocked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7151,7 +7247,7 @@ function AccountContent() {
                                                                     className: "w-4 h-4 flex-shrink-0"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1097,
+                                                                    lineNumber: 1101,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7159,52 +7255,52 @@ function AccountContent() {
                                                                     children: "Отправка сообщений заблокирована"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1098,
+                                                                    lineNumber: 1102,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1096,
+                                                            lineNumber: 1100,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1095,
+                                                        lineNumber: 1099,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 991,
+                                                lineNumber: 995,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 936,
+                                        lineNumber: 940,
                                         columnNumber: 17
                                     }, this)
                                 }, letter.id, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 929,
+                                    lineNumber: 933,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 927,
+                            lineNumber: 931,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 903,
+                    lineNumber: 907,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-            lineNumber: 762,
+            lineNumber: 766,
             columnNumber: 5
         }, this);
     // Modern Welcome Dashboard
@@ -7230,19 +7326,19 @@ function AccountContent() {
                                                 className: "w-full h-full object-cover rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1125,
+                                                lineNumber: 1129,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-3xl text-white font-medium",
                                                 children: getInitials()
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1131,
+                                                lineNumber: 1135,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1123,
+                                            lineNumber: 1127,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7260,7 +7356,7 @@ function AccountContent() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1139,
+                                                            lineNumber: 1143,
                                                             columnNumber: 21
                                                         }, this),
                                                         user?.role === 'ADMIN' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7270,20 +7366,20 @@ function AccountContent() {
                                                                     className: "w-3 h-3 sm:w-4 sm:h-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1144,
+                                                                    lineNumber: 1148,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 "Админ"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1143,
+                                                            lineNumber: 1147,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1138,
+                                                    lineNumber: 1142,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7291,39 +7387,39 @@ function AccountContent() {
                                                     children: "Ваш персональный медицинский помощник"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1149,
+                                                    lineNumber: 1153,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1137,
+                                            lineNumber: 1141,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1122,
+                                    lineNumber: 1126,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1121,
+                                lineNumber: 1125,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1119,
+                            lineNumber: 1123,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 1118,
+                        lineNumber: 1122,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1117,
+                    lineNumber: 1121,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7345,12 +7441,12 @@ function AccountContent() {
                                                         className: "w-5 h-5 sm:w-6 sm:h-6 text-white"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1166,
+                                                        lineNumber: 1170,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1165,
+                                                    lineNumber: 1169,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7360,7 +7456,7 @@ function AccountContent() {
                                                             children: "Информация профиля"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1169,
+                                                            lineNumber: 1173,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7368,19 +7464,19 @@ function AccountContent() {
                                                             children: "Ваши личные данные и настройки безопасности"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1172,
+                                                            lineNumber: 1176,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1168,
+                                                    lineNumber: 1172,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1164,
+                                            lineNumber: 1168,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -7393,25 +7489,25 @@ function AccountContent() {
                                                     className: "w-4 h-4 mr-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1183,
+                                                    lineNumber: 1187,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Редактировать"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1177,
+                                            lineNumber: 1181,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1163,
+                                    lineNumber: 1167,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1162,
+                                lineNumber: 1166,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7429,14 +7525,14 @@ function AccountContent() {
                                                             className: "w-4 h-4 text-[#18A36C]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1193,
+                                                            lineNumber: 1197,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Логин"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1192,
+                                                    lineNumber: 1196,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7446,18 +7542,18 @@ function AccountContent() {
                                                         children: user?.login || 'Не указан'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1197,
+                                                        lineNumber: 1201,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1196,
+                                                    lineNumber: 1200,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1191,
+                                            lineNumber: 1195,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7470,14 +7566,14 @@ function AccountContent() {
                                                             className: "w-4 h-4 text-[#18A36C]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1206,
+                                                            lineNumber: 1210,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Email"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1205,
+                                                    lineNumber: 1209,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7487,18 +7583,18 @@ function AccountContent() {
                                                         children: user?.email || 'Не указан'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1210,
+                                                        lineNumber: 1214,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1209,
+                                                    lineNumber: 1213,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1204,
+                                            lineNumber: 1208,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7511,14 +7607,14 @@ function AccountContent() {
                                                             className: "w-4 h-4 text-[#18A36C]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1219,
+                                                            lineNumber: 1223,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Телефон"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1218,
+                                                    lineNumber: 1222,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7528,18 +7624,18 @@ function AccountContent() {
                                                         children: user?.phone || 'Не указан'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1223,
+                                                        lineNumber: 1227,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1222,
+                                                    lineNumber: 1226,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1217,
+                                            lineNumber: 1221,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7552,14 +7648,14 @@ function AccountContent() {
                                                             className: "w-4 h-4 text-[#18A36C]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1232,
+                                                            lineNumber: 1236,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Дата регистрации"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1231,
+                                                    lineNumber: 1235,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7573,18 +7669,18 @@ function AccountContent() {
                                                         }) : 'Не указана'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1236,
+                                                        lineNumber: 1240,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1235,
+                                                    lineNumber: 1239,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1230,
+                                            lineNumber: 1234,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7597,14 +7693,14 @@ function AccountContent() {
                                                             className: "w-4 h-4 text-[#18A36C]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1252,
+                                                            lineNumber: 1256,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Полное имя"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1251,
+                                                    lineNumber: 1255,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7614,40 +7710,40 @@ function AccountContent() {
                                                         children: user?.name || 'Не указано'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1256,
+                                                        lineNumber: 1260,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1255,
+                                                    lineNumber: 1259,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1250,
+                                            lineNumber: 1254,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1189,
+                                    lineNumber: 1193,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1188,
+                                lineNumber: 1192,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 1161,
+                        lineNumber: 1165,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1160,
+                    lineNumber: 1164,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7668,12 +7764,12 @@ function AccountContent() {
                                                     className: "w-6 h-6 sm:w-7 sm:h-7 text-white"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1275,
+                                                    lineNumber: 1279,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1274,
+                                                lineNumber: 1278,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7683,7 +7779,7 @@ function AccountContent() {
                                                         children: "Материалы"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1278,
+                                                        lineNumber: 1282,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7691,19 +7787,19 @@ function AccountContent() {
                                                         children: "Специальные предложения"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1281,
+                                                        lineNumber: 1285,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1277,
+                                                lineNumber: 1281,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1273,
+                                        lineNumber: 1277,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7713,31 +7809,31 @@ function AccountContent() {
                                                 children: "Просмотреть материалы"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1287,
+                                                lineNumber: 1291,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 className: "w-4 h-4 ml-[2.5px] group-hover:translate-x-1 transition-transform"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1288,
+                                                lineNumber: 1292,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1286,
+                                        lineNumber: 1290,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1272,
+                                lineNumber: 1276,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1268,
+                            lineNumber: 1272,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -7755,22 +7851,22 @@ function AccountContent() {
                                                     className: "w-6 h-6 sm:w-7 sm:h-7 text-white"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1300,
+                                                    lineNumber: 1304,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1299,
+                                                lineNumber: 1303,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-base sm:text-lg text-gray-800 mb-0.5 sm:mb-1",
-                                                        children: "Связь с врачом"
+                                                        children: "Связаться с главным врачом"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1303,
+                                                        lineNumber: 1307,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7778,19 +7874,19 @@ function AccountContent() {
                                                         children: "Написать главврачу"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1306,
+                                                        lineNumber: 1310,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1302,
+                                                lineNumber: 1306,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1298,
+                                        lineNumber: 1302,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7800,37 +7896,37 @@ function AccountContent() {
                                                 children: "Отправить сообщение"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1312,
+                                                lineNumber: 1316,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 className: "w-4 h-4 ml-[2.5px] group-hover:translate-x-1 transition-transform"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1313,
+                                                lineNumber: 1317,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1311,
+                                        lineNumber: 1315,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1297,
+                                lineNumber: 1301,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1293,
+                            lineNumber: 1297,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1267,
+                    lineNumber: 1271,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7844,10 +7940,10 @@ function AccountContent() {
                                     children: "Последние материалы"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1322,
+                                    lineNumber: 1326,
                                     columnNumber: 11
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                materials.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                     variant: "outline",
                                     onClick: ()=>navigate("/account/materials"),
                                     className: "text-[#18A36C] border-[#18A36C] hover:bg-[#18A36C] hover:text-white w-full sm:w-auto hover:shadow-lg hover:shadow-[#18A36C]/20",
@@ -7857,22 +7953,60 @@ function AccountContent() {
                                             className: "w-4 h-4 ml-[2.5px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1331,
-                                            columnNumber: 13
+                                            lineNumber: 1336,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1325,
-                                    columnNumber: 11
+                                    lineNumber: 1330,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1321,
+                            lineNumber: 1325,
                             columnNumber: 9
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        materials.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-center py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-16 h-16 sm:w-20 sm:h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                        className: "w-8 h-8 sm:w-10 sm:h-10 text-gray-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                                        lineNumber: 1344,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                                    lineNumber: 1343,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-lg sm:text-xl text-gray-800 mb-2",
+                                    children: "Материалы отсутствуют"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                                    lineNumber: 1346,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm sm:text-base text-gray-600 max-w-md mx-auto",
+                                    children: "В данный момент нет доступных материалов. Они появятся здесь, как только будут опубликованы."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                                    lineNumber: 1349,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
+                            lineNumber: 1342,
+                            columnNumber: 11
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6",
                             children: materials.slice(0, 3).map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
                                     className: "group hover:shadow-lg transition-all duration-300 border border-gray-200",
@@ -7886,7 +8020,7 @@ function AccountContent() {
                                                     className: "w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1344,
+                                                    lineNumber: 1363,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7896,18 +8030,18 @@ function AccountContent() {
                                                         children: "Новое"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                        lineNumber: 1351,
+                                                        lineNumber: 1370,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1349,
+                                                    lineNumber: 1368,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1343,
+                                            lineNumber: 1362,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7918,7 +8052,7 @@ function AccountContent() {
                                                     children: item.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1358,
+                                                    lineNumber: 1377,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7926,7 +8060,7 @@ function AccountContent() {
                                                     children: item.content
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1361,
+                                                    lineNumber: 1380,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7939,20 +8073,20 @@ function AccountContent() {
                                                                     className: "w-3 h-3"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1366,
+                                                                    lineNumber: 1385,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: item.date
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1367,
+                                                                    lineNumber: 1386,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1365,
+                                                            lineNumber: 1384,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -7965,43 +8099,43 @@ function AccountContent() {
                                                                     className: "w-3 h-3 sm:w-4 sm:h-4 mr-1"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                                    lineNumber: 1375,
+                                                                    lineNumber: 1394,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 "Подробнее"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                            lineNumber: 1369,
+                                                            lineNumber: 1388,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1364,
+                                                    lineNumber: 1383,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1357,
+                                            lineNumber: 1376,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, item.id, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1339,
+                                    lineNumber: 1358,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1335,
-                            columnNumber: 9
+                            lineNumber: 1354,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1320,
+                    lineNumber: 1324,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMCard$2f$SMCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -8022,19 +8156,19 @@ function AccountContent() {
                                                 className: "w-full h-full object-cover rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1392,
+                                                lineNumber: 1412,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-lg sm:text-xl text-white font-medium",
                                                 children: getInitials()
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1398,
+                                                lineNumber: 1418,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1390,
+                                            lineNumber: 1410,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8044,7 +8178,7 @@ function AccountContent() {
                                                     children: displayUser.fullName || displayUser.name || "Пользователь"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1404,
+                                                    lineNumber: 1424,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8052,7 +8186,7 @@ function AccountContent() {
                                                     children: displayUser.email || "Email не указан"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1407,
+                                                    lineNumber: 1427,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8060,19 +8194,19 @@ function AccountContent() {
                                                     children: user?.registration_date ? `Участник с ${new Date(user.registration_date).getFullYear()} года` : "Участник"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1410,
+                                                    lineNumber: 1430,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1403,
+                                            lineNumber: 1423,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1389,
+                                    lineNumber: 1409,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8087,14 +8221,14 @@ function AccountContent() {
                                                     className: "w-4 h-4 mr-[2.5px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1423,
+                                                    lineNumber: 1443,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Редактировать"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1418,
+                                            lineNumber: 1438,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8106,14 +8240,14 @@ function AccountContent() {
                                                     className: "w-4 h-4 mr-[2.5px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1431,
+                                                    lineNumber: 1451,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Пароль"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1426,
+                                            lineNumber: 1446,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8125,36 +8259,36 @@ function AccountContent() {
                                                     className: "w-4 h-4 mr-[2.5px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                    lineNumber: 1439,
+                                                    lineNumber: 1459,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Выйти"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                            lineNumber: 1434,
+                                            lineNumber: 1454,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                    lineNumber: 1417,
+                                    lineNumber: 1437,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                            lineNumber: 1388,
+                            lineNumber: 1408,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 1387,
+                        lineNumber: 1407,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1386,
+                    lineNumber: 1406,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -8170,7 +8304,7 @@ function AccountContent() {
                                         children: "Подтверждение выхода"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1450,
+                                        lineNumber: 1470,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -8179,20 +8313,20 @@ function AccountContent() {
                                             "Вы уверены, что хотите выйти из аккаунта?",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1455,
+                                                lineNumber: 1475,
                                                 columnNumber: 15
                                             }, this),
                                             "Вам потребуется войти снова для доступа к личному кабинету."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1453,
+                                        lineNumber: 1473,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1449,
+                                lineNumber: 1469,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMDialog$2f$SMDialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -8205,7 +8339,7 @@ function AccountContent() {
                                         children: "Отмена"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1460,
+                                        lineNumber: 1480,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8216,31 +8350,31 @@ function AccountContent() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                                lineNumber: 1471,
+                                                lineNumber: 1491,
                                                 columnNumber: 15
                                             }, this),
                                             "Выйти"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                        lineNumber: 1467,
+                                        lineNumber: 1487,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                                lineNumber: 1459,
+                                lineNumber: 1479,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                        lineNumber: 1448,
+                        lineNumber: 1468,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1447,
+                    lineNumber: 1467,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMChangePasswordModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChangePasswordModal"], {
@@ -8248,7 +8382,7 @@ function AccountContent() {
                     onClose: ()=>setShowChangePasswordModal(false)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1479,
+                    lineNumber: 1499,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMEditProfileModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EditProfileModal"], {
@@ -8258,7 +8392,7 @@ function AccountContent() {
                     onProfileUpdate: handleProfileUpdate
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1485,
+                    lineNumber: 1505,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMMaterialDetailModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MaterialDetailModal"], {
@@ -8270,13 +8404,13 @@ function AccountContent() {
                     material: selectedMaterial
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                    lineNumber: 1493,
+                    lineNumber: 1513,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-            lineNumber: 1115,
+            lineNumber: 1119,
             columnNumber: 5
         }, this);
     // Show skeleton during initial loading
@@ -8284,20 +8418,20 @@ function AccountContent() {
         if (activeSection === "materials") {
             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMAccountSkeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MaterialsPageSkeleton"], {}, void 0, false, {
                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                lineNumber: 1507,
+                lineNumber: 1527,
                 columnNumber: 14
             }, this);
         }
         if (activeSection === "contact") {
             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMAccountSkeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ContactSkeleton"], {}, void 0, false, {
                 fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-                lineNumber: 1510,
+                lineNumber: 1530,
                 columnNumber: 14
             }, this);
         }
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMAccount$2f$SMAccountSkeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WelcomeDashboardSkeleton"], {}, void 0, false, {
             fileName: "[project]/src/components/SMAccount/SMAccountContent.tsx",
-            lineNumber: 1512,
+            lineNumber: 1532,
             columnNumber: 12
         }, this);
     }

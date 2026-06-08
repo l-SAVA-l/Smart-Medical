@@ -202,9 +202,12 @@ export function NavigableServicesMenu() {
       };
 
       const parents = findParents(menuData, categorySlug);
-      if (parents && parents.length > 0) {
-        setExpandedItems(new Set(parents));
+      const nextExpanded = new Set(parents || []);
+      const activeRoot = menuData.find((item) => item.id === categorySlug);
+      if (activeRoot?.children && activeRoot.children.length > 0) {
+        nextExpanded.add(categorySlug);
       }
+      setExpandedItems(nextExpanded);
     } else if (routeParts[0] === 'services' && routeParts.length === 1) {
       // На главной странице услуг - сбрасываем активный пункт
       setActiveItem(null);
@@ -216,6 +219,15 @@ export function NavigableServicesMenu() {
     // Обновляем activeItem только если он изменился
     if (activeItem !== itemId) {
       setActiveItem(itemId);
+    }
+
+    // При клике на категорию сразу раскрываем её подкатегории
+    if (item.children && item.children.length > 0) {
+      setExpandedItems((prev) => {
+        const next = new Set(prev);
+        next.add(itemId);
+        return next;
+      });
     }
 
     // Всегда переходим на страницу категории
@@ -252,7 +264,10 @@ export function NavigableServicesMenu() {
       </div>
 
       {/* Scrollable Menu Items */}
-      <div className="flex-1 overflow-y-auto overflow-x-hidden py-2">
+      <div
+        className="flex-1 overflow-y-scroll overflow-x-hidden py-2"
+        style={{ scrollbarGutter: 'stable' }}
+      >
         {loading ? (
           <MenuSkeleton itemCount={8} showHeader={false} showFooter={false} />
         ) : menuData.length > 0 ? (
@@ -292,7 +307,10 @@ export function NavigableServicesMenu() {
 
   return (
     <>
-      <div className="hidden lg:block w-72 bg-white border-r border-[#CACACA] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-auto">
+      <div
+        className="hidden lg:block w-72 bg-white border-r border-[#CACACA] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-scroll"
+        style={{ scrollbarGutter: 'stable' }}
+      >
         <MenuContent />
       </div>
 

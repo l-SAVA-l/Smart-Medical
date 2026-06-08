@@ -9,26 +9,41 @@ export async function GET(
   try {
     const { categorySlug, serviceId } = await params;
 
-    // Сначала пытаемся найти в новой структуре ServiceCategory
-    // @ts-ignore
     const serviceCategory = await prisma.serviceCategory.findUnique({
       where: { slug: categorySlug },
     });
 
-    // Если не нашли в ServiceCategory, ищем в старой структуре Category
-    const category = serviceCategory ? null : await prisma.category.findUnique({
-      where: { slug: categorySlug },
-    });
-
-    if (!serviceCategory && !category) {
+    if (!serviceCategory) {
       return NextResponse.json(
         { error: 'Category not found' },
         { status: 404 }
       );
     }
 
-    // Определяем какой category_id использовать для поиска услуг
-    const categoryIdForSearch = serviceCategory ? serviceCategory.id : category?.id;
+    // Для новой структуры учитываем не только выбранную категорию,
+    // но и ее дочерние категории (вплоть до 2 уровней).
+    let allowedServiceCategoryIds: number[] = [];
+    if (serviceCategory) {
+      const children = await prisma.serviceCategory.findMany({
+        where: { parent_id: serviceCategory.id, is_active: true },
+        select: { id: true },
+      });
+      const childIds = children.map((c) => c.id);
+
+      let grandChildIds: number[] = [];
+      if (childIds.length > 0) {
+        const grandChildren = await prisma.serviceCategory.findMany({
+          where: {
+            parent_id: { in: childIds },
+            is_active: true,
+          },
+          select: { id: true },
+        });
+        grandChildIds = grandChildren.map((c) => c.id);
+      }
+
+      allowedServiceCategoryIds = [serviceCategory.id, ...childIds, ...grandChildIds];
+    }
 
     // Пытаемся определить, является ли serviceId числом (id) или строкой (название)
     const serviceIdNumber = parseInt(serviceId);
@@ -37,24 +52,18 @@ export async function GET(
     let service;
 
     if (isNumericId) {
-      // Если serviceId - число, ищем по id
-      // Ищем либо по category_id (старая структура) либо по service_category_id (новая структура)
       service = await prisma.service.findFirst({
         where: {
           id: serviceIdNumber,
-          OR: [
-            { category_id: category?.id },
-            { service_category_id: serviceCategory?.id },
-          ].filter(condition => Object.values(condition)[0] !== undefined),
+          service_category_id: { in: allowedServiceCategoryIds },
         },
         include: {
-          category: true,
           serviceCategory: true,
           specialists: {
             include: {
               specialist: {
                 include: {
-                  category: true,
+                  serviceCategory: true,
                 },
               },
             },
@@ -79,22 +88,17 @@ export async function GET(
       // Если serviceId - строка, сначала пытаемся получить точное название из маппинга
       const serviceTitle = getServiceTitleByServiceId(categorySlug, serviceId);
 
-      // Получаем все услуги категории
       const servicesRaw = await prisma.service.findMany({
         where: {
-          OR: [
-            { category_id: category?.id },
-            { service_category_id: serviceCategory?.id },
-          ].filter(condition => Object.values(condition)[0] !== undefined),
+          service_category_id: { in: allowedServiceCategoryIds },
         },
         include: {
-          category: true,
           serviceCategory: true,
           specialists: {
             include: {
               specialist: {
                 include: {
-                  category: true,
+                  serviceCategory: true,
                 },
               },
             },

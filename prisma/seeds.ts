@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
 
@@ -250,6 +251,24 @@ async function main() {
 
   console.log('\n✅ Service categories seeded successfully');
   console.log(`📊 Total categories created: ${totalCreated}`);
+
+  // Админ по умолчанию (логин: admin, пароль: Admin123!)
+  const adminEmail = 'admin@smartmedical.local';
+  const hashedPassword = await bcrypt.hash('Admin123!', 10);
+  await prisma.patient.upsert({
+    where: { email: adminEmail },
+    create: {
+      login: 'admin',
+      email: adminEmail,
+      password: hashedPassword,
+      name: 'Администратор',
+      phone: '+375290000000',
+      registration_date: new Date(),
+      role: 'ADMIN',
+    },
+    update: { role: 'ADMIN' },
+  });
+  console.log('✅ Admin user created/updated:', adminEmail);
 }
 
 main()

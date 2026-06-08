@@ -14,8 +14,8 @@ export interface ServiceFromDB {
   image_url_4: string | null;
   questions_id: number;
   reviews_id: number;
-  category_id: number;
-  category: {
+  service_category_id: number;
+  serviceCategory: {
     id: number;
     name: string;
     slug: string;
@@ -28,11 +28,11 @@ export interface ServiceFromDB {
     experience: number;
     grade: number;
     image_url: string;
-    category: {
+    serviceCategory?: {
       id: number;
       name: string;
       slug: string;
-    };
+    } | null;
   }>;
   questions: Array<{
     id: number;
@@ -103,19 +103,22 @@ export function mapServiceFromDBToServiceData(service: ServiceFromDB): ServiceDa
     experience: specialist.experience,
     grade: specialist.grade,
     image_url: specialist.image_url,
-    category: specialist.category,
+    category: specialist.serviceCategory ?? undefined,
   }));
 
   return {
     title: service.title,
-    category: service.category.name,
+    category: service.serviceCategory?.name || 'Услуги',
     description: service.subtitle,
     image: service.image_url,
     price,
     videoUrl: service.video_url || undefined,
     breadcrumbs: [
       { label: 'Услуги', path: '/' },
-      { label: service.category.name, path: `/services/${service.category.slug}` },
+      {
+        label: service.serviceCategory?.name || 'Услуги',
+        path: `/services/${service.serviceCategory?.slug || 'services'}`,
+      },
       { label: service.title },
     ],
     fullDescription: service.description,

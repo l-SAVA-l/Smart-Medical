@@ -79,23 +79,35 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__
 ;
 async function GET(request) {
     try {
-        // Get the first (and likely only) contact record
         const contacts = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].contacts.findFirst();
         if (!contacts) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: "Contacts not found"
+                address: "",
+                map_geo: "",
+                work_hours_main: "Пн–Сб 09:00–20:00",
+                work_hours_sunday: "Вс 10:00–18:00",
+                phone_number: "",
+                phone_number_sec: null,
+                email: ""
             }, {
-                status: 404
+                status: 200
             });
         }
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(contacts, {
             status: 200
         });
     } catch (error) {
+        console.error("Contacts API error:", error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            error: "Failed to fetch contacts"
+            address: "",
+            map_geo: "",
+            work_hours_main: "Пн–Сб 09:00–20:00",
+            work_hours_sunday: "Вс 10:00–18:00",
+            phone_number: "",
+            phone_number_sec: null,
+            email: ""
         }, {
-            status: 500
+            status: 200
         });
     }
 }

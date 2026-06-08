@@ -7,14 +7,6 @@ interface ServiceCategory {
   icon: string | null;
   parent_id: number | null;
   order: number;
-  services?: Service[];
-}
-
-interface Service {
-  id: number;
-  title: string;
-  subtitle: string;
-  service_category_id: number | null;
 }
 
 interface MenuItem {
@@ -25,60 +17,46 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
-// Функция для построения меню с услугами как подпунктами
-function buildMenuWithServices(categories: ServiceCategory[]): MenuItem[] {
-  return categories.map((category) => {
-    const menuItem: MenuItem = {
+function buildCategoryTree(
+  categories: ServiceCategory[],
+  parentId: number | null = null
+): MenuItem[] {
+  const levelItems = categories
+    .filter((category) => category.parent_id === parentId)
+    .sort((a, b) => {
+      if (a.order !== b.order) return a.order - b.order;
+      return a.name.localeCompare(b.name, 'ru');
+    });
+
+  return levelItems.map((category) => {
+    const children = buildCategoryTree(categories, category.id);
+    const item: MenuItem = {
       id: category.slug,
       title: category.name,
+      ...(category.icon ? { icon: category.icon } : {}),
+      ...(children.length > 0 ? { children } : {}),
     };
-
-    // Добавляем иконку для категории
-    if (category.icon) {
-      menuItem.icon = category.icon;
-    }
-
-    // Добавляем услуги как подпункты категории
-    if (category.services && category.services.length > 0) {
-      menuItem.children = category.services.map((service) => ({
-        id: `${category.slug}/${service.id}`,
-        title: service.title,
-      }));
-    }
-
-    return menuItem;
+    return item;
   });
 }
 
-// Получение меню услуг из БД (для использования на сервере)
 export async function getServicesMenuFromDB(): Promise<MenuItem[]> {
   try {
-    // @ts-ignore - ServiceCategory будет доступна после npx prisma generate
     const categories = await prisma.serviceCategory.findMany({
       where: {
         is_active: true,
-        parent_id: null, // Только корневые категории (без подкатегорий)
       },
-      orderBy: [
-        { order: 'asc' },
-        { name: 'asc' },
-      ],
-      include: {
-        services: {
-          orderBy: [
-            { title: 'asc' },
-          ],
-          select: {
-            id: true,
-            title: true,
-            subtitle: true,
-            service_category_id: true,
-          },
-        },
+      select: {
+        id: true,
+        name: true,
+        slug: true,
+        icon: true,
+        parent_id: true,
+        order: true,
       },
     });
 
-    return buildMenuWithServices(categories as ServiceCategory[]);
+    return buildCategoryTree(categories as ServiceCategory[]);
   } catch (error) {
     console.error('Error fetching services menu from DB:', error);
     return [];

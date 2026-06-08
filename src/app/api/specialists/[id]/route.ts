@@ -19,7 +19,6 @@ export async function GET(
     const specialist = await prisma.specialist.findUnique({
       where: { id },
       include: {
-        category: true,
         serviceCategory: true,
         services: true,
       },

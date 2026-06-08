@@ -17,6 +17,13 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
+interface PartnerApiItem {
+  category?: {
+    slug?: string;
+    name?: string;
+  };
+}
+
 const menuData: MenuItem[] = [
   {
     id: 'licenses',
@@ -174,36 +181,58 @@ export function NavigableClinicMenu() {
   const pathname = usePathname();
   const { isBurgerMenuOpen } = useMenu();
 
-  // Загрузка категорий вопросов из API
+  // Загрузка категорий вопросов и партнеров из API
   useEffect(() => {
-    async function loadQuestionCategories() {
+    async function loadDynamicCategories() {
       try {
-        const response = await fetch('/api/question-categories');
-        if (response.ok) {
-          const categories = await response.json();
+        const [questionRes, partnersRes] = await Promise.all([
+          fetch('/api/question-categories'),
+          fetch('/api/partners'),
+        ]);
 
-          // Обновляем menuData, добавляя категории как children к "questions"
-          const updatedMenu = menuData.map(item => {
-            if (item.id === 'questions') {
-              return {
-                ...item,
-                children: categories.map((cat: any) => ({
-                  id: cat.slug,
-                  title: cat.name,
-                }))
-              };
-            }
-            return item;
-          });
+        const questionCategories = questionRes.ok ? await questionRes.json() : [];
+        const partners = partnersRes.ok ? await partnersRes.json() : [];
 
-          setDynamicMenuData(updatedMenu);
+        const groupedPartners = new Map<string, string>();
+        for (const partner of partners as PartnerApiItem[]) {
+          const slug = partner.category?.slug;
+          const name = partner.category?.name;
+          if (slug && name) {
+            groupedPartners.set(slug, name);
+          }
         }
+
+        const partnerChildren = Array.from(groupedPartners.entries())
+          .map(([slug, name]) => ({ id: slug, title: name }))
+          .sort((a, b) => a.title.localeCompare(b.title, 'ru'));
+
+        // Обновляем menuData, добавляя категории в "questions" и "partners"
+        const updatedMenu = menuData.map(item => {
+          if (item.id === 'questions') {
+            return {
+              ...item,
+              children: questionCategories.map((cat: any) => ({
+                id: cat.slug,
+                title: cat.name,
+              })),
+            };
+          }
+          if (item.id === 'partners') {
+            return {
+              ...item,
+              children: partnerChildren,
+            };
+          }
+          return item;
+        });
+
+        setDynamicMenuData(updatedMenu);
       } catch (error) {
-        console.error('Error loading question categories:', error);
+        console.error('Error loading dynamic clinic menu categories:', error);
       }
     }
 
-    loadQuestionCategories();
+    loadDynamicCategories();
   }, []);
 
   // Auto-expand and select based on current route

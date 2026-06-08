@@ -9,11 +9,10 @@ export async function GET(
   try {
     const { slug } = await params;
 
-    // @ts-ignore - ServiceCategory будет доступна после npx prisma generate
-    const category = await prisma.serviceCategory.findUnique({
+    const category = await prisma.serviceCategory.findFirst({
       where: {
-        slug: slug,
-        is_active: true
+        slug,
+        is_active: true,
       },
       include: {
         children: {
@@ -32,25 +31,8 @@ export async function GET(
             },
           },
         },
-        services: {
-          orderBy: { title: 'asc' },
-          include: {
-            specialists: {
-              include: {
-                specialist: true,
-              },
-            },
-            questions: {
-              orderBy: { id: 'asc' },
-            },
-            feedbacks: {
-              orderBy: { date: 'desc' },
-            },
-          },
-        },
       },
     });
-
 
     if (!category) {
       return NextResponse.json(
@@ -59,7 +41,40 @@ export async function GET(
       );
     }
 
-    return NextResponse.json(category);
+    const collectCategoryIds = (node: typeof category): number[] => {
+      const ids = [node.id];
+      for (const child of node.children) {
+        ids.push(...collectCategoryIds(child as typeof category));
+      }
+      return ids;
+    };
+
+    const categoryIds = collectCategoryIds(category);
+
+    const services = await prisma.service.findMany({
+      where: {
+        service_category_id: { in: categoryIds },
+      },
+      orderBy: { title: 'asc' },
+      include: {
+        specialists: {
+          include: {
+            specialist: true,
+          },
+        },
+        questions: {
+          orderBy: { id: 'asc' },
+        },
+        feedbacks: {
+          orderBy: { date: 'desc' },
+        },
+      },
+    });
+
+    return NextResponse.json({
+      ...category,
+      services,
+    });
   } catch (error: any) {
     return NextResponse.json(
       {

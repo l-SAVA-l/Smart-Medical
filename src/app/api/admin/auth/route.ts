@@ -3,14 +3,15 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { hasAdminAccess } from "@/utils/auth";
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin123";
+const ADMIN_GATE_PASSWORD = "admin123"; // Пароль для экрана «Введите пароль для доступа»
 
 // POST - Проверка пароля для входа в админ-панель
 export async function POST(request: NextRequest) {
   try {
-    const { password } = await request.json();
+    const body = await request.json();
+    const password = typeof body?.password === "string" ? body.password.trim() : "";
 
-    if (password !== ADMIN_PASSWORD) {
+    if (password !== ADMIN_GATE_PASSWORD) {
       return NextResponse.json(
         { error: "Неверный пароль" },
         { status: 403 }

@@ -78,7 +78,7 @@ export function DoctorPage({ doctorId, categorySlug }: DoctorPageProps) {
 
         // Обновляем title страницы
         if (data) {
-          const categoryName = data.serviceCategory?.name || data.category?.name || 'Специалисты';
+          const categoryName = data.serviceCategory?.name || 'Специалисты';
           document.title = `${data.name} - ${categoryName} | Медицинский центр Doctor Family`;
         }
       } catch (err) {

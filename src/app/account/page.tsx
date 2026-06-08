@@ -19,7 +19,7 @@ export default function Account() {
     sectionId = pathParts[1] || '';
   }
 
-  const accountContentSections = ['subscriptions', 'materials', 'contact'];
+  const accountContentSections = ['appointments', 'subscriptions', 'materials', 'contact'];
   const showAccountContent = !sectionId || accountContentSections.includes(sectionId);
 
   // Redirect to home if not authenticated

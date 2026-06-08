@@ -80,14 +80,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__
 async function GET(request) {
     try {
         const { searchParams } = new URL(request.url);
-        const categoryId = searchParams.get('categoryId');
+        const serviceCategoryId = searchParams.get('serviceCategoryId') || searchParams.get('categoryId');
         const serviceCategorySlug = searchParams.get('serviceCategorySlug');
         let specialists;
         if (serviceCategorySlug) {
-            console.log('Filtering by service category slug:', serviceCategorySlug);
-            // Новый способ - фильтрация по категории услуг
-            // Сначала находим категорию услуг и все её подкатегории
-            // @ts-ignore
             const serviceCategory = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].serviceCategory.findUnique({
                 where: {
                     slug: serviceCategorySlug
@@ -101,30 +97,19 @@ async function GET(request) {
                 }
             });
             if (!serviceCategory) {
-                console.log('Service category not found:', serviceCategorySlug);
                 return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json([]);
             }
-            console.log('Found service category:', serviceCategory.name, 'ID:', serviceCategory.id);
-            // Собираем все ID категорий (текущая + все подкатегории)
             const categoryIds = [
                 serviceCategory.id
             ];
-            // Добавляем ID подкатегорий первого уровня
             if (serviceCategory.children) {
                 for (const child of serviceCategory.children){
                     categoryIds.push(child.id);
-                    // Добавляем ID подкатегорий второго уровня
                     if (child.children) {
-                        for (const grandchild of child.children){
-                            categoryIds.push(grandchild.id);
-                        }
+                        for (const grandchild of child.children)categoryIds.push(grandchild.id);
                     }
                 }
             }
-            console.log('Searching specialists with category IDs:', categoryIds);
-            // Находим специалистов, у которых:
-            // 1. service_category_id совпадает с категорией
-            // 2. ИЛИ есть услуги в этих категориях
             specialists = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].specialist.findMany({
                 where: {
                     OR: [
@@ -147,25 +132,18 @@ async function GET(request) {
                     ]
                 },
                 include: {
-                    category: true,
                     serviceCategory: true
                 },
                 orderBy: {
                     name: 'asc'
                 }
             });
-            console.log('Found specialists:', specialists.length, specialists.map((s)=>({
-                    name: s.name,
-                    service_category_id: s.service_category_id
-                })));
-        } else if (categoryId) {
-            // Старый способ - фильтрация по старой таблице категорий
+        } else if (serviceCategoryId) {
             specialists = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].specialist.findMany({
                 where: {
-                    category_id: parseInt(categoryId)
+                    service_category_id: parseInt(serviceCategoryId)
                 },
                 include: {
-                    category: true,
                     serviceCategory: true
                 },
                 orderBy: {
@@ -173,10 +151,8 @@ async function GET(request) {
                 }
             });
         } else {
-            // Без фильтрации - все специалисты
             specialists = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].specialist.findMany({
                 include: {
-                    category: true,
                     serviceCategory: true
                 },
                 orderBy: {
@@ -186,11 +162,9 @@ async function GET(request) {
         }
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(specialists);
     } catch (error) {
-        console.error('Error fetching specialists:', error);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            error: 'Failed to fetch specialists'
-        }, {
-            status: 500
+        console.error('Specialists API error:', error);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json([], {
+            status: 200
         });
     }
 }

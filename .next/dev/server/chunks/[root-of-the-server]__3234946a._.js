@@ -77,10 +77,60 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/prisma.ts [app-route] (ecmascript)");
 ;
 ;
+const CLINIC_FAQ_CATEGORY_META = {
+    "children-teeth": {
+        name: "Детские зубы",
+        order: 1
+    },
+    "girls-hygiene": {
+        name: "Гигиена девочек",
+        order: 2
+    },
+    "boys-hygiene": {
+        name: "Гигиена мальчиков",
+        order: 3
+    },
+    "girls-puberty": {
+        name: "Половое созревание девочек",
+        order: 4
+    },
+    culdocentesis: {
+        name: "Кульдоцентез",
+        order: 5
+    },
+    stomatology: {
+        name: "Стоматология",
+        order: 6
+    },
+    "polyp-removal": {
+        name: "Удаление полипов",
+        order: 7
+    },
+    ultrasound: {
+        name: "УЗИ",
+        order: 8
+    },
+    "womens-health": {
+        name: "Женское здоровье",
+        order: 9
+    },
+    curettage: {
+        name: "Раздельное диагностическое выскабливание",
+        order: 10
+    }
+};
 async function GET(request, { params }) {
     try {
         const { slug } = await params;
-        const category = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].questionCategory.findUnique({
+        const clinicMeta = CLINIC_FAQ_CATEGORY_META[slug];
+        if (!clinicMeta) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                error: "Категория не найдена"
+            }, {
+                status: 404
+            });
+        }
+        const category = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].questionCategory.findFirst({
             where: {
                 slug,
                 is_active: true
@@ -88,9 +138,10 @@ async function GET(request, { params }) {
             include: {
                 questions: {
                     where: {
+                        service_id: null,
                         answer: {
                             not: null
-                        } // Показываем только вопросы с ответами
+                        } // Показываем только вопросы с ответами клиники
                     },
                     orderBy: {
                         id: 'asc'
@@ -105,7 +156,11 @@ async function GET(request, { params }) {
                 status: 404
             });
         }
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(category, {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            ...category,
+            name: clinicMeta.name,
+            order: clinicMeta.order
+        }, {
             status: 200
         });
     } catch (error) {

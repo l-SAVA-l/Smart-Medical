@@ -205,7 +205,28 @@ const authOptions = {
     callbacks: {
         async jwt ({ token, user }) {
             if (user) {
-                token.id = user.id;
+                const email = user.email ?? token.email;
+                if (email) {
+                    try {
+                        const patient = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].patient.findUnique({
+                            where: {
+                                email
+                            },
+                            select: {
+                                id: true
+                            }
+                        });
+                        if (patient) {
+                            token.id = patient.id.toString();
+                        } else {
+                            token.id = user.id;
+                        }
+                    } catch  {
+                        token.id = user.id;
+                    }
+                } else {
+                    token.id = user.id;
+                }
                 token.role = user.role;
                 token.picture = user.image;
             }
@@ -308,11 +329,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$auth$2e$ts__
 ;
 ;
 ;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin123";
+const ADMIN_GATE_PASSWORD = "admin123"; // Пароль для экрана «Введите пароль для доступа»
 async function POST(request) {
     try {
-        const { password } = await request.json();
-        if (password !== ADMIN_PASSWORD) {
+        const body = await request.json();
+        const password = typeof body?.password === "string" ? body.password.trim() : "";
+        if (password !== ADMIN_GATE_PASSWORD) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: "Неверный пароль"
             }, {

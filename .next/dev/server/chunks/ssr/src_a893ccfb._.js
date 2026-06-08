@@ -383,13 +383,25 @@ const allMenuItems = [
         href: '/admin/questions'
     },
     {
+        id: 'question-categories',
+        title: 'Категории вопросов',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$tree$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderTree$3e$__["FolderTree"], {
+            className: "w-4 h-4"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
+            lineNumber: 73,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0)),
+        href: '/admin/question-categories'
+    },
+    {
         id: 'feedbacks',
         title: 'Отзывы',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-            lineNumber: 73,
+            lineNumber: 79,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         href: '/admin/feedbacks'
@@ -401,7 +413,7 @@ const allMenuItems = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-            lineNumber: 79,
+            lineNumber: 85,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         href: '/admin/contacts'
@@ -413,7 +425,7 @@ const allMenuItems = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-            lineNumber: 85,
+            lineNumber: 91,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         href: '/admin/letters',
@@ -426,7 +438,7 @@ const allMenuItems = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-            lineNumber: 92,
+            lineNumber: 98,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         href: '/admin/users'
@@ -517,12 +529,12 @@ function AdminMenu({ onNavigate }) {
                                     className: "w-6 h-6 text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 188,
+                                    lineNumber: 194,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                lineNumber: 187,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -533,7 +545,7 @@ function AdminMenu({ onNavigate }) {
                                         children: "Админ-панель"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                        lineNumber: 191,
+                                        lineNumber: 197,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -541,24 +553,24 @@ function AdminMenu({ onNavigate }) {
                                         children: "Управление контентом"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 200,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                lineNumber: 190,
+                                lineNumber: 196,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                        lineNumber: 186,
+                        lineNumber: 192,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                    lineNumber: 185,
+                    lineNumber: 191,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -586,13 +598,13 @@ function AdminMenu({ onNavigate }) {
                                                         children: unreadCount > 99 ? '99+' : unreadCount
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                                        lineNumber: 224,
+                                                        lineNumber: 230,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 222,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -600,37 +612,37 @@ function AdminMenu({ onNavigate }) {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                                lineNumber: 229,
+                                                lineNumber: 235,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                        lineNumber: 215,
+                                        lineNumber: 221,
                                         columnNumber: 17
                                     }, this),
                                     isActive(item.href) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                         className: "w-4 h-4 text-[#18A36C]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                        lineNumber: 236,
+                                        lineNumber: 242,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, item.id, true, {
                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                lineNumber: 205,
+                                lineNumber: 211,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                        lineNumber: 201,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                    lineNumber: 200,
+                    lineNumber: 206,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -644,7 +656,7 @@ function AdminMenu({ onNavigate }) {
                                     className: "w-4 h-4 text-gray-500 group-hover:text-[#18A36C] transition-colors"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 256,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -652,13 +664,13 @@ function AdminMenu({ onNavigate }) {
                                     children: "На сайт"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 257,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                            lineNumber: 246,
+                            lineNumber: 252,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -666,19 +678,19 @@ function AdminMenu({ onNavigate }) {
                             children: "Doctor Family © 2025"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                            lineNumber: 255,
+                            lineNumber: 261,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                    lineNumber: 245,
+                    lineNumber: 251,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-            lineNumber: 183,
+            lineNumber: 189,
             columnNumber: 5
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -687,12 +699,12 @@ function AdminMenu({ onNavigate }) {
                 className: "hidden lg:block w-80 flex-shrink-0 sticky top-0 h-screen overflow-y-auto bg-white border-r border-gray-200 shadow-lg",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {}, void 0, false, {
                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                    lineNumber: 266,
+                    lineNumber: 272,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                lineNumber: 265,
+                lineNumber: 271,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -710,17 +722,17 @@ function AdminMenu({ onNavigate }) {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 283,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                lineNumber: 273,
+                                lineNumber: 279,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                            lineNumber: 272,
+                            lineNumber: 278,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -734,42 +746,42 @@ function AdminMenu({ onNavigate }) {
                                             children: "Админ-панель"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                            lineNumber: 282,
+                                            lineNumber: 288,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetDescription"], {
                                             children: "Управление контентом сайта"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                            lineNumber: 283,
+                                            lineNumber: 289,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 281,
+                                    lineNumber: 287,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {}, void 0, false, {
                                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                                    lineNumber: 285,
+                                    lineNumber: 291,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                            lineNumber: 280,
+                            lineNumber: 286,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                    lineNumber: 271,
+                    lineNumber: 277,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMAdmin/SMAdminMenu.tsx",
-                lineNumber: 270,
+                lineNumber: 276,
                 columnNumber: 7
             }, this)
         ]

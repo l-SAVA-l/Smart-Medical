@@ -8,21 +8,35 @@ export async function GET(request: NextRequest) {
 
     let faqs;
     if (category) {
-      // Получаем FAQ по старой категории (для обратной совместимости)
-      // Используется на старых страницах клиники с хардкодеными категориями
+      const questionCategory = await prisma.questionCategory.findUnique({
+        where: { slug: category },
+        select: { id: true },
+      });
+
+      if (!questionCategory) {
+        return NextResponse.json([], { status: 200 });
+      }
+
       faqs = await prisma.question.findMany({
         where: {
           service_id: null,
-          category: category,
+          question_category_id: questionCategory.id,
           answer: { not: null } // Показываем только вопросы с ответами
+        },
+        include: {
+          questionCategory: {
+            select: {
+              id: true,
+              name: true,
+              slug: true,
+            },
+          },
         },
         orderBy: {
           id: 'asc'
         }
       });
     } else {
-      // Получаем все общие FAQ клиники (service_id = null)
-      // Поддерживаем как старую систему (category), так и новую (question_category_id)
       faqs = await prisma.question.findMany({
         where: {
           service_id: null,

@@ -741,7 +741,7 @@ function DoctorPage({ doctorId, categorySlug }) {
                 setDoctor(data);
                 // Обновляем title страницы
                 if (data) {
-                    const categoryName = data.serviceCategory?.name || data.category?.name || 'Специалисты';
+                    const categoryName = data.serviceCategory?.name || 'Специалисты';
                     document.title = `${data.name} - ${categoryName} | Медицинский центр Doctor Family`;
                 }
             } catch (err) {
@@ -2734,7 +2734,6 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
     const isExpanded = expandedItems.has(item.id);
     const isActive = activeItem === item.id;
     const isRouteActive = currentRoute.includes(`/doctors/${item.id}`);
-    const paddingLeft = level === 0 ? 'pl-4' : level === 1 ? 'pl-8' : 'pl-12';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-2",
         children: [
@@ -2759,7 +2758,7 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 66,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTooltip$2f$SMTooltip$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
@@ -2771,12 +2770,12 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 72,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 71,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTooltip$2f$SMTooltip$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -2784,37 +2783,37 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 78,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                            lineNumber: 66,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         hasChildren && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                             className: `w-4 h-4 text-gray-400 transition-all duration-200 ${isExpanded ? 'rotate-90 text-[#18A36C]' : 'group-hover:text-[#18A36C] group-hover:translate-x-1'}`
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                            lineNumber: 87,
+                            lineNumber: 85,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 65,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                lineNumber: 50,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -2861,40 +2860,39 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                     currentRoute: currentRoute
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 111,
                                     columnNumber: 19
                                 }, this)
                             }, child.id, false, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 107,
+                                lineNumber: 105,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 105,
+                        lineNumber: 103,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 98,
+                    lineNumber: 96,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                lineNumber: 96,
+                lineNumber: 94,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-        lineNumber: 49,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
 function NavigableDoctorsMenu() {
     const [categories, setCategories] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [activeItem, setActiveItem] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [expandedItems, setExpandedItems] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(new Set());
     const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -2933,7 +2931,6 @@ function NavigableDoctorsMenu() {
     ]);
     const menuItems = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         return categories.map((category)=>{
-            // Используем иконку из категории или fallback
             const IconComponent = category.icon && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$iconMapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["iconMap"][category.icon] ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$iconMapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["iconMap"][category.icon] : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"];
             return {
                 id: category.slug,
@@ -2942,7 +2939,7 @@ function NavigableDoctorsMenu() {
                     className: "w-4 h-4"
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 184,
+                    lineNumber: 181,
                     columnNumber: 15
                 }, this)
             };
@@ -2953,15 +2950,6 @@ function NavigableDoctorsMenu() {
     const handleItemClick = (itemId, _item)=>{
         setActiveItem(itemId);
         navigate(`/doctors/${itemId}`);
-    };
-    const handleToggleExpand = (itemId)=>{
-        const newExpanded = new Set(expandedItems);
-        if (newExpanded.has(itemId)) {
-            newExpanded.delete(itemId);
-        } else {
-            newExpanded.add(itemId);
-        }
-        setExpandedItems(newExpanded);
     };
     const MenuContent = ({ onItemClick: onItemClickProp })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-white flex flex-col h-full",
@@ -2977,12 +2965,12 @@ function NavigableDoctorsMenu() {
                                     className: "w-6 h-6 text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 210,
+                                    lineNumber: 197,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 209,
+                                lineNumber: 196,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2993,7 +2981,7 @@ function NavigableDoctorsMenu() {
                                         children: "Специалисты"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                        lineNumber: 213,
+                                        lineNumber: 200,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3001,66 +2989,69 @@ function NavigableDoctorsMenu() {
                                         children: "Выберите нужное направление"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                        lineNumber: 214,
+                                        lineNumber: 201,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 212,
+                                lineNumber: 199,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 208,
+                        lineNumber: 195,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 207,
+                    lineNumber: 194,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-1 overflow-y-auto py-2",
+                    className: "flex-1 overflow-y-scroll py-2",
+                    style: {
+                        scrollbarGutter: 'stable'
+                    },
                     children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMMenuSkeleton$2f$SMMenuSkeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MenuSkeleton"], {
                         itemCount: 8,
                         showHeader: false,
                         showFooter: false
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 222,
+                        lineNumber: 212,
                         columnNumber: 11
                     }, this) : error ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "px-4 py-6 text-sm text-red-600",
                         children: error
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 224,
+                        lineNumber: 214,
                         columnNumber: 11
                     }, this) : menuItems.length > 0 ? menuItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItemComponent, {
                             item: item,
                             level: 0,
                             activeItem: activeItem,
                             onItemClick: onItemClickProp || handleItemClick,
-                            expandedItems: expandedItems,
-                            onToggleExpand: handleToggleExpand,
+                            expandedItems: new Set(),
+                            onToggleExpand: ()=>{},
                             currentRoute: currentRoute
                         }, item.id, false, {
                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                            lineNumber: 227,
+                            lineNumber: 217,
                             columnNumber: 13
                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "px-4 py-6 text-sm text-gray-500",
                         children: "Категории не найдены"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 239,
+                        lineNumber: 229,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 220,
+                    lineNumber: 207,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3073,7 +3064,7 @@ function NavigableDoctorsMenu() {
                                 children: "Не нашли нужного специалиста?"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 246,
+                                lineNumber: 236,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3083,38 +3074,41 @@ function NavigableDoctorsMenu() {
                                 children: "Связаться с нами"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 247,
+                                lineNumber: 237,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                        lineNumber: 245,
+                        lineNumber: 235,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 244,
+                    lineNumber: 234,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-            lineNumber: 205,
+            lineNumber: 192,
             columnNumber: 5
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "hidden lg:block w-72 bg-white border-r border-[#E8E6E3] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)]",
+                className: "hidden lg:block w-72 bg-white border-r border-[#E8E6E3] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-scroll",
+                style: {
+                    scrollbarGutter: 'stable'
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {}, void 0, false, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 262,
+                    lineNumber: 255,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                lineNumber: 261,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3133,17 +3127,17 @@ function NavigableDoctorsMenu() {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 273,
+                                    lineNumber: 266,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                lineNumber: 268,
+                                lineNumber: 261,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                            lineNumber: 267,
+                            lineNumber: 260,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -3157,20 +3151,20 @@ function NavigableDoctorsMenu() {
                                             children: "Меню специалистов"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                            lineNumber: 278,
+                                            lineNumber: 271,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetDescription"], {
                                             children: "Навигация по специалистам клиники"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                            lineNumber: 279,
+                                            lineNumber: 272,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 270,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {
@@ -3180,24 +3174,24 @@ function NavigableDoctorsMenu() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                                    lineNumber: 281,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                            lineNumber: 276,
+                            lineNumber: 269,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                    lineNumber: 266,
+                    lineNumber: 259,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMDoctor/SMNavigableDoctorsMenu.tsx",
-                lineNumber: 265,
+                lineNumber: 258,
                 columnNumber: 7
             }, this)
         ]

@@ -43,7 +43,6 @@ export async function GET(
     const service = await prisma.service.findUnique({
       where: { id: serviceId },
       include: {
-        category: true,
         serviceCategory: true,
         specialists: {
           include: {
@@ -107,15 +106,6 @@ export async function PUT(
       );
     }
 
-    // Получаем первую категорию для совместимости (category_id not nullable в БД)
-    const firstCategory = await prisma.category.findFirst();
-    if (!firstCategory) {
-      return NextResponse.json(
-        { error: 'Не найдена категория по умолчанию' },
-        { status: 500 }
-      );
-    }
-
     // Update service and replace specialists
     const service = await prisma.service.update({
       where: { id: serviceId },
@@ -130,7 +120,6 @@ export async function PUT(
         image_url_2: image_url_2 || '',
         image_url_3: image_url_3 || '',
         image_url_4: image_url_4 || null,
-        category_id: firstCategory.id, // Используем первую категорию для совместимости
         service_category_id: parseInt(service_category_id),
         specialists: {
           // Delete existing relations and create new ones
@@ -141,7 +130,6 @@ export async function PUT(
         },
       },
       include: {
-        category: true,
         serviceCategory: true,
         specialists: {
           include: {

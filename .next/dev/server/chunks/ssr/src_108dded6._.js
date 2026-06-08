@@ -969,9 +969,12 @@ function NavigableServicesMenu() {
                 return null;
             };
             const parents = findParents(menuData, categorySlug);
-            if (parents && parents.length > 0) {
-                setExpandedItems(new Set(parents));
+            const nextExpanded = new Set(parents || []);
+            const activeRoot = menuData.find((item)=>item.id === categorySlug);
+            if (activeRoot?.children && activeRoot.children.length > 0) {
+                nextExpanded.add(categorySlug);
             }
+            setExpandedItems(nextExpanded);
         } else if (routeParts[0] === 'services' && routeParts.length === 1) {
             // На главной странице услуг - сбрасываем активный пункт
             setActiveItem(null);
@@ -985,6 +988,14 @@ function NavigableServicesMenu() {
         // Обновляем activeItem только если он изменился
         if (activeItem !== itemId) {
             setActiveItem(itemId);
+        }
+        // При клике на категорию сразу раскрываем её подкатегории
+        if (item.children && item.children.length > 0) {
+            setExpandedItems((prev)=>{
+                const next = new Set(prev);
+                next.add(itemId);
+                return next;
+            });
         }
         // Всегда переходим на страницу категории
         nextRouter.push(`/services/${itemId}`);
@@ -1012,12 +1023,12 @@ function NavigableServicesMenu() {
                                     className: "w-6 h-6 text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                    lineNumber: 241,
+                                    lineNumber: 253,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                lineNumber: 240,
+                                lineNumber: 252,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,7 +1039,7 @@ function NavigableServicesMenu() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$servicesMenu$2e$json__$28$json$29$__["default"].header.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                        lineNumber: 244,
+                                        lineNumber: 256,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,35 +1047,38 @@ function NavigableServicesMenu() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$servicesMenu$2e$json__$28$json$29$__["default"].header.subtitle
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                        lineNumber: 247,
+                                        lineNumber: 259,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                lineNumber: 243,
+                                lineNumber: 255,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                        lineNumber: 239,
+                        lineNumber: 251,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                    lineNumber: 238,
+                    lineNumber: 250,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-1 overflow-y-auto overflow-x-hidden py-2",
+                    className: "flex-1 overflow-y-scroll overflow-x-hidden py-2",
+                    style: {
+                        scrollbarGutter: 'stable'
+                    },
                     children: loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMMenuSkeleton$2f$SMMenuSkeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MenuSkeleton"], {
                         itemCount: 8,
                         showHeader: false,
                         showFooter: false
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                        lineNumber: 257,
+                        lineNumber: 272,
                         columnNumber: 11
                     }, this) : menuData.length > 0 ? menuData.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItemComponent, {
                             item: item,
@@ -1075,19 +1089,19 @@ function NavigableServicesMenu() {
                             onToggleExpand: handleToggleExpand
                         }, item.id, false, {
                             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                            lineNumber: 260,
+                            lineNumber: 275,
                             columnNumber: 13
                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "px-4 py-6 text-sm text-gray-500",
                         children: "Услуги не найдены"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                        lineNumber: 271,
+                        lineNumber: 286,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                    lineNumber: 255,
+                    lineNumber: 267,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1100,7 +1114,7 @@ function NavigableServicesMenu() {
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$servicesMenu$2e$json__$28$json$29$__["default"].footer.text
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                lineNumber: 278,
+                                lineNumber: 293,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1110,38 +1124,41 @@ function NavigableServicesMenu() {
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$servicesMenu$2e$json__$28$json$29$__["default"].footer.buttonText
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                lineNumber: 281,
+                                lineNumber: 296,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                        lineNumber: 277,
+                        lineNumber: 292,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                    lineNumber: 276,
+                    lineNumber: 291,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-            lineNumber: 236,
+            lineNumber: 248,
             columnNumber: 5
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "hidden lg:block w-72 bg-white border-r border-[#CACACA] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-auto",
+                className: "hidden lg:block w-72 bg-white border-r border-[#CACACA] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)] overflow-y-scroll",
+                style: {
+                    scrollbarGutter: 'stable'
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {}, void 0, false, {
                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                    lineNumber: 296,
+                    lineNumber: 314,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                lineNumber: 295,
+                lineNumber: 310,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1160,17 +1177,17 @@ function NavigableServicesMenu() {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                    lineNumber: 307,
+                                    lineNumber: 325,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                lineNumber: 302,
+                                lineNumber: 320,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                            lineNumber: 301,
+                            lineNumber: 319,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -1184,20 +1201,20 @@ function NavigableServicesMenu() {
                                             children: "Меню услуг"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                            lineNumber: 312,
+                                            lineNumber: 330,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetDescription"], {
                                             children: "Навигация по медицинским услугам клиники"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                            lineNumber: 313,
+                                            lineNumber: 331,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                    lineNumber: 311,
+                                    lineNumber: 329,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {
@@ -1207,24 +1224,24 @@ function NavigableServicesMenu() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                                    lineNumber: 315,
+                                    lineNumber: 333,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                            lineNumber: 310,
+                            lineNumber: 328,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                    lineNumber: 300,
+                    lineNumber: 318,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMServices/SMNavigableServicesMenu.tsx",
-                lineNumber: 299,
+                lineNumber: 317,
                 columnNumber: 7
             }, this)
         ]

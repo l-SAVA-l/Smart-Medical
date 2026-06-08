@@ -607,7 +607,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 24,
+            lineNumber: 31,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: []
@@ -619,7 +619,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 30,
+            lineNumber: 37,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [
@@ -644,7 +644,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 40,
+            lineNumber: 47,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: []
@@ -656,7 +656,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 46,
+            lineNumber: 53,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: []
@@ -668,7 +668,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 52,
+            lineNumber: 59,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [] // Будут загружены динамически из API
@@ -680,7 +680,7 @@ const menuData = [
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 58,
+            lineNumber: 65,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: []
@@ -719,7 +719,7 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                 children: item.icon
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 108,
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTooltip$2f$SMTooltip$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
@@ -731,12 +731,12 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                            lineNumber: 114,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMTooltip$2f$SMTooltip$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -744,19 +744,19 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 112,
+                                lineNumber: 119,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                        lineNumber: 103,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, this),
                     hasChildren && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -766,18 +766,18 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                             className: "w-4 h-4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                            lineNumber: 131,
+                            lineNumber: 138,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                        lineNumber: 126,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                lineNumber: 97,
+                lineNumber: 104,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -813,33 +813,33 @@ function MenuItemComponent({ item, level, activeItem, onItemClick, expandedItems
                                     currentRoute: currentRoute
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 156,
                                     columnNumber: 19
                                 }, this)
                             }, child.id, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 148,
+                                lineNumber: 155,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                        lineNumber: 146,
+                        lineNumber: 153,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 139,
+                    lineNumber: 146,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                lineNumber: 137,
+                lineNumber: 144,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-        lineNumber: 96,
+        lineNumber: 103,
         columnNumber: 5
     }, this);
 }
@@ -851,33 +851,53 @@ function NavigableClinicMenu() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const { isBurgerMenuOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SMMenuContext$2f$SMMenuContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMenu"])();
-    // Загрузка категорий вопросов из API
+    // Загрузка категорий вопросов и партнеров из API
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        async function loadQuestionCategories() {
+        async function loadDynamicCategories() {
             try {
-                const response = await fetch('/api/question-categories');
-                if (response.ok) {
-                    const categories = await response.json();
-                    // Обновляем menuData, добавляя категории как children к "questions"
-                    const updatedMenu = menuData.map((item)=>{
-                        if (item.id === 'questions') {
-                            return {
-                                ...item,
-                                children: categories.map((cat)=>({
-                                        id: cat.slug,
-                                        title: cat.name
-                                    }))
-                            };
-                        }
-                        return item;
-                    });
-                    setDynamicMenuData(updatedMenu);
+                const [questionRes, partnersRes] = await Promise.all([
+                    fetch('/api/question-categories'),
+                    fetch('/api/partners')
+                ]);
+                const questionCategories = questionRes.ok ? await questionRes.json() : [];
+                const partners = partnersRes.ok ? await partnersRes.json() : [];
+                const groupedPartners = new Map();
+                for (const partner of partners){
+                    const slug = partner.category?.slug;
+                    const name = partner.category?.name;
+                    if (slug && name) {
+                        groupedPartners.set(slug, name);
+                    }
                 }
+                const partnerChildren = Array.from(groupedPartners.entries()).map(([slug, name])=>({
+                        id: slug,
+                        title: name
+                    })).sort((a, b)=>a.title.localeCompare(b.title, 'ru'));
+                // Обновляем menuData, добавляя категории в "questions" и "partners"
+                const updatedMenu = menuData.map((item)=>{
+                    if (item.id === 'questions') {
+                        return {
+                            ...item,
+                            children: questionCategories.map((cat)=>({
+                                    id: cat.slug,
+                                    title: cat.name
+                                }))
+                        };
+                    }
+                    if (item.id === 'partners') {
+                        return {
+                            ...item,
+                            children: partnerChildren
+                        };
+                    }
+                    return item;
+                });
+                setDynamicMenuData(updatedMenu);
             } catch (error) {
-                console.error('Error loading question categories:', error);
+                console.error('Error loading dynamic clinic menu categories:', error);
             }
         }
-        loadQuestionCategories();
+        loadDynamicCategories();
     }, []);
     // Auto-expand and select based on current route
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -966,12 +986,12 @@ function NavigableClinicMenu() {
                                     className: "w-6 h-6 text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                    lineNumber: 297,
+                                    lineNumber: 326,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 296,
+                                lineNumber: 325,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -982,7 +1002,7 @@ function NavigableClinicMenu() {
                                         children: "Клиника"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                        lineNumber: 300,
+                                        lineNumber: 329,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -990,24 +1010,24 @@ function NavigableClinicMenu() {
                                         children: "Выберите нужный раздел"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 330,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 299,
+                                lineNumber: 328,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                        lineNumber: 295,
+                        lineNumber: 324,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 294,
+                    lineNumber: 323,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1022,12 +1042,12 @@ function NavigableClinicMenu() {
                             currentRoute: pathname
                         }, item.id, false, {
                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                            lineNumber: 309,
+                            lineNumber: 338,
                             columnNumber: 11
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 307,
+                    lineNumber: 336,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1040,7 +1060,7 @@ function NavigableClinicMenu() {
                                 children: "Не нашли нужную информацию?"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 325,
+                                lineNumber: 354,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMButton$2f$SMButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1050,24 +1070,24 @@ function NavigableClinicMenu() {
                                 children: "Связаться с нами"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 326,
+                                lineNumber: 355,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                        lineNumber: 324,
+                        lineNumber: 353,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 323,
+                    lineNumber: 352,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-            lineNumber: 292,
+            lineNumber: 321,
             columnNumber: 5
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1076,12 +1096,12 @@ function NavigableClinicMenu() {
                 className: "hidden lg:block w-72 bg-white border-r border-[#E8E6E3] shadow-lg flex-shrink-0 sticky top-[80px] h-[calc(100vh-80px)]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {}, void 0, false, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 341,
+                    lineNumber: 370,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                lineNumber: 340,
+                lineNumber: 369,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1100,17 +1120,17 @@ function NavigableClinicMenu() {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                    lineNumber: 352,
+                                    lineNumber: 381,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                lineNumber: 347,
+                                lineNumber: 376,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                            lineNumber: 346,
+                            lineNumber: 375,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -1124,20 +1144,20 @@ function NavigableClinicMenu() {
                                             children: "Меню клиники"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                            lineNumber: 357,
+                                            lineNumber: 386,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$SMSheet$2f$SMSheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetDescription"], {
                                             children: "Навигация по разделам клиники"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                            lineNumber: 358,
+                                            lineNumber: 387,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                    lineNumber: 356,
+                                    lineNumber: 385,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuContent, {
@@ -1150,24 +1170,24 @@ function NavigableClinicMenu() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                                    lineNumber: 360,
+                                    lineNumber: 389,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                            lineNumber: 355,
+                            lineNumber: 384,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                    lineNumber: 345,
+                    lineNumber: 374,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/SMClinic/SMNavigableClinicMenu.tsx",
-                lineNumber: 344,
+                lineNumber: 373,
                 columnNumber: 7
             }, this)
         ]

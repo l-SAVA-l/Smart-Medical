@@ -19,12 +19,12 @@ export async function GET(
     const service = await prisma.service.findUnique({
       where: { id },
       include: {
-        category: true,
+        serviceCategory: true,
         specialists: {
           include: {
             specialist: {
               include: {
-                category: true,
+                serviceCategory: true,
               },
             },
           },

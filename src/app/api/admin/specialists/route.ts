@@ -12,13 +12,6 @@ export async function GET(request: NextRequest) {
 
     const specialists = await prisma.specialist.findMany({
       include: {
-        category: {
-          select: {
-            id: true,
-            name: true,
-            slug: true,
-          },
-        },
         serviceCategory: {
           select: {
             id: true,
@@ -51,7 +44,6 @@ export async function POST(request: NextRequest) {
 
     console.log('Creating specialist with data:', {
       ...data,
-      category_id: data.category_id ? parseInt(data.category_id) : null,
       service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null,
     });
 
@@ -69,11 +61,9 @@ export async function POST(request: NextRequest) {
         specializations: data.specializations || [],
         education: data.education || [],
         work_examples: data.work_examples || null,
-        category_id: data.category_id ? parseInt(data.category_id) : null,
         service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null,
       },
       include: {
-        category: true,
         serviceCategory: true,
       },
     });
