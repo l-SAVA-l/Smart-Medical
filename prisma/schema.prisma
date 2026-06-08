@@ -1,0 +1,362 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Service {
+  id                   Int                   @id @default(autoincrement()) @map("service_id")
+  title                String
+  subtitle             String
+  price                Int
+  video_url            String
+  description          String                @db.Text
+  image_url            String
+  image_url_1          String
+  image_url_2          String
+  image_url_3          String
+  image_url_4          String?
+  questions_id         Int
+  reviews_id           Int
+  service_category_id  Int                   // Связь с ServiceCategory
+
+  // Отношения
+  serviceCategory      ServiceCategory       @relation(fields: [service_category_id], references: [id])
+  specialists          ServiceSpecialist[]   // M:N со специалистами
+  questions            Question[]            // 1:M с вопросами
+  feedbacks            Feedback[]            // 1:M с отзывами
+  appointments         Appointment[]         // записи на приём
+
+  @@map("services")
+  @@index([service_category_id])
+}
+
+// Таблица связей many-to-many между услугами и специалистами
+model ServiceSpecialist {
+  service_id     Int
+  specialist_id  Int
+
+  service        Service    @relation(fields: [service_id], references: [id], onDelete: Cascade)
+  specialist     Specialist @relation(fields: [specialist_id], references: [id], onDelete: Cascade)
+
+  @@id([service_id, specialist_id])
+  @@map("service_specialists")
+}
+
+model Category {
+  id          Int          @id @default(autoincrement()) @map("category_id")
+  name        String
+  slug        String       @unique
+  partners    Partner[]
+
+  @@map("categories")
+  @@index([slug])
+}
+
+// Древовидная структура меню услуг (для навигации)
+model ServiceCategory {
+  id          Int                @id @default(autoincrement()) @map("service_category_id")
+  name        String             // Название категории
+  slug        String             @unique // URL-friendly ID
+  icon        String?            // Название иконки (например "Baby", "Smile")
+  description String?            @db.Text // Описание категории
+  parent_id   Int?               // ID родительской категории (null для корневых)
+  order       Int                @default(0) // Порядок сортировки
+  is_active   Boolean            @default(true) // Активна ли категория
+  created_at  DateTime           @default(now())
+  updated_at  DateTime           @updatedAt
+
+  // Самоссылка для древовидной структуры
+  parent      ServiceCategory?   @relation("ServiceCategoryTree", fields: [parent_id], references: [id], onDelete: Cascade)
+  children    ServiceCategory[]  @relation("ServiceCategoryTree")
+  services    Service[]          // Услуги в этой категории
+  specialists Specialist[]       // Специалисты в этой категории
+
+  @@map("service_categories")
+  @@index([parent_id])
+  @@index([slug])
+  @@index([is_active])
+  @@index([order])
+}
+
+model Specialist {
+  id                   Int                  @id @default(autoincrement()) @map("specialists_id")
+  service_category_id  Int                  // Привязка к категории услуг
+  name                 String
+  specialization       String
+  qualification        String
+  experience           Int
+  grade                Int
+  image_url            String
+  activity_area        String?
+  education_details    String?              @db.Text
+  conferences          String[]             @default([])
+  // Поля для структуры about
+  specializations      String[]             @default([])
+  education            String[]             @default([])
+  work_examples        Json?                // Для хранения массива { title: string; images: string[] }[]
+
+  // relations
+  serviceCategory      ServiceCategory      @relation(fields: [service_category_id], references: [id])
+  services             ServiceSpecialist[]  // M:N с услугами
+  appointments         Appointment[]
+
+  @@map("specialists")
+  @@index([service_category_id])
+}
+
+// Категории вопросов (одноуровневая структура, без подкатегорий)
+model QuestionCategory {
+  id          Int        @id @default(autoincrement()) @map("question_category_id")
+  name        String     // Название категории
+  slug        String     @unique // URL-friendly ID
+  description String?    @db.Text // Описание категории
+  order       Int        @default(0) // Порядок сортировки
+  is_active   Boolean    @default(true) // Активна ли категория
+  created_at  DateTime   @default(now())
+  updated_at  DateTime   @updatedAt
+
+  questions   Question[] // Вопросы в этой категории
+
+  @@map("question_categories")
+  @@index([slug])
+  @@index([is_active])
+  @@index([order])
+}
+
+model Question {
+  id                    Int                @id @default(autoincrement()) @map("questions_id")
+  question              String
+  answer                String?            @db.Text
+  service_id            Int?               // Для привязки к услуге
+  question_category_id  Int?               // Для привязки к категории вопросов клиники
+
+  service               Service?           @relation(fields: [service_id], references: [id])
+  questionCategory      QuestionCategory?  @relation(fields: [question_category_id], references: [id])
+
+  @@map("questions")
+  @@index([service_id])
+  @@index([question_category_id])
+}
+
+model Feedback {
+  id         Int      @id @default(autoincrement()) @map("reviews_id")
+  name       String
+  text       String   @db.Text
+  date       DateTime @db.Date
+  grade      Int
+  image_url  String
+  verified   Boolean  @default(false) // Для общих отзывов клиники
+  service_id Int?     // Теперь необязательный - для общих отзывов клиники
+  service    Service? @relation(fields: [service_id], references: [id])
+
+  @@map("feedbacks")
+  @@index([service_id])
+}
+
+model Partner {
+  id           Int       @id @default(autoincrement()) @map("partners_id")
+  category_id  Int       @map("categori_id")
+  image_url    String
+  name         String
+  description  String    @db.Text
+  number       Int
+  website_url  String
+
+  category     Category  @relation(fields: [category_id], references: [id])
+
+  @@map("partners")
+  @@index([category_id])
+}
+
+model Vacancy {
+  id           Int     @id @default(autoincrement()) @map("vacancies_id")
+  name         String
+  category     String
+  description  String
+  payment      Int
+  experience   Int
+  requirements String
+
+  @@map("vacancies")
+}
+
+model Contacts {
+  id                 Int    @id @default(autoincrement()) @map("contact_id")
+  address            String
+  map_geo            String
+  work_hours_main    String
+  work_hours_sunday  String
+  phone_number       String
+  phone_number_sec   String?
+  email              String
+
+  @@map("contacts")
+}
+
+enum Role {
+  USER
+  ADMIN
+  CHIEF_DOCTOR
+  OPERATOR
+}
+
+model Patient {
+  id                   Int      @id @default(autoincrement()) @map("patient_id")
+  login                String
+  email                String   @unique
+  password             String
+  name                 String
+  phone                String   @unique
+  registration_date    DateTime @db.Date
+  avatar_url           String?  // URL аватарки пользователя (опционально)
+  role                 Role     @default(USER)
+  is_messages_blocked  Boolean  @default(false) // Заблокирован ли пользователь от отправки писем
+
+  letters              Letter[]                // Письма главному врачу
+  operator_chats       OperatorChat[]          // Чаты с операторами (как пациент)
+  assigned_chats       OperatorChat[]          @relation("OperatorChats") // Чаты где этот пользователь - оператор
+  chat_messages        OperatorChatMessage[]   // Сообщения в чатах
+  appointments         Appointment[]           // Записи на приём
+
+  @@map("patients")
+}
+
+model Material {
+  id               Int      @id @default(autoincrement()) @map("material_id")
+  title            String
+  content          String   @db.Text
+  detailed_content String?  @db.Text // Подробное описание для модального окна
+  image_url        String
+  date             DateTime @db.Date
+  year             Int
+  is_active        Boolean  @default(true)
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  @@map("materials")
+  @@index([year])
+  @@index([is_active])
+}
+
+// Письма главному врачу
+model Letter {
+  id             Int             @id @default(autoincrement()) @map("letter_id")
+  patient_id     Int
+  subject        String
+  content        String          @db.Text
+  created_at     DateTime        @default(now())
+  reply          String?         @db.Text  // Ответ главного врача (первый ответ для обратной совместимости)
+  replied_at     DateTime?                 // Дата ответа
+  is_read        Boolean         @default(false)  // Прочитано главным врачом
+  is_reply_read  Boolean         @default(false)  // Ответ прочитан пациентом
+  has_new_patient_message  Boolean @default(false) // Есть новое сообщение от пациента
+
+  patient        Patient         @relation(fields: [patient_id], references: [id], onDelete: Cascade)
+  messages       LetterMessage[] // Сообщения в переписке
+
+  @@map("letters")
+  @@index([patient_id])
+  @@index([is_read])
+  @@index([is_reply_read])
+  @@index([has_new_patient_message])
+}
+
+// Сообщения в переписке письма
+model LetterMessage {
+  id             Int       @id @default(autoincrement()) @map("message_id")
+  letter_id      Int
+  sender_type    String    // 'patient' или 'chief_doctor'
+  content        String    @db.Text
+  created_at     DateTime  @default(now())
+  is_read        Boolean   @default(false)
+
+  letter         Letter    @relation(fields: [letter_id], references: [id], onDelete: Cascade)
+
+  @@map("letter_messages")
+  @@index([letter_id])
+  @@index([is_read])
+}
+
+// Чаты с операторами
+model OperatorChat {
+  id                    Int                    @id @default(autoincrement()) @map("chat_id")
+  patient_id            Int
+  operator_id           Int?                    // ID оператора, который взял чат (может быть null если никто не взял)
+  status                ChatStatus              @default(WAITING)
+  created_at            DateTime                @default(now())
+  updated_at            DateTime                @updatedAt
+  last_message_at       DateTime?               // Время последнего сообщения
+  has_unread_operator   Boolean                 @default(true)  // Есть непрочитанные сообщения для оператора
+  has_unread_patient    Boolean                 @default(false) // Есть непрочитанные сообщения для пациента
+
+  patient               Patient                 @relation(fields: [patient_id], references: [id], onDelete: Cascade)
+  operator              Patient?                @relation("OperatorChats", fields: [operator_id], references: [id], onDelete: SetNull)
+  messages              OperatorChatMessage[]
+
+  @@map("operator_chats")
+  @@index([patient_id])
+  @@index([operator_id])
+  @@index([status])
+  @@index([has_unread_operator])
+}
+
+enum ChatStatus {
+  WAITING   // Ожидает ответа оператора
+  ACTIVE    // Активный чат
+  CLOSED    // Закрытый чат
+}
+
+// Сообщения в чате с оператором
+model OperatorChatMessage {
+  id             Int       @id @default(autoincrement()) @map("message_id")
+  chat_id        Int
+  sender_id      Int       // ID отправителя (patient_id)
+  sender_type    String    // 'patient' или 'operator'
+  content        String    @db.Text
+  created_at     DateTime  @default(now())
+  is_read        Boolean   @default(false)
+
+  chat           OperatorChat @relation(fields: [chat_id], references: [id], onDelete: Cascade)
+  sender         Patient      @relation(fields: [sender_id], references: [id], onDelete: Cascade)
+
+  @@map("operator_chat_messages")
+  @@index([chat_id])
+  @@index([sender_id])
+  @@index([is_read])
+  @@index([created_at])
+}
+
+// Записи на приём
+model Appointment {
+  id                 Int         @id @default(autoincrement()) @map("appointment_id")
+  patient_id         Int         @map("patient_id")
+  specialist_id      Int         @map("specialists_id")
+  service_id         Int?        @map("service_id")
+  scheduled_at       DateTime    @map("scheduled_at")
+  duration_minutes   Int         @default(30) @map("duration_minutes")
+  status             String      @default("pending") // pending | confirmed | cancelled | completed | no_show
+  note               String?     @db.Text // комментарий пациента при записи
+  admin_comment      String?     @db.Text @map("admin_comment") // комментарий админа, виден пациенту
+  created_at         DateTime    @default(now()) @map("created_at")
+  updated_at         DateTime    @updatedAt @map("updated_at")
+
+  patient            Patient     @relation(fields: [patient_id], references: [id], onDelete: Cascade)
+  specialist         Specialist  @relation(fields: [specialist_id], references: [id], onDelete: Restrict)
+  service            Service?    @relation(fields: [service_id], references: [id], onDelete: SetNull)
+
+  @@map("appointments")
+  @@index([patient_id])
+  @@index([specialist_id])
+  @@index([scheduled_at])
+  @@index([status])
+}

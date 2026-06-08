@@ -1,0 +1,43 @@
+flowchart TB
+  subgraph site["Сайт — гости и пациенты (единая структура)"]
+    direction TB
+    ROOT["/ — главная, навигация по разделам, запись на приём и т.п."]
+
+    ROOT --> CONTACTS["/contacts — контакты, карта, реквизиты"]
+
+    ROOT --> SVC["/services — каталог услуг"]
+    SVC --> SVC_CAT["/services/[categorySlug] — услуги категории"]
+    SVC_CAT --> SVC_ID["/services/[categorySlug]/[serviceId] — карточка услуги, запись"]
+
+    ROOT --> DOC["/doctors — каталог специалистов"]
+    DOC --> DOC_ID["/doctors/[categorySlug]/[doctorId] — карточка врача, запись"]
+    DOC --> DOC_CATCH["/doctors/[...slug] — вспомогательные маршруты раздела врачей"]
+
+    ROOT --> CLINIC["/clinic — о клинике, материалы и вложенные страницы"]
+    CLINIC --> CLINIC_SLUG["/clinic/[...slug] — статьи, подразделы клиники"]
+
+    ROOT --> FAQ["/clinic/questions — вопросы и ответы"]
+    FAQ --> FAQ_SLUG["/clinic/questions/[slug] — категория или тема FAQ"]
+
+    ROOT --> ACC["/account — личный кабинет пациента"]
+    ACC --> ACC_SUB["/account/[...slug] — профиль, записи, письма главврачу, чаты с оператором и др. подразделы ЛК"]
+
+    ROOT --> PAT["/patient — сценарий пациента (по реализации UI)"]
+  end
+
+  subgraph adm["Только админ-панель (отдельно)"]
+    direction TB
+    AD["/admin — дашборд админки"]
+    AD --> AD_CHAT["/admin/chat — чаты с пациентами"]
+    AD --> AD_LET["/admin/letters — письма главному врачу"]
+    AD --> AD_FB["/admin/feedbacks — отзывы"]
+    AD --> AD_SVC["/admin/services — услуги"]
+    AD --> AD_SVCAT["/admin/service-categories — категории услуг"]
+    AD --> AD_Q["/admin/questions — вопросы FAQ"]
+    AD --> AD_QCAT["/admin/question-categories — категории вопросов"]
+    AD --> AD_MAT["/admin/materials — материалы / новости"]
+    AD --> AD_VAC["/admin/vacancies — вакансии"]
+    AD --> AD_PAR["/admin/partners — партнёры"]
+    AD --> AD_CON["/admin/contacts — контакты на сайте"]
+    AD --> AD_USR["/admin/users — пользователи / блокировки"]
+  end

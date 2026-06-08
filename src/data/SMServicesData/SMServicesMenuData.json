@@ -1,0 +1,158 @@
+{
+  "menuData": [
+    {
+      "id": "dentistry",
+      "title": "Стоматология",
+      "icon": "Smile",
+      "children": [
+        {
+          "id": "therapeutic-dentistry",
+          "title": "Терапевтическая стоматология",
+          "children": [
+            { "id": "teeth-whitening", "title": "Отбеливание зубов Beyond Polus" },
+            { "id": "professional-cleaning", "title": "Профессиональная чистка зубов Air Flow" },
+            { "id": "ultrasonic-cleaning", "title": "Чистка зубов в Минске — ультразвуковая и профессиональная" },
+            { "id": "pulpitis-treatment", "title": "Лечение пульпита в Минске — стоимость" },
+            { "id": "oral-hygiene", "title": "Профессиональная гигиена полости рта" },
+            { "id": "caries-treatment", "title": "Лечение кариеса в Минске" }
+          ]
+        },
+        {
+          "id": "implantation",
+          "title": "Имплантация",
+          "children": [
+            { "id": "straumann-implants", "title": "Имплантация зубов Straumann в Минске" },
+            { "id": "total-implantation", "title": "Тотальная (полная) имплантация зубов в Минске" },
+            { "id": "immediate-implantation", "title": "Одномоментная имплантация зубов в Минске" },
+            { "id": "osstem-implants", "title": "Имплантация зубов Osstem в Минске" },
+            { "id": "all-on-4-6", "title": "Имплантация зубов All-on-4 и All-on-6 в Минске" },
+            { "id": "two-stage-implantation", "title": "Двухэтапная имплантация зубов в Минске" },
+            { "id": "implantation-prices", "title": "Имплантация зубов в Минске — цены и виды" }
+          ]
+        },
+        {
+          "id": "orthopedics",
+          "title": "Ортопедия",
+          "children": [
+            { "id": "veneers", "title": "Виниры в Минске — цены и установка" },
+            { "id": "crowns", "title": "Коронки на зубы в Минске — цены и виды" }
+          ]
+        },
+        {
+          "id": "orthodontics",
+          "title": "Ортодонтия",
+          "children": [
+            { "id": "braces-installation", "title": "Установка брекетов в Минске" },
+            { "id": "orthodontist-consultation", "title": "Ортодонт в Минске — консультация врача и лечение прикуса" },
+            { "id": "aligners", "title": "Элайнеры в Минске — цены на выравнивание зубов без брекетов" }
+          ]
+        },
+        {
+          "id": "surgery",
+          "title": "Хирургия",
+          "children": [
+            { "id": "tooth-extraction", "title": "Удаление зубов в Минске — удаление зуба мудрости и другие сложные случаи" },
+            { "id": "sinus-lift", "title": "Синус-лифтинг в Минске — цены и виды операции" }
+          ]
+        },
+        { "id": "anesthesia-treatment", "title": "Лечение зубов под наркозом в Минске" },
+        { "id": "microscope-treatment", "title": "Лечение зубов под микроскопом в Минске" }
+      ]
+    },
+    {
+      "id": "gynecology",
+      "title": "Гинекология",
+      "icon": "Heart",
+      "children": [
+        { "id": "gynecologist-appointment", "title": "Приём гинеколога" },
+        { "id": "diagnostic-studies", "title": "Диагностические исследования" },
+        { "id": "intrauterine-device", "title": "Внутриматочная спираль" },
+        { "id": "cervical-conization", "title": "Конизация шейки матки" },
+        { "id": "colposcopy", "title": "Кольпоскопия шейки матки" },
+        { "id": "tube-patency-check", "title": "Проверка проходимости маточных труб (соногистероскопия) с помощью ExEm-геля" },
+        { "id": "polyp-removal", "title": "Удаление полипов | Полипэктомия" },
+        { "id": "diagnostic-curettage", "title": "Раздельное диагностическое выскабливание" },
+        { "id": "culdocentesis", "title": "Кульдоцентез" }
+      ]
+    },
+    {
+      "id": "pediatric-gynecology",
+      "title": "Детская гинекология",
+      "icon": "Baby",
+      "children": [
+        { "id": "pelvic-ultrasound-girls", "title": "УЗИ органов малого таза для девочек" },
+        { "id": "adolescent-gynecologist", "title": "Подростковый гинеколог" },
+        { "id": "pediatric-gynecologist", "title": "Детский гинеколог" }
+      ]
+    },
+    {
+      "id": "pediatric-urology",
+      "title": "Детская урология",
+      "icon": "Stethoscope",
+      "children": [
+        { "id": "varicocele-treatment", "title": "Лечение варикоцеле" },
+        { "id": "pediatric-urologist-appointment", "title": "Приём детского уролога" }
+      ]
+    },
+    {
+      "id": "endocrinology",
+      "title": "Эндокринология",
+      "icon": "Activity",
+      "children": [
+        { "id": "endocrinologist-consultation", "title": "Консультация врача-эндокринолога" }
+      ]
+    },
+    {
+      "id": "oncology",
+      "title": "Онкология",
+      "icon": "Stethoscope",
+      "children": [
+        { "id": "oncologist-appointment", "title": "Приём врача онколога" }
+      ]
+    },
+    {
+      "id": "ultrasound",
+      "title": "УЗИ",
+      "icon": "Eye",
+      "children": [
+        { "id": "pelvic-ultrasound", "title": "УЗИ органов малого таза" },
+        { "id": "breast-ultrasound", "title": "УЗИ молочных желез" },
+        { "id": "thyroid-ultrasound", "title": "УЗИ щитовидной железы" },
+        { "id": "abdominal-ultrasound", "title": "УЗИ брюшной полости" },
+        { "id": "fetal-ultrasound", "title": "УЗИ плода" },
+        { "id": "gender-party", "title": "Гендер пати" }
+      ]
+    },
+    {
+      "id": "cardiology",
+      "title": "Кардиология",
+      "icon": "Heart",
+      "children": [
+        { "id": "echo-kg", "title": "ЭХО-КГ (УЗИ сердца)" },
+        { "id": "ecg", "title": "ЭКГ (электрокардиография)" },
+        { "id": "holter-monitoring", "title": "Холтеровское мониторирование" },
+        { "id": "cardiologist-appointment", "title": "Приём кардиолога" }
+      ]
+    },
+    {
+      "id": "diagnostics",
+      "title": "Диагностика",
+      "icon": "Search",
+      "children": [
+        { "id": "expert-ultrasound", "title": "Экспертное УЗИ" },
+        { "id": "analyses", "title": "Анализы" },
+        { "id": "tooth-xray", "title": "Снимок зуба" },
+        { "id": "3d-dental-scan", "title": "3D снимок зубов" },
+        { "id": "panoramic-dental-scan", "title": "Панорамный снимок зубок" }
+      ]
+    },
+    {
+      "id": "day-hospital",
+      "title": "Дневной стационар",
+      "icon": "Building2",
+      "children": [
+        { "id": "procedure-room", "title": "Процедурный кабинет" }
+      ]
+    }
+  ]
+}

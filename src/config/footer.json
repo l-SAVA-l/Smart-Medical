@@ -1,0 +1,94 @@
+{
+  "companyInfo": {
+    "name": "Doctor Family",
+    "description": "Современная медицинская клиника в Новополоцке. Профессиональная медицина нового уровня.",
+    "copyright": "© 2025 Doctor Family. Все права защищены.",
+    "license": "Лицензия на медицинскую деятельность от 15.06.2020 г."
+  },
+  "services": [
+    {
+      "name": "Стоматология",
+      "path": "/services"
+    },
+    {
+      "name": "Гинекология",
+      "path": "/services"
+    },
+    {
+      "name": "УЗИ диагностика",
+      "path": "/services"
+    },
+    {
+      "name": "Детская стоматология",
+      "path": "/services"
+    },
+    {
+      "name": "Эндокринология",
+      "path": "/services"
+    }
+  ],
+  "informationLinks": [
+    {
+      "name": "Наши врачи",
+      "path": "/doctors"
+    },
+    {
+      "name": "О клинике",
+      "path": "/clinic"
+    },
+    {
+      "name": "Контакты",
+      "path": "/contacts"
+    },
+    {
+      "name": "Пациенту",
+      "path": "/patient"
+    }
+  ],
+  "contactInfo": {
+    "phone": {
+      "number": "+375 29 161-01-01",
+      "workingHours": "Пн-Пт с 08:00 до 21:00",
+      "workingHours2": "Сб-Вс с 09:00 до 18:00"
+    },
+    "email": {
+      "address": "smartmedical.by@gmail.com",
+      "responseTime": "Ответим в течение 24 часов"
+    },
+    "address": {
+      "full": "г. Минск, пр. Победителей, д. 119, пом. 504",
+      "note": "Центр города, удобная парковка"
+    },
+    "schedule": {
+      "title": "Режим работы",
+      "hours": "Пн-Пт: 08:00-21:00",
+      "hours2": "Сб-Вс: 09:00-18:00"
+    }
+  },
+  "socialMedia": [
+    {
+      "name": "VK",
+      "url": "#",
+      "label": "VK"
+    },
+    {
+      "name": "Facebook",
+      "url": "#",
+      "label": "F"
+    },
+    {
+      "name": "Instagram",
+      "url": "#",
+      "label": "IG"
+    },
+    {
+      "name": "YouTube",
+      "url": "#",
+      "label": "YT"
+    }
+  ],
+  "newsletter": {
+    "title": "Новости клиники",
+    "placeholder": "Ваш email"
+  }
+}

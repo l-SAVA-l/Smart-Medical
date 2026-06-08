@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm run build:*)",
+      "Bash(del \"C:\\Study\\commercial-projects\\smartmedical\\prisma\\prismaClient.ts\")",
+      "Bash(del \"C:\\Study\\commercial-projects\\smartmedical\\prismaClient.ts\")",
+      "Bash(npm run build:dev:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npm run prisma:migrate:*)",
+      "Bash(npm run prisma:push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

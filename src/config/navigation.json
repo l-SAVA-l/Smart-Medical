@@ -1,0 +1,119 @@
+{
+  "mainNavigation": [
+    {
+      "name": "Услуги",
+      "path": "/services",
+      "icon": "Stethoscope",
+      "subPages": [
+        {
+          "name": "Все услуги",
+          "path": "/services"
+        },
+        {
+          "name": "Детская стоматология",
+          "path": "/services/pediatric-dentistry"
+        },
+        {
+          "name": "Стоматология",
+          "path": "/services/dentistry"
+        },
+        {
+          "name": "Гинекология",
+          "path": "/services/gynecology"
+        },
+        {
+          "name": "Детская гинекология",
+          "path": "/services/pediatric-gynecology"
+        },
+        {
+          "name": "Детская урология",
+          "path": "/services/pediatric-urology"
+        },
+        {
+          "name": "УЗИ",
+          "path": "/services/ultrasound"
+        },
+        {
+          "name": "Анализы",
+          "path": "/services/laboratory"
+        }
+      ]
+    },
+    {
+      "name": "Клиника",
+      "path": "/clinic",
+      "icon": "Building",
+      "subPages": [
+        {
+          "name": "О клинике",
+          "path": "/clinic"
+        },
+        {
+          "name": "Лицензии",
+          "path": "/clinic/licenses"
+        },
+        {
+          "name": "Партнёры",
+          "path": "/clinic/partners"
+        },
+        {
+          "name": "Отзывы",
+          "path": "/clinic/reviews"
+        },
+        {
+          "name": "Реквизиты",
+          "path": "/clinic/requisites"
+        },
+        {
+          "name": "Вопрос-ответ",
+          "path": "/clinic/questions"
+        },
+        {
+          "name": "Вакансии",
+          "path": "/clinic/vacancies"
+        }
+      ]
+    },
+    {
+      "name": "Специалисты",
+      "path": "/doctors",
+      "icon": "Users",
+      "subPages": [
+        {
+          "name": "Все специалисты",
+          "path": "/doctors"
+        },
+        {
+          "name": "Стоматологи",
+          "path": "/doctors/dentistry"
+        },
+        {
+          "name": "Гинекологи",
+          "path": "/doctors/gynecology"
+        },
+        {
+          "name": "Детские врачи",
+          "path": "/doctors/pediatrics"
+        },
+        {
+          "name": "Хирурги",
+          "path": "/doctors/surgery"
+        },
+        {
+          "name": "УЗИ-специалисты",
+          "path": "/doctors/ultrasound"
+        }
+      ]
+    },
+    {
+      "name": "Контакты",
+      "path": "/contacts",
+      "icon": "MessageSquare"
+    },
+    {
+      "name": "Пациенту",
+      "path": "/patient",
+      "icon": "UserCheck"
+    }
+  ]
+}

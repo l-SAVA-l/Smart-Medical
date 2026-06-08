@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Доктор Фемели:",
+    "titleHighlight": "Забота, основанная на профессионализме",
+    "subtitle": "Объединяем опыт лучших врачей Беларуси, передовые медицинские технологии и персональный подход для вашего благополучия",
+    "buttons": {
+      "appointment": "Связаться с нами",
+      "services": "Наши услуги"
+    }
+  },
+  "stats": [
+    {
+      "icon": "UserCheck",
+      "title": "15+ специалистов",
+      "description": "Врачи высшей категории"
+    },
+    {
+      "icon": "Activity",
+      "title": "Современное оборудование",
+      "description": "Точная диагностика"
+    },
+    {
+      "icon": "Timer",
+      "title": "Быстрый результат",
+      "description": "Минимум ожидания"
+    }
+  ],
+  "servicesSection": {
+    "title": "Наши услуги",
+    "subtitle": "Широкий спектр медицинских услуг с использованием передовых технологий и персональным подходом",
+    "services": [
+      {
+        "id": "dentistry",
+        "name": "Стоматология",
+        "description": "Полный спектр стоматологических услуг: лечение, имплантация, протезирование",
+        "icon": "Stethoscope"
+      },
+      {
+        "id": "gynecology",
+        "name": "Гинекология",
+        "description": "Консультации, диагностика и лечение женских заболеваний",
+        "icon": "Heart"
+      },
+      {
+        "id": "ultrasound",
+        "name": "УЗИ диагностика",
+        "description": "Современная ультразвуковая диагностика на оборудовании экспертного класса",
+        "icon": "Activity"
+      }
+    ],
+    "buttonText": "Все услуги"
+  },
+  "contactSection": {
+    "title": "Готовы позаботиться о своём здоровье?",
+    "subtitle": "Запишитесь на консультацию прямо сейчас и получите профессиональную медицинскую помощь",
+    "contactInfo": {
+      "phone": {
+        "title": "Телефон",
+        "number": "+375 29 161-01-01",
+        "description": "Понедельник-пятница с 08:00 до 21:00",
+        "description2": "Суббота-воскресенье с 09:00 до 18:00"
+      },
+      "address": {
+        "title": "Адрес",
+        "full": "г. Минск, пр. Победителей, д. 119, пом. 504",
+        "description": "Легко добраться на транспорте",
+        "description2": ""
+      },
+      "email": {
+        "title": "Email",
+        "address": "smartmedical.by@gmail.com",
+        "description": "Ответим в течение 24 часов"
+      }
+    },
+    "location": {
+      "title": "Удобное расположение",
+      "description": "Клиника находится в самом центре Минска, рядом с метро и остановками общественного транспорта",
+      "mapButtonText": "Показать на карте"
+    },
+    "buttonText": "Связаться с нами",
+    "image": "https://images.unsplash.com/photo-1744190070208-4b348963252b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtZWRpY2FsJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwxfHx8fDE3NTkyMjYwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageAlt": "Doctor Family Clinic Building"
+  }
+}
