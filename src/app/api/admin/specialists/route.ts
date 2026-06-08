@@ -42,10 +42,12 @@ export async function POST(request: NextRequest) {
 
     const data = await request.json();
 
-    console.log('Creating specialist with data:', {
-      ...data,
-      service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null,
-    });
+    if (!data.service_category_id) {
+      return NextResponse.json(
+        { error: "Категория услуг обязательна" },
+        { status: 400 }
+      );
+    }
 
     const specialist = await prisma.specialist.create({
       data: {
@@ -61,7 +63,7 @@ export async function POST(request: NextRequest) {
         specializations: data.specializations || [],
         education: data.education || [],
         work_examples: data.work_examples || null,
-        service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null,
+        service_category_id: parseInt(data.service_category_id),
       },
       include: {
         serviceCategory: true,

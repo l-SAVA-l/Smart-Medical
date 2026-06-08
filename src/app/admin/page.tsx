@@ -350,7 +350,7 @@ export default function AdminPage() {
                             <h3 className="font-semibold text-gray-800 truncate">{specialist.name}</h3>
                             <p className="text-sm text-gray-500 truncate">{specialist.specialization}</p>
                             <div className="flex items-center gap-2 mt-2">
-                              <Badge variant="primary">{specialist.serviceCategory?.name || specialist.category?.name || 'Без категории'}</Badge>
+                              <Badge variant="primary">{specialist.serviceCategory?.name || 'Без категории'}</Badge>
                               <Badge variant="secondary">{specialist.experience} лет</Badge>
                             </div>
                           </div>

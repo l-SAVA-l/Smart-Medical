@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/account/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Личный кабинет\",\r\n  description: \"Личный кабинет пациента Doctor Family. Управление записями, история посещений, медицинские документы.\",\r\n  keywords: [\"личный кабинет\", \"Doctor Family\", \"пациент\", \"записи\", \"история\"],\r\n  openGraph: {\r\n    title: \"Doctor Family | Личный кабинет\",\r\n    description: \"Личный кабинет пациента Doctor Family. Управление записями и медицинскими документами.\",\r\n  },\r\n};\r\n\r\nexport default function AccountLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;IACb,UAAU;QAAC;QAAkB;QAAiB;QAAW;QAAU;KAAU;IAC7E,WAAW;QACT,OAAO;QACP,aAAa;IACf;AACF;AAEe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
-}

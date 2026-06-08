@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/doctors/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Наши врачи\",\r\n  description: \"Квалифицированные врачи медицинского центра Doctor Family. Специалисты с многолетним опытом работы в различных областях медицины.\",\r\n  keywords: [\"врачи\", \"специалисты\", \"Doctor Family\", \"медицинский персонал\", \"доктора\"],\r\n  openGraph: {\r\n    title: \"Doctor Family | Наши врачи\",\r\n    description: \"Квалифицированные врачи медицинского центра Doctor Family. Специалисты с многолетним опытом работы.\",\r\n  },\r\n};\r\n\r\nexport default function DoctorsLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;IACb,UAAU;QAAC;QAAS;QAAe;QAAiB;QAAwB;KAAU;IACtF,WAAW;QACT,OAAO;QACP,aAAa;IACf;AACF;AAEe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
-}

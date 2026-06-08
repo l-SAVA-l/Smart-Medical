@@ -1,3 +1,0 @@
-module.exports=[42619,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"Наши врачи",description:"Квалифицированные врачи медицинского центра Doctor Family. Специалисты с многолетним опытом работы в различных областях медицины.",keywords:["врачи","специалисты","Doctor Family","медицинский персонал","доктора"],openGraph:{title:"Doctor Family | Наши врачи",description:"Квалифицированные врачи медицинского центра Doctor Family. Специалисты с многолетним опытом работы."}}])}];
-
-//# sourceMappingURL=src_app_doctors_layout_tsx_39608b7d._.js.map

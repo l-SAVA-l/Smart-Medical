@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/admin/contacts/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Контакты\",\r\n};\r\n\r\nexport default function ContactsLayout({ children }: { children: React.ReactNode }) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;AACT;AAEe,SAAS,eAAe,EAAE,QAAQ,EAAiC;IAChF,OAAO;AACT","debugId":null}}]
-}

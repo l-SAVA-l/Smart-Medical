@@ -1,3 +1,0 @@
-module.exports=[56908,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"Личный кабинет",description:"Личный кабинет пациента Doctor Family. Управление записями, история посещений, медицинские документы.",keywords:["личный кабинет","Doctor Family","пациент","записи","история"],openGraph:{title:"Doctor Family | Личный кабинет",description:"Личный кабинет пациента Doctor Family. Управление записями и медицинскими документами."}}])}];
-
-//# sourceMappingURL=src_app_account_layout_tsx_35bfd360._.js.map

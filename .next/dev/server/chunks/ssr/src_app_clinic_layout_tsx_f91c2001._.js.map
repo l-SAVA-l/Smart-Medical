@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/clinic/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"О клинике\",\r\n  description: \"Медицинский центр Doctor Family - современная клиника с передовым оборудованием и комфортными условиями для пациентов.\",\r\n  keywords: [\"клиника\", \"Doctor Family\", \"медицинский центр\", \"о нас\", \"оборудование\"],\r\n  openGraph: {\r\n    title: \"Doctor Family | О клинике\",\r\n    description: \"Медицинский центр Doctor Family - современная клиника с передовым оборудованием.\",\r\n  },\r\n};\r\n\r\nexport default function ClinicLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;IACb,UAAU;QAAC;QAAW;QAAiB;QAAqB;QAAS;KAAe;IACpF,WAAW;QACT,OAAO;QACP,aAAa;IACf;AACF;AAEe,SAAS,aAAa,EACnC,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
-}

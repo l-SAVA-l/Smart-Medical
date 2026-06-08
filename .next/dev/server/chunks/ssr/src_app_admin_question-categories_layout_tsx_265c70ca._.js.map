@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/admin/question-categories/layout.tsx"],"sourcesContent":["export const metadata = {\r\n  title: 'Категории вопросов | Админ-панель',\r\n  description: 'Управление категориями вопросов и ответов',\r\n};\r\n\r\nexport default function QuestionCategoriesLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,yBAAyB,EAC/C,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
-}

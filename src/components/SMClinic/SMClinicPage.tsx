@@ -263,14 +263,7 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
     );
   }
 
-  const breadcrumbItems = [
-    { label: 'Главная', href: '/' },
-    { label: 'Клиника', href: '/clinic' },
-    ...(categoryItem ? [{ label: categoryItem.title, href: `/clinic/${categoryId}` }] : []),
-    { label: clinicItem.title, href: currentRoute }
-  ];
-
-  // Handle partner category page (dynamic slug)
+  // Handle partner category page (dynamic slug) before static clinicItem usage
   if (isPartnerCategoryRoute) {
     return (
       <>
@@ -403,6 +396,17 @@ export function ClinicPage({ itemId, categoryId }: ClinicPageProps) {
       </>
     );
   }
+
+  if (!clinicItem) {
+    return null;
+  }
+
+  const breadcrumbItems = [
+    { label: 'Главная', href: '/' },
+    { label: 'Клиника', href: '/clinic' },
+    ...(categoryItem ? [{ label: categoryItem.title, href: `/clinic/${categoryId}` }] : []),
+    { label: clinicItem.title, href: currentRoute }
+  ];
 
   // Handle individual partner page
   if (currentRoute.includes('/clinic/partners/') && !['medical-labs', 'insurance', 'dental-labs'].includes(itemId)) {

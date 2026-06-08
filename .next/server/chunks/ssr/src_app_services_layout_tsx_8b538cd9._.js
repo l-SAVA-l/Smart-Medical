@@ -1,3 +1,0 @@
-module.exports=[44222,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"Услуги",description:"Полный спектр медицинских услуг в клинике Doctor Family. Диагностика, лечение, профилактика и реабилитация.",keywords:["медицинские услуги","Doctor Family","лечение","диагностика","клиника"],openGraph:{title:"Doctor Family | Услуги",description:"Полный спектр медицинских услуг в клинике Doctor Family. Диагностика, лечение, профилактика."}}])}];
-
-//# sourceMappingURL=src_app_services_layout_tsx_8b538cd9._.js.map

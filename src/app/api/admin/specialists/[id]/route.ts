@@ -75,7 +75,9 @@ export async function PUT(
         specializations: data.specializations || [],
         education: data.education || [],
         work_examples: data.work_examples || null,
-        service_category_id: data.service_category_id ? parseInt(data.service_category_id) : null,
+        ...(data.service_category_id !== undefined && data.service_category_id !== null && data.service_category_id !== ''
+          ? { service_category_id: parseInt(data.service_category_id) }
+          : {}),
       },
       include: {
         serviceCategory: true,

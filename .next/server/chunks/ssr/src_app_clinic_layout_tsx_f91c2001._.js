@@ -1,3 +1,0 @@
-module.exports=[73425,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"О клинике",description:"Медицинский центр Doctor Family - современная клиника с передовым оборудованием и комфортными условиями для пациентов.",keywords:["клиника","Doctor Family","медицинский центр","о нас","оборудование"],openGraph:{title:"Doctor Family | О клинике",description:"Медицинский центр Doctor Family - современная клиника с передовым оборудованием."}}])}];
-
-//# sourceMappingURL=src_app_clinic_layout_tsx_f91c2001._.js.map

@@ -40,6 +40,7 @@
 , "prisma/seed.js", "prisma/schema.prisma"  ],
   "exclude": [
     "node_modules",
-    "prisma"
+    "prisma",
+    "scripts"
   ]
 }

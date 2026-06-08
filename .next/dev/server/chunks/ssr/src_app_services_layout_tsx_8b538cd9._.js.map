@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Cursor_Projects/SM_2/smartmedical/smartmedical/src/app/services/layout.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Услуги\",\r\n  description: \"Полный спектр медицинских услуг в клинике Doctor Family. Диагностика, лечение, профилактика и реабилитация.\",\r\n  keywords: [\"медицинские услуги\", \"Doctor Family\", \"лечение\", \"диагностика\", \"клиника\"],\r\n  openGraph: {\r\n    title: \"Doctor Family | Услуги\",\r\n    description: \"Полный спектр медицинских услуг в клинике Doctor Family. Диагностика, лечение, профилактика.\",\r\n  },\r\n};\r\n\r\nexport default function ServicesLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;IACb,UAAU;QAAC;QAAsB;QAAiB;QAAW;QAAe;KAAU;IACtF,WAAW;QACT,OAAO;QACP,aAAa;IACf;AACF;AAEe,SAAS,eAAe,EACrC,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
-}
