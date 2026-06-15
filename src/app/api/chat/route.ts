@@ -2,9 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL;
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
-const OPENROUTER_MODEL =
-  process.env.OPENROUTER_MODEL || "nvidia/nemotron-3-ultra-550b-a55b:free";
 
 async function parseCardsInMessage(message: string) {
 
@@ -334,6 +333,20 @@ export async function POST(request: NextRequest) {
     if (!OPENROUTER_API_KEY) {
       return NextResponse.json(
         { error: "OpenRouter API key not configured. Please add OPENROUTER_API_KEY to your .env file." },
+        {
+          status: 500,
+          headers: {
+            'Cache-Control': 'no-store, no-cache, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0',
+          }
+        }
+      );
+    }
+
+    if (!OPENROUTER_MODEL) {
+      return NextResponse.json(
+        { error: "OpenRouter model not configured. Please add OPENROUTER_MODEL to your .env file." },
         {
           status: 500,
           headers: {
