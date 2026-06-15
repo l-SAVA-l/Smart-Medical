@@ -67,21 +67,39 @@ export const authOptions: NextAuthOptions = {
                     try {
                         const patient = await prisma.patient.findUnique({
                             where: { email },
-                            select: { id: true },
+                            select: { id: true, role: true },
                         });
                         if (patient) {
                             token.id = patient.id.toString();
+                            token.role = patient.role;
                         } else {
                             token.id = user.id;
+                            token.role = user.role;
                         }
                     } catch {
                         token.id = user.id;
+                        token.role = user.role;
                     }
                 } else {
                     token.id = user.id;
+                    token.role = user.role;
                 }
-                token.role = user.role;
                 token.picture = user.image;
+            } else if (token.id || token.email) {
+                try {
+                    const patient = await prisma.patient.findFirst({
+                        where: token.id
+                            ? { id: parseInt(token.id as string, 10) }
+                            : { email: token.email as string },
+                        select: { id: true, role: true },
+                    });
+                    if (patient) {
+                        token.id = patient.id.toString();
+                        token.role = patient.role;
+                    }
+                } catch {
+                    // keep existing token claims
+                }
             }
             return token;
         },

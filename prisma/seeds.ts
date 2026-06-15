@@ -21,7 +21,14 @@ const TEST_ACCOUNTS: Array<{
   role: Role;
 }> = [
   {
-    login: 'admin',
+    login: 'RlyAdmin',
+    email: 'rlyadmin@test.local',
+    password: 'Password123#@!',
+    name: 'Rly Admin',
+    phone: '+375290000099',
+    role: 'ADMIN',
+  },
+  {
     email: 'admin@test.local',
     password: 'admin123',
     name: 'Администратор',
