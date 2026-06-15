@@ -1,7 +1,12 @@
 -- Sync schema drift: chat/letters tables, role enum values, patient block flag
 
--- CreateEnum
-CREATE TYPE "ChatStatus" AS ENUM ('WAITING', 'ACTIVE', 'CLOSED');
+-- CreateEnum (idempotent: type may already exist from db push)
+DO $$
+BEGIN
+  CREATE TYPE "ChatStatus" AS ENUM ('WAITING', 'ACTIVE', 'CLOSED');
+EXCEPTION
+  WHEN duplicate_object THEN NULL;
+END $$;
 
 -- AlterEnum
 ALTER TYPE "Role" ADD VALUE IF NOT EXISTS 'CHIEF_DOCTOR';

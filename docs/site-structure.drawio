@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="SmartMedical" version="24.7.17" type="device">
+  <diagram id="site-structure" name="Структура сайта">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="site" value="Информационный портал клиники — гости и пациенты" style="swimlane;whiteSpace=wrap;html=1;startSize=34;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="760" height="980" as="geometry" />
+        </mxCell>
+
+        <mxCell id="root" value="Главная страница" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="site">
+          <mxGeometry x="270" y="50" width="220" height="44" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svc" value="Услуги" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="30" y="140" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_cat" value="Категория услуг" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="30" y="200" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_card" value="Карточка услуги,&#xa;запись на приём" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="30" y="260" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="doc" value="Специалисты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="220" y="140" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="doc_cat" value="Направление / категория" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="220" y="200" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="doc_card" value="Карточка специалиста,&#xa;запись на приём" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="220" y="260" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="clinic" value="Клиника" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="430" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_about" value="О клинике" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="400" y="200" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_lic" value="Лицензии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="530" y="200" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_par" value="Партнёры" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="400" y="242" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_rev" value="Отзывы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="530" y="242" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_req" value="Реквизиты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="400" y="284" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_vac" value="Вакансии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="530" y="284" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_faq" value="Вопросы и ответы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="400" y="326" width="250" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cl_faq_cat" value="Категория вопросов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="site">
+          <mxGeometry x="430" y="370" width="190" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="contacts" value="Контакты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="600" y="140" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" value="Пациентам" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="site">
+          <mxGeometry x="600" y="190" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="acc" value="Личный кабинет пациента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="site">
+          <mxGeometry x="30" y="360" width="220" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_prof" value="Профиль" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="site">
+          <mxGeometry x="30" y="420" width="220" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_app" value="Записи на приём" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="site">
+          <mxGeometry x="30" y="462" width="220" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_mat" value="Материалы клиники" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="site">
+          <mxGeometry x="30" y="504" width="220" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_let" value="Обращения главному врачу" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="site">
+          <mxGeometry x="30" y="546" width="220" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="global" value="Сквозной функционал" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="site">
+          <mxGeometry x="300" y="360" width="220" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="g_auth" value="Вход и регистрация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="site">
+          <mxGeometry x="280" y="420" width="150" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="g_book" value="Запись на приём" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="site">
+          <mxGeometry x="440" y="420" width="150" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="g_ai" value="ИИ-помощник и чат с оператором" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="site">
+          <mxGeometry x="300" y="464" width="260" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_root_svc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="svc"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_svc_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="svc" target="svc_cat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cat_card" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="svc_cat" target="svc_card"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_doc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="doc"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_doc_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="doc" target="doc_cat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_doc_card" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="doc_cat" target="doc_card"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_cl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="clinic"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_ab" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_about"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_lic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_lic"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_par" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_par"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_rev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_rev"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_req" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_req"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_vac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_vac"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_cl_faq" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="clinic" target="cl_faq"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_faq_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="cl_faq" target="cl_faq_cat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_con" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="contacts"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_pat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="patient"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_acc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="acc"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_acc_prof" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="acc" target="acc_prof"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_acc_app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="acc" target="acc_app"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_acc_mat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="acc" target="acc_mat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_acc_let" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="acc" target="acc_let"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_root_glob" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="root" target="global"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_g_auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="global" target="g_auth"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_g_book" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="global" target="g_book"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_g_ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="site" source="global" target="g_ai"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="adm" value="Административная панель" style="swimlane;whiteSpace=wrap;html=1;startSize=34;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="820" y="20" width="340" height="760" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ad" value="Главная панели,&#xa;управление специалистами" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="50" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_chat" value="Чаты с пациентами" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="120" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_app" value="Записи на приём" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="166" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_let" value="Письма главному врачу" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="212" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_fb" value="Отзывы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="258" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_svc" value="Услуги" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="304" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_svcat" value="Категории услуг" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="350" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_q" value="Вопросы и ответы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="396" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_qcat" value="Категории вопросов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="442" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_mat" value="Материалы и новости" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="488" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_vac" value="Вакансии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="534" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_par" value="Партнёры" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="580" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_con" value="Контактная информация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="626" width="260" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_usr" value="Пользователи и блокировки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="adm">
+          <mxGeometry x="40" y="672" width="260" height="36" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_ad_chat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_app"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_let" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_let"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_fb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_fb"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_svc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_svc"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_svcat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_svcat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_q" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_q"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_qcat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_qcat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_mat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_mat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_vac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_vac"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_par" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_par"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_con" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_con"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ad_usr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="adm" source="ad" target="ad_usr"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
