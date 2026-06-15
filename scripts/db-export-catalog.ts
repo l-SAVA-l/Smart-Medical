@@ -1,7 +1,13 @@
 import { PrismaClient } from '@prisma/client';
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
-import { makeCatalogKey, type CatalogExport } from '../prisma/seed-catalog';
+import { makeCatalogKey } from '../prisma/db-sync/keys';
+
+type CatalogExport = {
+  exportedAt: string;
+  specialists: unknown[];
+  services: unknown[];
+};
 
 const prisma = new PrismaClient();
 const outPath = join(process.cwd(), 'prisma', 'seed-data', 'catalog.json');

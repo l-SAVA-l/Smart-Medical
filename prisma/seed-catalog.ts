@@ -1,6 +1,7 @@
 import { Prisma, PrismaClient } from '@prisma/client';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { makeCatalogKey } from './db-sync/keys';
 
 export type CatalogSpecialist = {
   key: string;
@@ -42,14 +43,6 @@ export type CatalogExport = {
   specialists: CatalogSpecialist[];
   services: CatalogService[];
 };
-
-export function makeCatalogKey(label: string, categorySlug: string): string {
-  const normalized = label
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ');
-  return `${normalized}@${categorySlug}`;
-}
 
 function loadCatalog(): CatalogExport | null {
   const path = join(process.cwd(), 'prisma', 'seed-data', 'catalog.json');

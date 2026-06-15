@@ -5,6 +5,7 @@ export async function GET() {
   const results: any = {
     timestamp: new Date().toISOString(),
     openrouterKey: process.env.OPENROUTER_API_KEY ? "✓ Configured" : "✗ Missing",
+    openrouterModel: process.env.OPENROUTER_MODEL || "nvidia/nemotron-3-ultra-550b-a55b:free",
     database: {
       connection: "unknown",
       contacts: 0,

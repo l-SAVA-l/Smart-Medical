@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
+const OPENROUTER_MODEL =
+  process.env.OPENROUTER_MODEL || "nvidia/nemotron-3-ultra-550b-a55b:free";
 
 async function parseCardsInMessage(message: string) {
 
@@ -393,7 +395,7 @@ export async function POST(request: NextRequest) {
         "X-Title": "Doctor Family Medical Clinic",
       },
       body: JSON.stringify({
-        model: "openai/gpt-4o-mini",
+        model: OPENROUTER_MODEL,
         messages: [
           {
             role: "system",

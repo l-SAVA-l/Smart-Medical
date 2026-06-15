@@ -1,0 +1,3437 @@
+{
+  "exportedAt": "2026-06-15T18:15:33.692Z",
+  "serviceCategories": [
+    {
+      "slug": "pediatric-dentistry",
+      "parentSlug": null,
+      "name": "Детская стоматология",
+      "icon": "Baby",
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-surgeon",
+      "parentSlug": "pediatric-dentistry",
+      "name": "Детский хирург-стоматолог",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "milk-teeth-treatment",
+      "parentSlug": "pediatric-dentistry",
+      "name": "Лечение молочных зубов",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-orthodontist",
+      "parentSlug": "pediatric-dentistry",
+      "name": "Детский ортодонт",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "milk-teeth-anesthesia",
+      "parentSlug": "pediatric-dentistry",
+      "name": "Лечение молочных зубов под наркозом в Минске",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "dentistry",
+      "parentSlug": null,
+      "name": "Стоматология",
+      "icon": "Smile",
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "therapeutic-dentistry",
+      "parentSlug": "dentistry",
+      "name": "Терапевтическая стоматология",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "teeth-whitening",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Отбеливание зубов Beyond Polus",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "professional-cleaning",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Профессиональная чистка зубов Air Flow",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "ultrasonic-cleaning",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Чистка зубов в Минске — ультразвуковая и профессиональная",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "pulpitis-treatment",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Лечение пульпита в Минске — стоимость",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "oral-hygiene",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Профессиональная гигиена полости рта",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "caries-treatment",
+      "parentSlug": "therapeutic-dentistry",
+      "name": "Лечение кариеса в Минске",
+      "icon": null,
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "implantation",
+      "parentSlug": "dentistry",
+      "name": "Имплантация",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "straumann-implants",
+      "parentSlug": "implantation",
+      "name": "Имплантация зубов Straumann в Минске",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "total-implantation",
+      "parentSlug": "implantation",
+      "name": "Тотальная (полная) имплантация зубов в Минске",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "immediate-implantation",
+      "parentSlug": "implantation",
+      "name": "Одномоментная имплантация зубов в Минске",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "osstem-implants",
+      "parentSlug": "implantation",
+      "name": "Имплантация зубов Osstem в Минске",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "all-on-4-6",
+      "parentSlug": "implantation",
+      "name": "Имплантация зубов All-on-4 и All-on-6 в Минске",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "two-stage-implantation",
+      "parentSlug": "implantation",
+      "name": "Двухэтапная имплантация зубов в Минске",
+      "icon": null,
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "implantation-prices",
+      "parentSlug": "implantation",
+      "name": "Имплантация зубов в Минске — цены и виды",
+      "icon": null,
+      "description": null,
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "slug": "orthopedics",
+      "parentSlug": "dentistry",
+      "name": "Ортопедия",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "veneers",
+      "parentSlug": "orthopedics",
+      "name": "Виниры в Минске — цены и установка",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "crowns",
+      "parentSlug": "orthopedics",
+      "name": "Коронки на зубы в Минске — цены и виды",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "orthodontics",
+      "parentSlug": "dentistry",
+      "name": "Ортодонтия",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "braces-installation",
+      "parentSlug": "orthodontics",
+      "name": "Установка брекетов в Минске",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "orthodontist-consultation",
+      "parentSlug": "orthodontics",
+      "name": "Ортодонт в Минске — консультация врача и лечение прикуса",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "aligners",
+      "parentSlug": "orthodontics",
+      "name": "Элайнеры в Минске — цены на выравнивание зубов без брекетов",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "surgery",
+      "parentSlug": "dentistry",
+      "name": "Хирургия",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "tooth-extraction",
+      "parentSlug": "surgery",
+      "name": "Удаление зубов в Минске — удаление зуба мудрости и другие сложные случаи",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "sinus-lift",
+      "parentSlug": "surgery",
+      "name": "Синус-лифтинг в Минске — цены и виды операции",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "anesthesia-treatment",
+      "parentSlug": "dentistry",
+      "name": "Лечение зубов под наркозом в Минске",
+      "icon": null,
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "microscope-treatment",
+      "parentSlug": "dentistry",
+      "name": "Лечение зубов под микроскопом в Минске",
+      "icon": null,
+      "description": null,
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "slug": "gynecology",
+      "parentSlug": null,
+      "name": "Гинекология",
+      "icon": "Heart",
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "gynecologist-appointment",
+      "parentSlug": "gynecology",
+      "name": "Приём гинеколога",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "diagnostic-studies",
+      "parentSlug": "gynecology",
+      "name": "Диагностические исследования",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "intrauterine-device",
+      "parentSlug": "gynecology",
+      "name": "Внутриматочная спираль",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "cervical-conization",
+      "parentSlug": "gynecology",
+      "name": "Конизация шейки матки",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "colposcopy",
+      "parentSlug": "gynecology",
+      "name": "Кольпоскопия шейки матки",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "tube-patency-check",
+      "parentSlug": "gynecology",
+      "name": "Проверка проходимости маточных труб (соногистероскопия) с помощью ExEm-геля",
+      "icon": null,
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "polyp-removal",
+      "parentSlug": "gynecology",
+      "name": "Удаление полипов | Полипэктомия",
+      "icon": null,
+      "description": null,
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "slug": "diagnostic-curettage",
+      "parentSlug": "gynecology",
+      "name": "Раздельное диагностическое выскабливание",
+      "icon": null,
+      "description": null,
+      "order": 7,
+      "is_active": true
+    },
+    {
+      "slug": "culdocentesis",
+      "parentSlug": "gynecology",
+      "name": "Кульдоцентез",
+      "icon": null,
+      "description": null,
+      "order": 8,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-gynecology",
+      "parentSlug": null,
+      "name": "Детская гинекология",
+      "icon": "Baby",
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "pelvic-ultrasound-girls",
+      "parentSlug": "pediatric-gynecology",
+      "name": "УЗИ органов малого таза для девочек",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "adolescent-gynecologist",
+      "parentSlug": "pediatric-gynecology",
+      "name": "Подростковый гинеколог",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-gynecologist",
+      "parentSlug": "pediatric-gynecology",
+      "name": "Детский гинеколог",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-urology",
+      "parentSlug": null,
+      "name": "Детская урология",
+      "icon": "Stethoscope",
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "varicocele-treatment",
+      "parentSlug": "pediatric-urology",
+      "name": "Лечение варикоцеле",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "pediatric-urologist-appointment",
+      "parentSlug": "pediatric-urology",
+      "name": "Приём детского уролога",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "endocrinology",
+      "parentSlug": null,
+      "name": "Эндокринология",
+      "icon": "Activity",
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "endocrinologist-consultation",
+      "parentSlug": "endocrinology",
+      "name": "Консультация врача-эндокринолога",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "oncology",
+      "parentSlug": null,
+      "name": "Онкология",
+      "icon": "Stethoscope",
+      "description": null,
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "slug": "oncologist-appointment",
+      "parentSlug": "oncology",
+      "name": "Приём врача онколога",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "ultrasound",
+      "parentSlug": null,
+      "name": "УЗИ",
+      "icon": "Eye",
+      "description": null,
+      "order": 7,
+      "is_active": true
+    },
+    {
+      "slug": "pelvic-ultrasound",
+      "parentSlug": "ultrasound",
+      "name": "УЗИ органов малого таза",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "breast-ultrasound",
+      "parentSlug": "ultrasound",
+      "name": "УЗИ молочных желез",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "thyroid-ultrasound",
+      "parentSlug": "ultrasound",
+      "name": "УЗИ щитовидной железы",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "abdominal-ultrasound",
+      "parentSlug": "ultrasound",
+      "name": "УЗИ брюшной полости",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "fetal-ultrasound",
+      "parentSlug": "ultrasound",
+      "name": "УЗИ плода",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "gender-party",
+      "parentSlug": "ultrasound",
+      "name": "Гендер пати",
+      "icon": null,
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "cardiology",
+      "parentSlug": null,
+      "name": "Кардиология",
+      "icon": "Heart",
+      "description": null,
+      "order": 8,
+      "is_active": true
+    },
+    {
+      "slug": "echo-kg",
+      "parentSlug": "cardiology",
+      "name": "ЭХО-КГ (УЗИ сердца)",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "ecg",
+      "parentSlug": "cardiology",
+      "name": "ЭКГ (электрокардиография)",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "holter-monitoring",
+      "parentSlug": "cardiology",
+      "name": "Холтеровское мониторирование",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "cardiologist-appointment",
+      "parentSlug": "cardiology",
+      "name": "Приём кардиолога",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "diagnostics",
+      "parentSlug": null,
+      "name": "Диагностика",
+      "icon": "Search",
+      "description": null,
+      "order": 9,
+      "is_active": true
+    },
+    {
+      "slug": "expert-ultrasound",
+      "parentSlug": "diagnostics",
+      "name": "Экспертное УЗИ",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "slug": "analyses",
+      "parentSlug": "diagnostics",
+      "name": "Анализы",
+      "icon": null,
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "tooth-xray",
+      "parentSlug": "diagnostics",
+      "name": "Снимок зуба",
+      "icon": null,
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "3d-dental-scan",
+      "parentSlug": "diagnostics",
+      "name": "3D снимок зубов",
+      "icon": null,
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "panoramic-dental-scan",
+      "parentSlug": "diagnostics",
+      "name": "Панорамный снимок зубок",
+      "icon": null,
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "day-hospital",
+      "parentSlug": null,
+      "name": "Дневной стационар",
+      "icon": "Building2",
+      "description": null,
+      "order": 10,
+      "is_active": true
+    },
+    {
+      "slug": "procedure-room",
+      "parentSlug": "day-hospital",
+      "name": "Процедурный кабинет",
+      "icon": null,
+      "description": null,
+      "order": 0,
+      "is_active": true
+    }
+  ],
+  "partnerCategories": [
+    {
+      "slug": "dentistry",
+      "name": "Стоматология"
+    },
+    {
+      "slug": "pediatric-dentistry",
+      "name": "Детская стоматология"
+    },
+    {
+      "slug": "gynecology",
+      "name": "Гинекология"
+    },
+    {
+      "slug": "ultrasound",
+      "name": "УЗИ"
+    },
+    {
+      "slug": "diagnostics",
+      "name": "Диагностика"
+    },
+    {
+      "slug": "cardiology",
+      "name": "Кардиология"
+    },
+    {
+      "slug": "pediatric-gynecology",
+      "name": "Детская гинекология"
+    },
+    {
+      "slug": "endocrinology",
+      "name": "Эндокринология"
+    },
+    {
+      "slug": "oncology",
+      "name": "Онкология"
+    },
+    {
+      "slug": "day-hospital",
+      "name": "Дневной стационар"
+    },
+    {
+      "slug": "medical-labs",
+      "name": "Медицинские лаборатории"
+    },
+    {
+      "slug": "insurance",
+      "name": "Страховые компании"
+    },
+    {
+      "slug": "dental-labs",
+      "name": "Зуботехнические лаборатории"
+    }
+  ],
+  "questionCategories": [
+    {
+      "slug": "children-teeth",
+      "name": "Children Teeth",
+      "description": null,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "slug": "girls-hygiene",
+      "name": "Girls Hygiene",
+      "description": null,
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "slug": "boys-hygiene",
+      "name": "Boys Hygiene",
+      "description": null,
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "slug": "girls-puberty",
+      "name": "Girls Puberty",
+      "description": null,
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "slug": "culdocentesis",
+      "name": "Culdocentesis",
+      "description": null,
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "slug": "stomatology",
+      "name": "Stomatology",
+      "description": null,
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "slug": "polyp-removal",
+      "name": "Polyp Removal",
+      "description": null,
+      "order": 7,
+      "is_active": true
+    },
+    {
+      "slug": "ultrasound",
+      "name": "Ultrasound",
+      "description": null,
+      "order": 8,
+      "is_active": true
+    },
+    {
+      "slug": "womens-health",
+      "name": "Womens Health",
+      "description": null,
+      "order": 9,
+      "is_active": true
+    },
+    {
+      "slug": "curettage",
+      "name": "Curettage",
+      "description": null,
+      "order": 10,
+      "is_active": true
+    }
+  ],
+  "contacts": [
+    {
+      "address": "г. Минск, пр. Победителей, д. 119, пом. 504",
+      "map_geo": "53.9006,27.5590",
+      "work_hours_main": "Пн–Сб 09:00–20:00",
+      "work_hours_sunday": "Вс 10:00–18:00",
+      "phone_number": "+375(29)161-01-01",
+      "phone_number_sec": "+375(29)161-01-02",
+      "email": "smartmedical.by@gmail.com"
+    }
+  ],
+  "materials": [
+    {
+      "key": "новогодние скидки на стоматологические услуги@2025",
+      "title": "Новогодние скидки на стоматологические услуги",
+      "content": "Специальное предложение на все виды стоматологических услуг в январе",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop",
+      "date": "2025-01-15",
+      "year": 2025,
+      "is_active": true
+    },
+    {
+      "key": "комплексная диагностика со скидкой 30%@2025",
+      "title": "Комплексная диагностика со скидкой 30%",
+      "content": "Полное обследование организма по специальной цене",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
+      "date": "2025-01-10",
+      "year": 2025,
+      "is_active": true
+    },
+    {
+      "key": "акция на вакцинацию@2024",
+      "title": "Акция на вакцинацию",
+      "content": "Скидки на все виды вакцинации для взрослых и детей",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
+      "date": "2024-12-20",
+      "year": 2024,
+      "is_active": true
+    },
+    {
+      "key": "профилактические осмотры@2024",
+      "title": "Профилактические осмотры",
+      "content": "Бесплатные консультации специалистов в рамках профилактики",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=300&fit=crop",
+      "date": "2024-11-15",
+      "year": 2024,
+      "is_active": true
+    },
+    {
+      "key": "летние скидки на косметологию@2023",
+      "title": "Летние скидки на косметологию",
+      "content": "Специальные цены на косметологические процедуры",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop",
+      "date": "2023-07-01",
+      "year": 2023,
+      "is_active": true
+    },
+    {
+      "key": "скидка 20% на узи диагностику@2024",
+      "title": "Скидка 20% на УЗИ диагностику",
+      "content": "Пройдите УЗИ диагностику со значительной скидкой до конца месяца",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=400&h=300&fit=crop",
+      "date": "2024-10-05",
+      "year": 2024,
+      "is_active": true
+    },
+    {
+      "key": "бесплатная консультация гинеколога@2025",
+      "title": "Бесплатная консультация гинеколога",
+      "content": "Получите бесплатную первичную консультацию гинеколога",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&h=300&fit=crop",
+      "date": "2025-02-01",
+      "year": 2025,
+      "is_active": true
+    },
+    {
+      "key": "детская стоматология: скидка 15%@2024",
+      "title": "Детская стоматология: скидка 15%",
+      "content": "Специальное предложение для детей до 12 лет на все стоматологические услуги",
+      "detailed_content": null,
+      "image_url": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop",
+      "date": "2024-09-10",
+      "year": 2024,
+      "is_active": true
+    }
+  ],
+  "vacancies": [
+    {
+      "key": "медицинская сестра (кардиология)@кардиология",
+      "name": "Медицинская сестра (кардиология)",
+      "category": "Кардиология",
+      "description": "Помощь врачу-кардиологу в диагностике и лечении пациентов. Подготовка кабинета и оборудования, выполнение инъекций, измерение давления, проведение ЭКГ.",
+      "payment": 1800,
+      "experience": 2,
+      "requirements": "Среднее медицинское образование, действующий сертификат. Опыт работы от 2 лет. Знание работы с медицинским оборудованием."
+    },
+    {
+      "key": "стоматолог-ортопед@стоматология",
+      "name": "Стоматолог-ортопед",
+      "category": "Стоматология",
+      "description": "Протезирование зубов, работа с имплантами, диагностика и планирование лечения. Изготовление и установка ортопедических конструкций.",
+      "payment": 3500,
+      "experience": 5,
+      "requirements": "Высшее медицинское образование по специальности \"Стоматология\", ординатура по ортопедической стоматологии. Опыт работы от 5 лет."
+    },
+    {
+      "key": "врач-гинеколог@гинекология",
+      "name": "Врач-гинеколог",
+      "category": "Гинекология",
+      "description": "Консультирование пациентов, проведение гинекологических осмотров, диагностика и лечение заболеваний женской репродуктивной системы.",
+      "payment": 3200,
+      "experience": 3,
+      "requirements": "Высшее медицинское образование, ординатура по акушерству и гинекологии. Сертификат специалиста. Опыт работы от 3 лет."
+    },
+    {
+      "key": "детский стоматолог@детская стоматология",
+      "name": "Детский стоматолог",
+      "category": "Детская стоматология",
+      "description": "Лечение молочных и постоянных зубов у детей, профилактика кариеса, обучение правильной гигиене полости рта.",
+      "payment": 2900,
+      "experience": 2,
+      "requirements": "Высшее медицинское образование по специальности \"Стоматология\", специализация по детской стоматологии. Умение работать с детьми."
+    },
+    {
+      "key": "врач узи-диагностики@узи",
+      "name": "Врач УЗИ-диагностики",
+      "category": "УЗИ",
+      "description": "Проведение ультразвуковых исследований всех органов и систем организма. Интерпретация результатов, написание заключений.",
+      "payment": 2700,
+      "experience": 3,
+      "requirements": "Высшее медицинское образование, сертификат по ультразвуковой диагностике. Опыт работы от 3 лет. Знание современного УЗИ-оборудования."
+    },
+    {
+      "key": "администратор клиники@администрация",
+      "name": "Администратор клиники",
+      "category": "Администрация",
+      "description": "Работа с пациентами на ресепшене, ведение записи к врачам, консультирование по услугам клиники, оформление документов.",
+      "payment": 1500,
+      "experience": 1,
+      "requirements": "Высшее образование, грамотная речь, знание ПК. Коммуникабельность, стрессоустойчивость. Опыт работы в медицинских учреждениях приветствуется."
+    },
+    {
+      "key": "лаборант@диагностика",
+      "name": "Лаборант",
+      "category": "Диагностика",
+      "description": "Проведение лабораторных исследований крови, мочи и других биоматериалов. Работа с современным лабораторным оборудованием.",
+      "payment": 1400,
+      "experience": 1,
+      "requirements": "Среднее специальное медицинское образование, специальность \"Лабораторная диагностика\". Опыт работы в лаборатории от 1 года."
+    },
+    {
+      "key": "врач-эндодонтист@стоматология",
+      "name": "Врач-эндодонтист",
+      "category": "Стоматология",
+      "description": "Лечение корневых каналов зубов, эндодонтическая хирургия. Работа с дентальным микроскопом, перелечивание сложных каналов.",
+      "payment": 3800,
+      "experience": 4,
+      "requirements": "Высшее медицинское образование по стоматологии, специализация по эндодонтии. Опыт работы от 4 лет. Обязательный опыт работы с микроскопом."
+    },
+    {
+      "key": "врач-кардиолог@кардиология",
+      "name": "Врач-кардиолог",
+      "category": "Кардиология",
+      "description": "Диагностика и лечение заболеваний сердечно-сосудистой системы. Проведение ЭКГ, ЭХО-КГ, холтеровского мониторирования.",
+      "payment": 3300,
+      "experience": 5,
+      "requirements": "Высшее медицинское образование, ординатура по кардиологии. Сертификат специалиста. Опыт работы от 5 лет. Знание функциональной диагностики."
+    },
+    {
+      "key": "стоматолог-терапевт@стоматология",
+      "name": "Стоматолог-терапевт",
+      "category": "Стоматология",
+      "description": "Лечение кариеса и его осложнений, реставрация зубов, профессиональная гигиена полости рта, отбеливание зубов.",
+      "payment": 3000,
+      "experience": 2,
+      "requirements": "Высшее медицинское образование по специальности \"Стоматология\". Сертификат специалиста. Опыт работы от 2 лет."
+    },
+    {
+      "key": "врач-эндокринолог@эндокринология",
+      "name": "Врач-эндокринолог",
+      "category": "Эндокринология",
+      "description": "Диагностика и лечение заболеваний эндокринной системы. Ведение пациентов с сахарным диабетом, заболеваниями щитовидной железы.",
+      "payment": 3100,
+      "experience": 3,
+      "requirements": "Высшее медицинское образование, ординатура по эндокринологии. Сертификат специалиста. Опыт работы от 3 лет."
+    },
+    {
+      "key": "медицинская сестра (процедурная)@медицинский персонал",
+      "name": "Медицинская сестра (процедурная)",
+      "category": "Медицинский персонал",
+      "description": "Выполнение внутривенных и внутримышечных инъекций, забор крови на анализы, постановка капельниц.",
+      "payment": 1600,
+      "experience": 1,
+      "requirements": "Среднее медицинское образование, сертификат. Опыт работы от 1 года. Уверенные навыки постановки инъекций."
+    },
+    {
+      "key": "менеджер по работе с клиентами@администрация",
+      "name": "Менеджер по работе с клиентами",
+      "category": "Администрация",
+      "description": "Привлечение новых пациентов, работа с базой клиентов, консультирование по услугам клиники, организация маркетинговых мероприятий.",
+      "payment": 2000,
+      "experience": 2,
+      "requirements": "Высшее образование, опыт работы в продажах или маркетинге от 2 лет. Коммуникабельность, стрессоустойчивость."
+    },
+    {
+      "key": "врач-онколог@онкология",
+      "name": "Врач-онколог",
+      "category": "Онкология",
+      "description": "Диагностика онкологических заболеваний, консультирование пациентов, разработка планов лечения, проведение химиотерапии.",
+      "payment": 3600,
+      "experience": 5,
+      "requirements": "Высшее медицинское образование, ординатура по онкологии. Сертификат специалиста. Опыт работы от 5 лет в онкологии."
+    },
+    {
+      "key": "стоматолог-хирург@стоматология",
+      "name": "Стоматолог-хирург",
+      "category": "Стоматология",
+      "description": "Удаление зубов, имплантация, костная пластика, удаление новообразований полости рта.",
+      "payment": 3400,
+      "experience": 4,
+      "requirements": "Высшее медицинское образование по стоматологии, специализация по хирургической стоматологии. Опыт работы от 4 лет."
+    }
+  ],
+  "patients": [
+    {
+      "email": "patient1@example.com",
+      "login": "patient1",
+      "password": "$2b$10$PZU0SViurpY9k4NhC2RE.eL9YObUjUJjWGsYHrc41CMOPxPFbLPHq",
+      "name": "Смирнов Пётр",
+      "phone": "+79001234567",
+      "registration_date": "2024-01-15",
+      "avatar_url": null,
+      "role": "OPERATOR",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "patient2@example.com",
+      "login": "patient2",
+      "password": "$2b$10$PZU0SViurpY9k4NhC2RE.eL9YObUjUJjWGsYHrc41CMOPxPFbLPHq",
+      "name": "Иванова Мария",
+      "phone": "+79007654321",
+      "registration_date": "2024-02-10",
+      "avatar_url": null,
+      "role": "USER",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "patient3@example.com",
+      "login": "patient3",
+      "password": "$2b$10$PZU0SViurpY9k4NhC2RE.eL9YObUjUJjWGsYHrc41CMOPxPFbLPHq",
+      "name": "Козлов Александр Викторович",
+      "phone": "+79001112233",
+      "registration_date": "2024-03-05",
+      "avatar_url": null,
+      "role": "USER",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "patient4@example.com",
+      "login": "patient4",
+      "password": "$2b$10$PZU0SViurpY9k4NhC2RE.eL9YObUjUJjWGsYHrc41CMOPxPFbLPHq",
+      "name": "Новикова Елена Сергеевна",
+      "phone": "+79002223344",
+      "registration_date": "2024-03-20",
+      "avatar_url": null,
+      "role": "USER",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "patient5@example.com",
+      "login": "patient5",
+      "password": "$2b$10$PZU0SViurpY9k4NhC2RE.eL9YObUjUJjWGsYHrc41CMOPxPFbLPHq",
+      "name": "Федоров Дмитрий Андреевич",
+      "phone": "+79003334455",
+      "registration_date": "2024-04-10",
+      "avatar_url": null,
+      "role": "USER",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "admin@smartmedical.local",
+      "login": "admin",
+      "password": "$2b$10$qBqGUmMGBXPZ4KAgH8SoaOvUkD/iWgx7r0dVTIvU4LdAzx5gE6bC2",
+      "name": "Администратор",
+      "phone": "+375290000000",
+      "registration_date": "2026-03-03",
+      "avatar_url": null,
+      "role": "ADMIN",
+      "is_messages_blocked": false
+    },
+    {
+      "email": "fedortorgonsky@gmail.com",
+      "login": "SAVA",
+      "password": "$2b$10$L4nOM4snagSVrDh.Ik1O/utXDgFrlh4NusyA1ugM6Jb4gTZBoXtsO",
+      "name": "Иванов Иван",
+      "phone": "375292331310",
+      "registration_date": "2026-06-07",
+      "avatar_url": null,
+      "role": "USER",
+      "is_messages_blocked": false
+    }
+  ],
+  "specialists": [
+    {
+      "key": "иванов иван иванович@dentistry",
+      "categorySlug": "dentistry",
+      "name": "Иванов Иван Иванович",
+      "specialization": "Стоматолог-терапевт",
+      "qualification": "Врач высшей категории",
+      "experience": 10,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585598/smartmedical/specialists/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+      "activity_area": "Лечение кариеса, реставрация зубов",
+      "education_details": "МГМСУ, интернатура по терапевтической стоматологии",
+      "conferences": [],
+      "specializations": [
+        "Лечение кариеса",
+        "Реставрация зубов",
+        "Эндодонтическое лечение",
+        "Профессиональная гигиена"
+      ],
+      "education": [
+        "МГМСУ им. А.И. Евдокимова, стоматологический факультет, 2013г.",
+        "Интернатура по терапевтической стоматологии, 2014г.",
+        "Курсы повышения квалификации по эндодонтии, 2020г."
+      ],
+      "work_examples": [
+        {
+          "title": "Эстетическая реставрация фронтальных зубов",
+          "images": [
+            "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_caries_1.jpg",
+            "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_caries_2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "петрова анна сергеевна@cardiology",
+      "categorySlug": "cardiology",
+      "name": "Петрова Анна Сергеевна",
+      "specialization": "Кардиолог",
+      "qualification": "Кандидат медицинских наук",
+      "experience": 12,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585602/smartmedical/specialists/smiling-brunette-woman-with-crossed-arms-looking-camera-gray_171337-987.jpg",
+      "activity_area": "Диагностика и лечение сердечно-сосудистых заболеваний",
+      "education_details": "РНИМУ им. Пирогова, ординатура по кардиологии",
+      "conferences": [],
+      "specializations": [
+        "Диагностика сердечно-сосудистых заболеваний",
+        "Эхокардиография",
+        "Лечение артериальной гипертензии",
+        "Реабилитация после инфаркта"
+      ],
+      "education": [
+        "РНИМУ им. Н.И. Пирогова, лечебный факультет, 2011г.",
+        "Ординатура по кардиологии, 2013г.",
+        "Кандидатская диссертация по кардиологии, 2018г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "сидорова елена викторовна@pediatric-dentistry",
+      "categorySlug": "pediatric-dentistry",
+      "name": "Сидорова Елена Викторовна",
+      "specialization": "Детский стоматолог",
+      "qualification": "Врач высшей категории",
+      "experience": 8,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585603/smartmedical/specialists/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg",
+      "activity_area": "Лечение молочных и постоянных зубов у детей",
+      "education_details": "БГМУ, интернатура по детской стоматологии",
+      "conferences": [],
+      "specializations": [
+        "Лечение молочных зубов",
+        "Профилактика кариеса у детей",
+        "Лечение пульпита у детей",
+        "Герметизация фиссур"
+      ],
+      "education": [
+        "БГМУ, стоматологический факультет, 2015г.",
+        "Интернатура по детской стоматологии, 2016г.",
+        "Курсы повышения квалификации по детской анестезиологии, 2020г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "козлов дмитрий александрович@gynecology",
+      "categorySlug": "gynecology",
+      "name": "Козлов Дмитрий Александрович",
+      "specialization": "Врач-гинеколог",
+      "qualification": "Врач первой категории",
+      "experience": 6,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585600/smartmedical/specialists/portrait-white-man-isolated_53876-40306.jpg",
+      "activity_area": "Диагностика и лечение гинекологических заболеваний",
+      "education_details": "БГМУ, ординатура по акушерству и гинекологии",
+      "conferences": [],
+      "specializations": [
+        "Лечение воспалительных заболеваний",
+        "Гормональные нарушения",
+        "Планирование семьи",
+        "УЗИ в гинекологии"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2017г.",
+        "Ординатура по акушерству и гинекологии, 2019г.",
+        "Курсы повышения квалификации по УЗИ-диагностике, 2022г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "волкова ольга петровна@ultrasound",
+      "categorySlug": "ultrasound",
+      "name": "Волкова Ольга Петровна",
+      "specialization": "Врач УЗИ-диагностики",
+      "qualification": "Врач высшей категории",
+      "experience": 15,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585602/smartmedical/specialists/smiling-brunette-woman-with-crossed-arms-looking-camera-gray_171337-987.jpg",
+      "activity_area": "УЗИ всех органов и систем",
+      "education_details": "БГМУ, специальность по ультразвуковой диагностике",
+      "conferences": [],
+      "specializations": [
+        "УЗИ органов брюшной полости",
+        "УЗИ органов малого таза",
+        "УЗИ молочных желез",
+        "УЗИ щитовидной железы",
+        "УЗИ сердца"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2008г.",
+        "Специализация по ультразвуковой диагностике, 2010г.",
+        "Курсы повышения квалификации по эхокардиографии, 2015г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "соколов андрей викторович@diagnostics",
+      "categorySlug": "diagnostics",
+      "name": "Соколов Андрей Викторович",
+      "specialization": "Врач-диагност",
+      "qualification": "Врач высшей категории",
+      "experience": 12,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585599/smartmedical/specialists/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg",
+      "activity_area": "Лабораторная диагностика, рентгенология, функциональная диагностика",
+      "education_details": "БГМУ, специальность по диагностике",
+      "conferences": [],
+      "specializations": [
+        "Лабораторная диагностика",
+        "Рентгенология",
+        "Функциональная диагностика",
+        "УЗИ-диагностика",
+        "3D-диагностика"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2011г.",
+        "Специализация по диагностике, 2013г.",
+        "Курсы повышения квалификации по 3D-диагностике, 2020г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "михайлов сергей николаевич@pediatric-dentistry",
+      "categorySlug": "pediatric-dentistry",
+      "name": "Михайлов Сергей Николаевич",
+      "specialization": "Детский хирург-стоматолог",
+      "qualification": "Врач высшей категории",
+      "experience": 9,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585598/smartmedical/specialists/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+      "activity_area": "Хирургическое лечение молочных и постоянных зубов у детей",
+      "education_details": "БГМУ, интернатура по детской хирургической стоматологии",
+      "conferences": [],
+      "specializations": [
+        "Удаление молочных зубов",
+        "Удаление постоянных зубов у детей",
+        "Пластика уздечек",
+        "Лечение травм зубов у детей"
+      ],
+      "education": [
+        "БГМУ, стоматологический факультет, 2014г.",
+        "Интернатура по детской хирургической стоматологии, 2015г.",
+        "Курсы повышения квалификации по детской анестезиологии, 2021г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "новикова екатерина александровна@pediatric-dentistry",
+      "categorySlug": "pediatric-dentistry",
+      "name": "Новикова Екатерина Александровна",
+      "specialization": "Детский ортодонт",
+      "qualification": "Врач первой категории",
+      "experience": 7,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585603/smartmedical/specialists/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg",
+      "activity_area": "Исправление прикуса у детей, установка брекет-систем",
+      "education_details": "БГМУ, интернатура по ортодонтии",
+      "conferences": [],
+      "specializations": [
+        "Исправление прикуса у детей",
+        "Установка брекет-систем",
+        "Лечение скученности зубов",
+        "Коррекция аномалий прикуса"
+      ],
+      "education": [
+        "БГМУ, стоматологический факультет, 2016г.",
+        "Интернатура по ортодонтии, 2017г.",
+        "Курсы повышения квалификации по современным брекет-системам, 2022г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "белова наталья сергеевна@pediatric-gynecology",
+      "categorySlug": "pediatric-gynecology",
+      "name": "Белова Наталья Сергеевна",
+      "specialization": "Детский гинеколог",
+      "qualification": "Врач высшей категории",
+      "experience": 14,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585602/smartmedical/specialists/smiling-brunette-woman-with-crossed-arms-looking-camera-gray_171337-987.jpg",
+      "activity_area": "Гинекологическое наблюдение девочек и подростков",
+      "education_details": "БГМУ, ординатура по детской гинекологии",
+      "conferences": [],
+      "specializations": [
+        "Гинекологический осмотр девочек",
+        "Лечение воспалительных заболеваний",
+        "Нарушения менструального цикла",
+        "Консультации для подростков"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2009г.",
+        "Ординатура по детской гинекологии, 2011г.",
+        "Курсы повышения квалификации по подростковой гинекологии, 2020г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "морозов алексей владимирович@endocrinology",
+      "categorySlug": "endocrinology",
+      "name": "Морозов Алексей Владимирович",
+      "specialization": "Врач-эндокринолог",
+      "qualification": "Кандидат медицинских наук",
+      "experience": 11,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585600/smartmedical/specialists/portrait-white-man-isolated_53876-40306.jpg",
+      "activity_area": "Диагностика и лечение эндокринных заболеваний",
+      "education_details": "БГМУ, ординатура по эндокринологии",
+      "conferences": [],
+      "specializations": [
+        "Сахарный диабет",
+        "Заболевания щитовидной железы",
+        "Ожирение и метаболический синдром",
+        "Гормональные нарушения"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2012г.",
+        "Ординатура по эндокринологии, 2014г.",
+        "Защита кандидатской диссертации, 2019г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "федорова ирина михайловна@oncology",
+      "categorySlug": "oncology",
+      "name": "Федорова Ирина Михайловна",
+      "specialization": "Врач-онколог",
+      "qualification": "Врач высшей категории",
+      "experience": 18,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585603/smartmedical/specialists/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg",
+      "activity_area": "Диагностика и лечение онкологических заболеваний",
+      "education_details": "БГМУ, ординатура по онкологии",
+      "conferences": [],
+      "specializations": [
+        "Диагностика онкозаболеваний",
+        "Химиотерапия",
+        "Паллиативная помощь",
+        "Профилактика рака"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2005г.",
+        "Ординатура по онкологии, 2007г.",
+        "Курсы повышения квалификации по химиотерапии, 2022г."
+      ],
+      "work_examples": null
+    },
+    {
+      "key": "кузнецова марина андреевна@day-hospital",
+      "categorySlug": "day-hospital",
+      "name": "Кузнецова Марина Андреевна",
+      "specialization": "Врач-терапевт дневного стационара",
+      "qualification": "Врач первой категории",
+      "experience": 9,
+      "grade": 5,
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585602/smartmedical/specialists/smiling-brunette-woman-with-crossed-arms-looking-camera-gray_171337-987.jpg",
+      "activity_area": "Ведение пациентов в дневном стационаре",
+      "education_details": "БГМУ, ординатура по терапии",
+      "conferences": [],
+      "specializations": [
+        "Внутривенная терапия",
+        "Наблюдение пациентов",
+        "Реабилитация",
+        "Подготовка к операциям"
+      ],
+      "education": [
+        "БГМУ, лечебный факультет, 2014г.",
+        "Ординатура по терапии, 2016г.",
+        "Курсы повышения квалификации по интенсивной терапии, 2021г."
+      ],
+      "work_examples": null
+    }
+  ],
+  "services": [
+    {
+      "key": "лечение кариеса@caries-treatment",
+      "categorySlug": "caries-treatment",
+      "title": "Лечение кариеса",
+      "subtitle": "Щадящие методики и современные материалы",
+      "price": 4500,
+      "video_url": "https://videos.example.com/dentistry/caries",
+      "description": "Комплексное лечение кариеса с использованием микроскопа и композитных материалов последнего поколения. Индивидуальный подход и безболезненная анестезия.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_1.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585606/smartmedical/services/service_2.jpg",
+      "image_url_2": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585614/smartmedical/services/service_4.jpg",
+      "image_url_4": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585628/smartmedical/services/service_5.jpg",
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "иванов иван иванович@dentistry"
+      ]
+    },
+    {
+      "key": "эхо-кг (узи сердца)@echo-kg",
+      "categorySlug": "echo-kg",
+      "title": "ЭХО-КГ (УЗИ сердца)",
+      "subtitle": "Высокоточная диагностика сердечных заболеваний",
+      "price": 3500,
+      "video_url": "https://videos.example.com/cardiology/echo",
+      "description": "Эхокардиография на современном аппарате экспертного класса. Расширенная оценка структуры и функции сердца, заключение специалиста.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585629/smartmedical/services/service_6.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585630/smartmedical/services/service_7.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585631/smartmedical/services/service_8.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585629/smartmedical/services/service_6.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "петрова анна сергеевна@cardiology"
+      ]
+    },
+    {
+      "key": "лечение молочных зубов@milk-teeth-treatment",
+      "categorySlug": "milk-teeth-treatment",
+      "title": "Лечение молочных зубов",
+      "subtitle": "Безболезненное лечение для детей",
+      "price": 2500,
+      "video_url": "https://videos.example.com/pediatric-dentistry/milk-teeth",
+      "description": "Специализированное лечение молочных зубов у детей с использованием современных методик и материалов. Безболезненная анестезия, игровая форма приема. Сохранение молочных зубов важно для правильного формирования постоянного прикуса.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585606/smartmedical/services/service_2.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585636/smartmedical/services/service_11.jpg",
+      "image_url_2": "https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&q=80",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_1.jpg",
+      "image_url_4": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_milk_teeth_4.jpg",
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "сидорова елена викторовна@pediatric-dentistry",
+        "михайлов сергей николаевич@pediatric-dentistry",
+        "новикова екатерина александровна@pediatric-dentistry"
+      ]
+    },
+    {
+      "key": "отбеливание зубов beyond polus@teeth-whitening",
+      "categorySlug": "teeth-whitening",
+      "title": "Отбеливание зубов Beyond Polus",
+      "subtitle": "Профессиональное отбеливание за один визит",
+      "price": 8500,
+      "video_url": "https://videos.example.com/dentistry/whitening",
+      "description": "Современная система отбеливания Beyond Polus позволяет осветлить зубы на несколько тонов за один визит. Используется холодный свет, что исключает перегрев тканей зуба. Безболезненная процедура, результат сохраняется до 2-3 лет при соблюдении рекомендаций.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585628/smartmedical/services/service_5.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_1.jpg",
+      "image_url_2": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585614/smartmedical/services/service_4.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "иванов иван иванович@dentistry"
+      ]
+    },
+    {
+      "key": "профессиональная чистка зубов air flow@professional-cleaning",
+      "categorySlug": "professional-cleaning",
+      "title": "Профессиональная чистка зубов Air Flow",
+      "subtitle": "Удаление налета и зубного камня",
+      "price": 3500,
+      "video_url": "https://videos.example.com/dentistry/cleaning",
+      "description": "Профессиональная чистка зубов методом Air Flow эффективно удаляет зубной налет, пигментацию и зубной камень. Процедура безопасна, безболезненна и не повреждает эмаль. После чистки зубы становятся светлее, глаже и здоровее.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585634/smartmedical/services/service_10.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585606/smartmedical/services/service_2.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585636/smartmedical/services/service_11.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585628/smartmedical/services/service_5.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "иванов иван иванович@dentistry"
+      ]
+    },
+    {
+      "key": "приём гинеколога@gynecologist-appointment",
+      "categorySlug": "gynecologist-appointment",
+      "title": "Приём гинеколога",
+      "subtitle": "Комплексное обследование и консультация",
+      "price": 5500,
+      "video_url": "https://videos.example.com/gynecology/appointment",
+      "description": "Полный гинекологический осмотр, консультация специалиста, взятие анализов. Врач проведет осмотр, ответит на все вопросы, назначит необходимые обследования. Ведение беременности, лечение гинекологических заболеваний, планирование семьи.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585637/smartmedical/services/service_12.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_gynecologist_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_gynecologist_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_gynecologist_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "козлов дмитрий александрович@gynecology"
+      ]
+    },
+    {
+      "key": "узи органов малого таза@pelvic-ultrasound",
+      "categorySlug": "pelvic-ultrasound",
+      "title": "УЗИ органов малого таза",
+      "subtitle": "Точная диагностика гинекологических заболеваний",
+      "price": 4000,
+      "video_url": "https://videos.example.com/ultrasound/pelvic",
+      "description": "Ультразвуковое исследование органов малого таза на современном аппарате экспертного класса. Оценка состояния матки, яичников, мочевого пузыря. Безболезненное и безопасное исследование, не требует специальной подготовки.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585638/smartmedical/services/service_13.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pelvic_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pelvic_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pelvic_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "волкова ольга петровна@ultrasound"
+      ]
+    },
+    {
+      "key": "узи молочных желез@breast-ultrasound",
+      "categorySlug": "breast-ultrasound",
+      "title": "УЗИ молочных желез",
+      "subtitle": "Ранняя диагностика заболеваний груди",
+      "price": 3800,
+      "video_url": "https://videos.example.com/ultrasound/breast",
+      "description": "Ультразвуковое исследование молочных желез для ранней диагностики заболеваний. Безопасный и информативный метод обследования. Рекомендуется женщинам всех возрастов для профилактики и выявления патологий на ранних стадиях.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585639/smartmedical/services/service_14.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_breast_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_breast_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_breast_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "волкова ольга петровна@ultrasound"
+      ]
+    },
+    {
+      "key": "узи щитовидной железы@thyroid-ultrasound",
+      "categorySlug": "thyroid-ultrasound",
+      "title": "УЗИ щитовидной железы",
+      "subtitle": "Оценка структуры и функции щитовидной железы",
+      "price": 3200,
+      "video_url": "https://videos.example.com/ultrasound/thyroid",
+      "description": "Ультразвуковое исследование щитовидной железы для оценки ее структуры, размеров и выявления патологических изменений. Безболезненное и безопасное исследование, не требует специальной подготовки. Результаты готовы сразу после исследования.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585640/smartmedical/services/service_15.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_thyroid_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_thyroid_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_thyroid_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "волкова ольга петровна@ultrasound"
+      ]
+    },
+    {
+      "key": "лечение пульпита@pulpitis-treatment",
+      "categorySlug": "pulpitis-treatment",
+      "title": "Лечение пульпита",
+      "subtitle": "Эндодонтическое лечение с использованием микроскопа",
+      "price": 6500,
+      "video_url": "https://videos.example.com/dentistry/pulpitis",
+      "description": "Лечение пульпита (воспаления нерва зуба) с использованием современного микроскопа и новейших методик. Тщательная обработка каналов, качественная пломбировка. Сохранение зуба и восстановление его функции. Безболезненная процедура с современной анестезией.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_1.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pulpitis_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pulpitis_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pulpitis_3.jpg",
+      "image_url_4": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pulpitis_4.jpg",
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "иванов иван иванович@dentistry"
+      ]
+    },
+    {
+      "key": "детский хирург-стоматолог@pediatric-surgeon",
+      "categorySlug": "pediatric-surgeon",
+      "title": "Детский хирург-стоматолог",
+      "subtitle": "Хирургическое лечение зубов у детей",
+      "price": 5500,
+      "video_url": "https://videos.example.com/pediatric-dentistry/surgeon",
+      "description": "Хирургическое лечение молочных и постоянных зубов у детей. Удаление зубов, пластика уздечек, лечение травм зубов. Безболезненные процедуры с использованием современной детской анестезии. Опытные врачи найдут подход к каждому ребенку.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585634/smartmedical/services/service_10.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_surgeon_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_surgeon_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_surgeon_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "сидорова елена викторовна@pediatric-dentistry",
+        "михайлов сергей николаевич@pediatric-dentistry",
+        "новикова екатерина александровна@pediatric-dentistry"
+      ]
+    },
+    {
+      "key": "детский ортодонт@pediatric-orthodontist",
+      "categorySlug": "pediatric-orthodontist",
+      "title": "Детский ортодонт",
+      "subtitle": "Исправление прикуса у детей",
+      "price": 7500,
+      "video_url": "https://videos.example.com/pediatric-dentistry/orthodontist",
+      "description": "Исправление прикуса у детей с использованием современных брекет-систем и ортодонтических аппаратов. Лечение скученности зубов, коррекция аномалий прикуса. Индивидуальный подход к каждому ребенку, комфортное лечение.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585606/smartmedical/services/service_2.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_orthodontist_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_orthodontist_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_orthodontist_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "сидорова елена викторовна@pediatric-dentistry",
+        "михайлов сергей николаевич@pediatric-dentistry",
+        "новикова екатерина александровна@pediatric-dentistry"
+      ]
+    },
+    {
+      "key": "лечение молочных зубов под наркозом@milk-teeth-anesthesia",
+      "categorySlug": "milk-teeth-anesthesia",
+      "title": "Лечение молочных зубов под наркозом",
+      "subtitle": "Безболезненное лечение для самых маленьких",
+      "price": 12000,
+      "video_url": "https://videos.example.com/pediatric-dentistry/anesthesia",
+      "description": "Лечение молочных зубов под общим наркозом для детей, которые не могут перенести лечение в обычных условиях. Безопасный медицинский наркоз, полный контроль состояния ребенка. За одно посещение можно вылечить все проблемные зубы.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585636/smartmedical/services/service_11.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_milk_teeth_anesthesia_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_milk_teeth_anesthesia_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_milk_teeth_anesthesia_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "сидорова елена викторовна@pediatric-dentistry",
+        "михайлов сергей николаевич@pediatric-dentistry",
+        "новикова екатерина александровна@pediatric-dentistry"
+      ]
+    },
+    {
+      "key": "диагностические исследования@diagnostic-studies",
+      "categorySlug": "diagnostic-studies",
+      "title": "Диагностические исследования",
+      "subtitle": "Комплексная диагностика гинекологических заболеваний",
+      "price": 6000,
+      "video_url": "https://videos.example.com/gynecology/diagnostic",
+      "description": "Комплексные диагностические исследования в гинекологии: кольпоскопия, биопсия, цитология, анализы на инфекции. Современное оборудование, точная диагностика. Помогаем выявить заболевания на ранних стадиях.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585642/smartmedical/services/service_16.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_diagnostic_studies_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_diagnostic_studies_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_diagnostic_studies_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "козлов дмитрий александрович@gynecology"
+      ]
+    },
+    {
+      "key": "узи органов брюшной полости@abdominal-ultrasound",
+      "categorySlug": "abdominal-ultrasound",
+      "title": "УЗИ органов брюшной полости",
+      "subtitle": "Комплексное обследование органов брюшной полости",
+      "price": 4200,
+      "video_url": "https://videos.example.com/ultrasound/abdominal",
+      "description": "Ультразвуковое исследование органов брюшной полости: печень, желчный пузырь, поджелудочная железа, селезенка, почки. Безболезненное и безопасное исследование. Точная диагностика заболеваний органов брюшной полости.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585638/smartmedical/services/service_13.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_abdominal_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_abdominal_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_abdominal_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "волкова ольга петровна@ultrasound"
+      ]
+    },
+    {
+      "key": "узи плода@fetal-ultrasound",
+      "categorySlug": "fetal-ultrasound",
+      "title": "УЗИ плода",
+      "subtitle": "Ультразвуковое исследование при беременности",
+      "price": 4500,
+      "video_url": "https://videos.example.com/ultrasound/fetal",
+      "description": "Ультразвуковое исследование плода при беременности. Оценка развития плода, определение пола, выявление патологий. Безопасное исследование для матери и ребенка. Современное оборудование экспертного класса.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585637/smartmedical/services/service_12.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_fetal_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_fetal_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_fetal_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "волкова ольга петровна@ultrasound"
+      ]
+    },
+    {
+      "key": "экспертное узи@expert-ultrasound",
+      "categorySlug": "expert-ultrasound",
+      "title": "Экспертное УЗИ",
+      "subtitle": "УЗИ-диагностика экспертного уровня",
+      "price": 5000,
+      "video_url": "https://videos.example.com/diagnostics/expert-ultrasound",
+      "description": "Экспертное ультразвуковое исследование на аппарате экспертного класса. Высокая точность диагностики, детальная оценка состояния органов. Проводится опытными специалистами с использованием современного оборудования.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585639/smartmedical/services/service_14.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_expert_ultrasound_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_expert_ultrasound_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_expert_ultrasound_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "соколов андрей викторович@diagnostics"
+      ]
+    },
+    {
+      "key": "лабораторные анализы@analyses",
+      "categorySlug": "analyses",
+      "title": "Лабораторные анализы",
+      "subtitle": "Комплексная лабораторная диагностика",
+      "price": 3500,
+      "video_url": "https://videos.example.com/diagnostics/analyses",
+      "description": "Широкий спектр лабораторных анализов: общий анализ крови, биохимия, гормоны, онкомаркеры, инфекции. Современная лаборатория, точные результаты. Быстрое выполнение анализов, удобная система получения результатов.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585643/smartmedical/services/service_17.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_analyses_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_analyses_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_analyses_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "соколов андрей викторович@diagnostics"
+      ]
+    },
+    {
+      "key": "рентген зубов@tooth-xray",
+      "categorySlug": "tooth-xray",
+      "title": "Рентген зубов",
+      "subtitle": "Рентгенологическое исследование зубов",
+      "price": 1500,
+      "video_url": "https://videos.example.com/diagnostics/tooth-xray",
+      "description": "Рентгенологическое исследование зубов для диагностики кариеса, пульпита, периодонтита. Прицельные и панорамные снимки. Низкая доза облучения, безопасно для здоровья. Необходимо для точной диагностики и планирования лечения.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585609/smartmedical/services/service_3.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_tooth_xray_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_tooth_xray_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_tooth_xray_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "соколов андрей викторович@diagnostics"
+      ]
+    },
+    {
+      "key": "3d сканирование зубов@3d-dental-scan",
+      "categorySlug": "3d-dental-scan",
+      "title": "3D сканирование зубов",
+      "subtitle": "Трехмерное сканирование для точной диагностики",
+      "price": 5500,
+      "video_url": "https://videos.example.com/diagnostics/3d-scan",
+      "description": "Трехмерное сканирование зубов с помощью компьютерной томографии. Точная диагностика, планирование имплантации, оценка состояния корней зубов. Высокое качество изображений, минимальная доза облучения.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585614/smartmedical/services/service_4.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_3d_dental_scan_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_3d_dental_scan_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_3d_dental_scan_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "соколов андрей викторович@diagnostics"
+      ]
+    },
+    {
+      "key": "панорамный снимок зубов@panoramic-dental-scan",
+      "categorySlug": "panoramic-dental-scan",
+      "title": "Панорамный снимок зубов",
+      "subtitle": "Ортопантомограмма (ОПТГ)",
+      "price": 2500,
+      "video_url": "https://videos.example.com/diagnostics/panoramic-scan",
+      "description": "Панорамный снимок всех зубов (ортопантомограмма) для оценки состояния зубов, челюстей, височно-нижнечелюстных суставов. Необходим для планирования лечения, имплантации, ортодонтического лечения. Быстрое выполнение, низкая доза облучения.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_1.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_panoramic_scan_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_panoramic_scan_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_panoramic_scan_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "соколов андрей викторович@diagnostics"
+      ]
+    },
+    {
+      "key": "детский гинеколог@pediatric-gynecologist",
+      "categorySlug": "pediatric-gynecologist",
+      "title": "Детский гинеколог",
+      "subtitle": "Специализированная помощь для девочек и подростков",
+      "price": 5500,
+      "video_url": "https://videos.example.com/pediatric-gynecology/appointment",
+      "description": "Консультация детского гинеколога для девочек и подростков. Профилактические осмотры, диагностика и лечение гинекологических заболеваний. Деликатный и профессиональный подход к маленьким пациенткам.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585637/smartmedical/services/service_12.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_gyn_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_gyn_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_pediatric_gyn_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "белова наталья сергеевна@pediatric-gynecology"
+      ]
+    },
+    {
+      "key": "консультация врача-эндокринолога@endocrinologist-consultation",
+      "categorySlug": "endocrinologist-consultation",
+      "title": "Консультация врача-эндокринолога",
+      "subtitle": "Диагностика и лечение эндокринных заболеваний",
+      "price": 6000,
+      "video_url": "https://videos.example.com/endocrinology/appointment",
+      "description": "Консультация эндокринолога с комплексной диагностикой. Лечение сахарного диабета, заболеваний щитовидной железы, ожирения и метаболического синдрома. Индивидуальный подбор терапии.",
+      "image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_endocrinology_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_endocrinology_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_endocrinology_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "морозов алексей владимирович@endocrinology"
+      ]
+    },
+    {
+      "key": "приём врача онколога@oncologist-appointment",
+      "categorySlug": "oncologist-appointment",
+      "title": "Приём врача онколога",
+      "subtitle": "Профилактика и диагностика онкологических заболеваний",
+      "price": 7500,
+      "video_url": "https://videos.example.com/oncology/appointment",
+      "description": "Консультация онколога с оценкой факторов риска, ранняя диагностика, скрининг. Профессиональная оценка новообразований, назначение обследований. Составление плана наблюдения и лечения при необходимости.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585639/smartmedical/services/service_14.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_oncology_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_oncology_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_oncology_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "федорова ирина михайловна@oncology"
+      ]
+    },
+    {
+      "key": "процедурный кабинет@procedure-room",
+      "categorySlug": "procedure-room",
+      "title": "Процедурный кабинет",
+      "subtitle": "Медицинские процедуры в дневном стационаре",
+      "price": 2500,
+      "video_url": "https://videos.example.com/day-hospital/procedure",
+      "description": "Инъекции, капельницы, внутривенные инфузии в комфортных условиях дневного стационара. Квалифицированный медперсонал, современное оборудование, контроль состояния пациента во время процедур.",
+      "image_url": "https://images.unsplash.com/photo-1631217868264-e6641e0e2055?w=800&q=80",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_procedure_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_procedure_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_procedure_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "кузнецова марина андреевна@day-hospital"
+      ]
+    },
+    {
+      "key": "приём кардиолога@cardiologist-appointment",
+      "categorySlug": "cardiologist-appointment",
+      "title": "Приём кардиолога",
+      "subtitle": "Комплексная консультация кардиолога",
+      "price": 6500,
+      "video_url": "https://videos.example.com/cardiology/appointment",
+      "description": "Консультация кардиолога с оценкой состояния сердечно-сосудистой системы. Анализ жалоб, осмотр, интерпретация результатов исследований. Назначение лечения и рекомендации по профилактике.",
+      "image_url": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585629/smartmedical/services/service_6.jpg",
+      "image_url_1": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_cardiology_1.jpg",
+      "image_url_2": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_cardiology_2.jpg",
+      "image_url_3": "https://res.cloudinary.com/dkee0i6u7/image/upload/v1763585605/smartmedical/services/service_cardiology_3.jpg",
+      "image_url_4": null,
+      "questions_id": 1,
+      "reviews_id": 1,
+      "specialistKeys": [
+        "петрова анна сергеевна@cardiology"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "больно ли лечить кариес?@лечение кариеса@caries-treatment@",
+      "question": "Больно ли лечить кариес?",
+      "answer": "Мы используем современную анестезию, поэтому лечение проходит комфортно. Пациент не испытывает болезненных ощущений во время процедуры.",
+      "serviceKey": "лечение кариеса@caries-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько длится процедура?@лечение кариеса@caries-treatment@",
+      "question": "Сколько длится процедура?",
+      "answer": "В среднем 40–60 минут в зависимости от сложности случая. Простое лечение может занять 30 минут, сложное – до 90 минут.",
+      "serviceKey": "лечение кариеса@caries-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как долго прослужит пломба?@лечение кариеса@caries-treatment@",
+      "question": "Как долго прослужит пломба?",
+      "answer": "Современные композитные пломбы служат 5–7 лет при правильном уходе. Мы используем материалы премиум-класса с гарантией качества.",
+      "serviceKey": "лечение кариеса@caries-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли специальная подготовка?@лечение кариеса@caries-treatment@",
+      "question": "Нужна ли специальная подготовка?",
+      "answer": "Специальная подготовка не требуется. Рекомендуется поесть перед визитом, чтобы снизить чувствительность к анестезии.",
+      "serviceKey": "лечение кариеса@caries-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли подготовка к эхо-кг?@эхо-кг (узи сердца)@echo-kg@",
+      "question": "Нужна ли подготовка к ЭХО-КГ?",
+      "answer": "Специальная подготовка не требуется, исследование безопасно и безболезненно. Можно принимать пищу и лекарства как обычно.",
+      "serviceKey": "эхо-кг (узи сердца)@echo-kg",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько длится исследование?@эхо-кг (узи сердца)@echo-kg@",
+      "question": "Сколько длится исследование?",
+      "answer": "Исследование занимает 30–40 минут. Время может варьироваться в зависимости от сложности случая.",
+      "serviceKey": "эхо-кг (узи сердца)@echo-kg",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "когда будут готовы результаты?@эхо-кг (узи сердца)@echo-kg@",
+      "question": "Когда будут готовы результаты?",
+      "answer": "Результаты готовы сразу после исследования. Врач проведет консультацию и объяснит результаты.",
+      "serviceKey": "эхо-кг (узи сердца)@echo-kg",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли лечить молочные зубы?@лечение молочных зубов@milk-teeth-treatment@",
+      "question": "Больно ли лечить молочные зубы?",
+      "answer": "Нет, мы используем специальную детскую анестезию и игровую форму приема. Лечение проходит комфортно и безболезненно для ребенка.",
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужн лечить молочные зубы, если они выпадут?@лечение молочных зубов@milk-teeth-treatment@",
+      "question": "Нужн лечить молочные зубы, если они выпадут?",
+      "answer": "Да, обязательно. Больные молочные зубы могут повредить зачатки постоянных зубов и вызвать проблемы с прикусом в будущем.",
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "с какого возраста можно лечить зубы ребенку?@лечение молочных зубов@milk-teeth-treatment@",
+      "question": "С какого возраста можно лечить зубы ребенку?",
+      "answer": "Лечение возможно с момента прорезывания первых зубов. Наши врачи работают с детьми от 1 года.",
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как подготовить ребенка к визиту?@лечение молочных зубов@milk-teeth-treatment@",
+      "question": "Как подготовить ребенка к визиту?",
+      "answer": "Расскажите ребенку о визите в игровой форме, объясните, что врач поможет зубкам быть здоровыми. Не пугайте ребенка стоматологом.",
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли отбеливание зубов?@отбеливание зубов beyond polus@teeth-whitening@",
+      "question": "Больно ли отбеливание зубов?",
+      "answer": "Процедура безболезненна. Возможна легкая чувствительность после процедуры, которая проходит в течение 24–48 часов.",
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "на сколько тонов можно осветлить зубы?@отбеливание зубов beyond polus@teeth-whitening@",
+      "question": "На сколько тонов можно осветлить зубы?",
+      "answer": "За один визит можно осветлить зубы на 3–5 тонов. Результат зависит от исходного цвета зубов и индивидуальных особенностей.",
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как долго сохраняется результат?@отбеливание зубов beyond polus@teeth-whitening@",
+      "question": "Как долго сохраняется результат?",
+      "answer": "Результат сохраняется 2–3 года при соблюдении рекомендаций врача: ограничение курения, кофе, чая, красного вина.",
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "есть ли противопоказания?@отбеливание зубов beyond polus@teeth-whitening@",
+      "question": "Есть ли противопоказания?",
+      "answer": "Противопоказания: беременность, кормление грудью, повышенная чувствительность зубов, наличие пломб на фронтальных зубах.",
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли делать профессиональную чистку?@профессиональная чистка зубов air flow@professional-cleaning@",
+      "question": "Больно ли делать профессиональную чистку?",
+      "answer": "Процедура безболезненна и комфортна. При повышенной чувствительности используется аппликационная анестезия.",
+      "serviceKey": "профессиональная чистка зубов air flow@professional-cleaning",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как часто нужно делать чистку?@профессиональная чистка зубов air flow@professional-cleaning@",
+      "question": "Как часто нужно делать чистку?",
+      "answer": "Рекомендуется делать профессиональную чистку 2 раза в год для поддержания здоровья зубов и десен.",
+      "serviceKey": "профессиональная чистка зубов air flow@professional-cleaning",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "повреждает ли чистка эмаль?@профессиональная чистка зубов air flow@professional-cleaning@",
+      "question": "Повреждает ли чистка эмаль?",
+      "answer": "Нет, процедура безопасна для эмали. Используются мягкие абразивы и современные методики, которые не повреждают зубную эмаль.",
+      "serviceKey": "профессиональная чистка зубов air flow@professional-cleaning",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как подготовиться к приему гинеколога?@приём гинеколога@gynecologist-appointment@",
+      "question": "Как подготовиться к приему гинеколога?",
+      "answer": "За 2 дня до приема исключить половые контакты. Накануне вечером провести гигиену наружных половых органов. Прийти натощак, если планируется УЗИ.",
+      "serviceKey": "приём гинеколога@gynecologist-appointment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "что входит в прием?@приём гинеколога@gynecologist-appointment@",
+      "question": "Что входит в прием?",
+      "answer": "В прием входит: осмотр, консультация, взятие анализов (мазки, цитология), назначение лечения или дополнительных обследований.",
+      "serviceKey": "приём гинеколога@gynecologist-appointment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько длится прием?@приём гинеколога@gynecologist-appointment@",
+      "question": "Сколько длится прием?",
+      "answer": "Прием длится 30–40 минут. Время может варьироваться в зависимости от необходимости дополнительных обследований.",
+      "serviceKey": "приём гинеколога@gynecologist-appointment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли подготовка к узи органов малого таза?@узи органов малого таза@pelvic-ultrasound@",
+      "question": "Нужна ли подготовка к УЗИ органов малого таза?",
+      "answer": "Да, требуется подготовка: за 2–3 дня исключить газообразующие продукты, накануне вечером легкий ужин, утром натощак. При трансвагинальном УЗИ специальная подготовка не требуется.",
+      "serviceKey": "узи органов малого таза@pelvic-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "на какой день цикла лучше делать узи?@узи органов малого таза@pelvic-ultrasound@",
+      "question": "На какой день цикла лучше делать УЗИ?",
+      "answer": "Для оценки состояния матки и яичников лучше делать УЗИ на 5–7 день цикла. Для контроля овуляции – на 12–14 день.",
+      "serviceKey": "узи органов малого таза@pelvic-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли делать узи?@узи органов малого таза@pelvic-ultrasound@",
+      "question": "Больно ли делать УЗИ?",
+      "answer": "Нет, процедура безболезненна и безопасна. Возможен легкий дискомфорт при трансвагинальном УЗИ.",
+      "serviceKey": "узи органов малого таза@pelvic-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "на какой день цикла лучше делать узи молочных желез?@узи молочных желез@breast-ultrasound@",
+      "question": "На какой день цикла лучше делать УЗИ молочных желез?",
+      "answer": "Лучше делать УЗИ молочных желез на 5–10 день менструального цикла, когда грудь менее чувствительна.",
+      "serviceKey": "узи молочных желез@breast-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли подготовка к узи молочных желез?@узи молочных желез@breast-ultrasound@",
+      "question": "Нужна ли подготовка к УЗИ молочных желез?",
+      "answer": "Специальная подготовка не требуется. Рекомендуется надеть удобную одежду, которую легко снять.",
+      "serviceKey": "узи молочных желез@breast-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как часто нужно делать узи молочных желез?@узи молочных желез@breast-ultrasound@",
+      "question": "Как часто нужно делать УЗИ молочных желез?",
+      "answer": "Рекомендуется делать УЗИ молочных желез 1 раз в год для профилактики и ранней диагностики заболеваний.",
+      "serviceKey": "узи молочных желез@breast-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли подготовка к узи щитовидной железы?@узи щитовидной железы@thyroid-ultrasound@",
+      "question": "Нужна ли подготовка к УЗИ щитовидной железы?",
+      "answer": "Специальная подготовка не требуется. Можно принимать пищу и лекарства как обычно.",
+      "serviceKey": "узи щитовидной железы@thyroid-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как часто нужно делать узи щитовидной железы?@узи щитовидной железы@thyroid-ultrasound@",
+      "question": "Как часто нужно делать УЗИ щитовидной железы?",
+      "answer": "Рекомендуется делать УЗИ щитовидной железы 1 раз в год для контроля состояния, при наличии проблем – по назначению врача.",
+      "serviceKey": "узи щитовидной железы@thyroid-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли лечить пульпит?@лечение пульпита@pulpitis-treatment@",
+      "question": "Больно ли лечить пульпит?",
+      "answer": "Нет, мы используем современную анестезию, поэтому лечение проходит безболезненно. Пациент не испытывает неприятных ощущений.",
+      "serviceKey": "лечение пульпита@pulpitis-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько визитов потребуется?@лечение пульпита@pulpitis-treatment@",
+      "question": "Сколько визитов потребуется?",
+      "answer": "Обычно лечение пульпита требует 2–3 визитов в зависимости от сложности случая. Первый визит – диагностика и лечение, второй – пломбировка каналов.",
+      "serviceKey": "лечение пульпита@pulpitis-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "что будет, если не лечить пульпит?@лечение пульпита@pulpitis-treatment@",
+      "question": "Что будет, если не лечить пульпит?",
+      "answer": "Если не лечить пульпит, воспаление может перейти на корень зуба, что приведет к периодонтиту и возможной потере зуба.",
+      "serviceKey": "лечение пульпита@pulpitis-treatment",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли удалять молочные зубы?@детский хирург-стоматолог@pediatric-surgeon@",
+      "question": "Больно ли удалять молочные зубы?",
+      "answer": "Нет, мы используем современную детскую анестезию, поэтому процедура проходит безболезненно. Врач найдет подход к каждому ребенку.",
+      "serviceKey": "детский хирург-стоматолог@pediatric-surgeon",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "с какого возраста можно удалять зубы ребенку?@детский хирург-стоматолог@pediatric-surgeon@",
+      "question": "С какого возраста можно удалять зубы ребенку?",
+      "answer": "Удаление молочных зубов возможно с момента их прорезывания. Врач оценит необходимость удаления и проведет процедуру безопасно.",
+      "serviceKey": "детский хирург-стоматолог@pediatric-surgeon",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "с какого возраста можно ставить брекеты ребенку?@детский ортодонт@pediatric-orthodontist@",
+      "question": "С какого возраста можно ставить брекеты ребенку?",
+      "answer": "Ортодонтическое лечение обычно начинается с 7-8 лет, когда начинают прорезываться постоянные зубы. Врач определит оптимальный возраст для начала лечения.",
+      "serviceKey": "детский ортодонт@pediatric-orthodontist",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько длится ортодонтическое лечение?@детский ортодонт@pediatric-orthodontist@",
+      "question": "Сколько длится ортодонтическое лечение?",
+      "answer": "Длительность лечения зависит от сложности случая и обычно составляет 1-2 года. Врач составит индивидуальный план лечения.",
+      "serviceKey": "детский ортодонт@pediatric-orthodontist",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "безопасен ли наркоз для детей?@лечение молочных зубов под наркозом@milk-teeth-anesthesia@",
+      "question": "Безопасен ли наркоз для детей?",
+      "answer": "Да, мы используем современный безопасный медицинский наркоз. Ребенок находится под постоянным контролем анестезиолога. Процедура полностью безопасна.",
+      "serviceKey": "лечение молочных зубов под наркозом@milk-teeth-anesthesia",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как подготовить ребенка к лечению под наркозом?@лечение молочных зубов под наркозом@milk-teeth-anesthesia@",
+      "question": "Как подготовить ребенка к лечению под наркозом?",
+      "answer": "За 6 часов до процедуры нельзя есть, за 2 часа - пить. Врач даст подробные инструкции по подготовке. Ребенок должен быть здоров.",
+      "serviceKey": "лечение молочных зубов под наркозом@milk-teeth-anesthesia",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "что входит в диагностические исследования?@диагностические исследования@diagnostic-studies@",
+      "question": "Что входит в диагностические исследования?",
+      "answer": "В комплекс входит: кольпоскопия, биопсия, цитология, анализы на инфекции. Врач определит необходимый объем исследований индивидуально.",
+      "serviceKey": "диагностические исследования@diagnostic-studies",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "больно ли делать биопсию?@диагностические исследования@diagnostic-studies@",
+      "question": "Больно ли делать биопсию?",
+      "answer": "Биопсия проводится под местной анестезией, поэтому процедура безболезненна. Возможен легкий дискомфорт после процедуры, который быстро проходит.",
+      "serviceKey": "диагностические исследования@diagnostic-studies",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужна ли подготовка к узи органов брюшной полости?@узи органов брюшной полости@abdominal-ultrasound@",
+      "question": "Нужна ли подготовка к УЗИ органов брюшной полости?",
+      "answer": "Да, требуется подготовка: за 2-3 дня исключить газообразующие продукты, накануне вечером легкий ужин, утром натощак. За 2 часа до исследования можно выпить немного воды.",
+      "serviceKey": "узи органов брюшной полости@abdominal-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "что показывает узи органов брюшной полости?@узи органов брюшной полости@abdominal-ultrasound@",
+      "question": "Что показывает УЗИ органов брюшной полости?",
+      "answer": "Исследование позволяет оценить состояние печени, желчного пузыря, поджелудочной железы, селезенки, почек, выявить патологические изменения.",
+      "serviceKey": "узи органов брюшной полости@abdominal-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "на каком сроке беременности лучше делать узи?@узи плода@fetal-ultrasound@",
+      "question": "На каком сроке беременности лучше делать УЗИ?",
+      "answer": "Рекомендуется делать УЗИ на 11-13 неделе (первый скрининг), 18-22 неделе (второй скрининг) и 32-34 неделе (третий скрининг). Врач определит оптимальные сроки.",
+      "serviceKey": "узи плода@fetal-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "безопасно ли узи для плода?@узи плода@fetal-ultrasound@",
+      "question": "Безопасно ли УЗИ для плода?",
+      "answer": "Да, УЗИ абсолютно безопасно для плода и матери. Это стандартный метод диагностики при беременности, не имеющий противопоказаний.",
+      "serviceKey": "узи плода@fetal-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "чем отличается экспертное узи от обычного?@экспертное узи@expert-ultrasound@",
+      "question": "Чем отличается экспертное УЗИ от обычного?",
+      "answer": "Экспертное УЗИ проводится на аппарате экспертного класса с более высоким разрешением. Проводится опытными специалистами, дает более детальную информацию.",
+      "serviceKey": "экспертное узи@expert-ultrasound",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как подготовиться к сдаче анализов?@лабораторные анализы@analyses@",
+      "question": "Как подготовиться к сдаче анализов?",
+      "answer": "Большинство анализов сдается натощак (не есть 8-12 часов). За день до сдачи исключить алкоголь, жирную пищу. Врач даст индивидуальные рекомендации.",
+      "serviceKey": "лабораторные анализы@analyses",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "сколько времени делаются анализы?@лабораторные анализы@analyses@",
+      "question": "Сколько времени делаются анализы?",
+      "answer": "Время выполнения зависит от вида анализа. Обычные анализы готовы в течение 1-2 дней, некоторые - в день сдачи. Результаты можно получить онлайн или в клинике.",
+      "serviceKey": "лабораторные анализы@analyses",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "безопасен ли рентген зубов?@рентген зубов@tooth-xray@",
+      "question": "Безопасен ли рентген зубов?",
+      "answer": "Да, современные рентген-аппараты используют минимальную дозу облучения. Один снимок безопасен и не оказывает негативного влияния на здоровье.",
+      "serviceKey": "рентген зубов@tooth-xray",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как часто можно делать рентген зубов?@рентген зубов@tooth-xray@",
+      "question": "Как часто можно делать рентген зубов?",
+      "answer": "Рентген можно делать по необходимости. Врач назначает снимки только когда это необходимо для диагностики. Современные аппараты безопасны.",
+      "serviceKey": "рентген зубов@tooth-xray",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "зачем нужно 3d сканирование зубов?@3d сканирование зубов@3d-dental-scan@",
+      "question": "Зачем нужно 3D сканирование зубов?",
+      "answer": "3D сканирование необходимо для точной диагностики, планирования имплантации, оценки состояния корней зубов. Дает полную трехмерную картину.",
+      "serviceKey": "3d сканирование зубов@3d-dental-scan",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "безопасно ли 3d сканирование?@3d сканирование зубов@3d-dental-scan@",
+      "question": "Безопасно ли 3D сканирование?",
+      "answer": "Да, современные аппараты используют минимальную дозу облучения. Процедура безопасна и необходима для точной диагностики и планирования лечения.",
+      "serviceKey": "3d сканирование зубов@3d-dental-scan",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "что показывает панорамный снимок?@панорамный снимок зубов@panoramic-dental-scan@",
+      "question": "Что показывает панорамный снимок?",
+      "answer": "Панорамный снимок показывает все зубы, челюсти, височно-нижнечелюстные суставы. Необходим для планирования лечения, имплантации, ортодонтии.",
+      "serviceKey": "панорамный снимок зубов@panoramic-dental-scan",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "как часто нужно делать панорамный снимок?@панорамный снимок зубов@panoramic-dental-scan@",
+      "question": "Как часто нужно делать панорамный снимок?",
+      "answer": "Обычно панорамный снимок делается один раз в год или по необходимости при планировании лечения. Врач определит необходимость.",
+      "serviceKey": "панорамный снимок зубов@panoramic-dental-scan",
+      "questionCategorySlug": null
+    },
+    {
+      "key": "нужны ли лечить молочные зубы?@@children-teeth",
+      "question": "Нужны ли лечить молочные зубы?",
+      "answer": "Да, молочные зубы обязательно нужно лечить. Они служат \"держателями места\" для постоянных зубов и влияют на правильное формирование прикуса и развитие речи. Кариес молочных зубов может привести к повреждению зачатков постоянных зубов.",
+      "serviceKey": null,
+      "questionCategorySlug": "children-teeth"
+    },
+    {
+      "key": "чем отличается наркоз от седации?@@children-teeth",
+      "question": "Чем отличается наркоз от седации?",
+      "answer": "Наркоз - это полное отключение сознания пациента, при котором он не чувствует боли и не помнит процедуру. Седация - это состояние расслабления и спокойствия, при котором пациент остается в сознании, но чувствует себя комфортно. Седация безопаснее для детей и часто достаточна для стоматологических процедур.",
+      "serviceKey": null,
+      "questionCategorySlug": "children-teeth"
+    },
+    {
+      "key": "какие рекомендации после наркоза?@@children-teeth",
+      "question": "Какие рекомендации после наркоза?",
+      "answer": "После наркоза необходимо: наблюдать за ребенком в течение суток, обеспечить покой, давать легкую пищу, избегать горячих напитков в первые часы, контролировать температуру тела. При любых необычных симптомах следует немедленно обратиться к врачу.",
+      "serviceKey": null,
+      "questionCategorySlug": "children-teeth"
+    },
+    {
+      "key": "половое созревание девочек. первые месячные.@@girls-hygiene",
+      "question": "Половое созревание девочек. Первые месячные.",
+      "answer": "Половое созревание девочек обычно начинается в 8-13 лет. Первые месячные (менархе) появляются в среднем в 12-13 лет. Важно заранее подготовить девочку к этим изменениям, объяснить, что это нормальный процесс взросления.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "как подмывать новорожденную девочку?@@girls-hygiene",
+      "question": "Как подмывать новорожденную девочку?",
+      "answer": "Подмывать девочку нужно спереди назад, чтобы избежать попадания бактерий из анальной области во влагалище. Использовать теплую воду и специальные детские средства без ароматизаторов. После подмывания аккуратно промокнуть мягким полотенцем.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "белая специальная смазка у новорождённых девочек. что с ней делать?@@girls-hygiene",
+      "question": "Белая специальная смазка у новорождённых девочек. Что с ней делать?",
+      "answer": "Первородная смазка (vernix caseosa) - это естественное защитное покрытие кожи новорожденного. Ее не нужно активно удалять, она впитается сама в течение первых дней жизни. При необходимости можно аккуратно протереть влажной салфеткой.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "подгузники. как часто менять? вредны подгузники или нет?@@girls-hygiene",
+      "question": "Подгузники. Как часто менять? Вредны подгузники или нет?",
+      "answer": "Подгузники нужно менять каждые 2-3 часа или сразу после дефекации. Современные качественные подгузники не вредны при правильном использовании. Важно выбирать подгузники по размеру, обеспечивать коже \"дыхание\" и регулярно проводить воздушные ванны.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "ванночки для новорождённых. какие лучше?@@girls-hygiene",
+      "question": "Ванночки для новорождённых. Какие лучше?",
+      "answer": "Лучше использовать специальные детские ванночки из безопасных материалов. Можно добавлять отвары трав (ромашка, череда) после заживления пупочной ранки. Температура воды должна быть 36-37°C. Первые купания должны быть короткими - 5-10 минут.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "что такое синехии. нужно ли лечить?@@girls-hygiene",
+      "question": "Что такое синехии. Нужно ли лечить?",
+      "answer": "Синехии - это сращение малых половых губ у девочек. Встречается довольно часто в возрасте до 6 лет. Лечение назначается только при нарушении мочеиспускания или воспалительных процессах. В большинстве случаев синехии разрешаются самостоятельно.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "изолированное телархе у девочек, что это?@@girls-hygiene",
+      "question": "Изолированное телархе у девочек, что это?",
+      "answer": "Изолированное телархе - это раннее увеличение молочных желез у девочек (обычно до 8 лет) без других признаков полового созревания. Чаще всего это доброкачественное состояние, которое не требует лечения, но требует наблюдения эндокринолога.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-hygiene"
+    },
+    {
+      "key": "фимоз у детей, как вылечить?@@boys-hygiene",
+      "question": "Фимоз у детей, как вылечить?",
+      "answer": "Фимоз у детей до 3-5 лет считается физиологическим и не требует лечения. При патологическом фимозе применяют консервативное лечение (мази с кортикостероидами) или хирургическое (обрезание, пластика крайней плоти). Лечение назначает только уролог.",
+      "serviceKey": null,
+      "questionCategorySlug": "boys-hygiene"
+    },
+    {
+      "key": "когда нужно обратиться к врачу урологу?@@boys-hygiene",
+      "question": "Когда нужно обратиться к врачу урологу?",
+      "answer": "К урологу нужно обратиться при: болезненном мочеиспускании, изменении цвета мочи, отеках, болях в животе или пояснице, нарушениях мочеиспускания, воспалительных процессах в области половых органов, подозрении на крипторхизм или фимоз.",
+      "serviceKey": null,
+      "questionCategorySlug": "boys-hygiene"
+    },
+    {
+      "key": "гигиена мальчиков. уход за пенисом.@@boys-hygiene",
+      "question": "Гигиена мальчиков. Уход за пенисом.",
+      "answer": "Ежедневно промывать теплой водой с детским мылом, не оттягивать крайнюю плоть насильно, менять белье ежедневно, следить за чистотой рук ребенка. При появлении покраснений, выделений или неприятного запаха обратиться к врачу.",
+      "serviceKey": null,
+      "questionCategorySlug": "boys-hygiene"
+    },
+    {
+      "key": "первые месячные.@@girls-puberty",
+      "question": "Первые месячные.",
+      "answer": "Первые месячные обычно начинаются в 11-15 лет. Важно заранее подготовить девочку: объяснить, что это нормально, научить пользоваться средствами гигиены, обеспечить психологическую поддержку. В первые годы цикл может быть нерегулярным - это нормально.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-puberty"
+    },
+    {
+      "key": "детская мастурбация. что делать родителям?@@girls-puberty",
+      "question": "Детская мастурбация. Что делать родителям?",
+      "answer": "Детская мастурбация - нормальное явление в процессе развития. Не нужно ругать или стыдить ребенка. Важно переключить внимание на другие занятия, обеспечить достаточную физическую активность, при необходимости деликатно объяснить вопросы приватности.",
+      "serviceKey": null,
+      "questionCategorySlug": "girls-puberty"
+    },
+    {
+      "key": "что ожидать после процедуры кульдоцентеза?@@culdocentesis",
+      "question": "Что ожидать после процедуры кульдоцентеза?",
+      "answer": "После кульдоцентеза возможны незначительные мажущие выделения в течение 1-2 дней, слабые боли внизу живота. Необходимо соблюдать покой в день процедуры, избегать физических нагрузок 2-3 дня, не принимать ванну 3-5 дней.",
+      "serviceKey": null,
+      "questionCategorySlug": "culdocentesis"
+    },
+    {
+      "key": "подготовка к кульдоцентезу.@@culdocentesis",
+      "question": "Подготовка к кульдоцентезу.",
+      "answer": "Перед процедурой необходимо: сдать анализы крови, мочи, мазок на флору, не есть за 4-6 часов до процедуры, опорожнить мочевой пузырь, снять украшения и контактные линзы. Процедура проводится на гинекологическом кресле под местной анестезией.",
+      "serviceKey": null,
+      "questionCategorySlug": "culdocentesis"
+    },
+    {
+      "key": "противопоказания к кульдоцентезу.@@culdocentesis",
+      "question": "Противопоказания к кульдоцентезу.",
+      "answer": "Противопоказания: острые воспалительные заболевания органов малого таза, нарушения свертываемости крови, тяжелое общее состояние пациентки, отсутствие жидкости в малом тазу по данным УЗИ, некоторые анатомические особенности.",
+      "serviceKey": null,
+      "questionCategorySlug": "culdocentesis"
+    },
+    {
+      "key": "металлические брекеты эффективнее других ортопедических систем.@@stomatology",
+      "question": "Металлические брекеты эффективнее других ортопедических систем.",
+      "answer": "Металлические брекеты действительно являются одними из самых эффективных ортодонтических систем. Они обеспечивают точное перемещение зубов, подходят для лечения сложных патологий прикуса, имеют доступную стоимость и высокую прочность.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "вредны ли металлические брекеты?@@stomatology",
+      "question": "Вредны ли металлические брекеты?",
+      "answer": "Металлические брекеты изготавливаются из медицинской стали и титана, которые биосовместимы и безопасны. Аллергические реакции крайне редки. Основные неудобства - это необходимость тщательной гигиены и возможные первоначальные дискомфорт и натирание.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "почему брекеты так важны?@@stomatology",
+      "question": "Почему брекеты так важны?",
+      "answer": "Брекеты исправляют неправильный прикус, что важно для: правильного пережевывания пищи, профилактики заболеваний ЖКТ, предотвращения развития кариеса и пародонтита, улучшения дикции, повышения самооценки и качества жизни.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "виды обесцвечивания зубов?@@stomatology",
+      "question": "Виды обесцвечивания зубов?",
+      "answer": "Различают внешнее (от кофе, чая, курения, красящих продуктов) и внутреннее (от лекарств, травм, возрастных изменений) окрашивание зубов. Также выделяют врожденные нарушения цвета эмали и приобретенные изменения.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "методы профессионального отбеливания зубов?@@stomatology",
+      "question": "Методы профессионального отбеливания зубов?",
+      "answer": "Основные методы: лазерное отбеливание, фотоотбеливание (ZOOM), химическое отбеливание в кабинете врача, домашнее отбеливание под контролем врача с использованием индивидуальных капп и профессиональных гелей.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "профессиональное офисное отбеливание зубов.@@stomatology",
+      "question": "Профессиональное офисное отбеливание зубов.",
+      "answer": "Офисное отбеливание проводится в стоматологическом кабинете с использованием высококонцентрированных отбеливающих гелей и активирующих устройств. Процедура длится 1-2 часа, результат виден сразу, эффект сохраняется 1-3 года при правильном уходе.",
+      "serviceKey": null,
+      "questionCategorySlug": "stomatology"
+    },
+    {
+      "key": "что мне нужно будет делать после возвращения домой?@@polyp-removal",
+      "question": "Что мне нужно будет делать после возвращения домой?",
+      "answer": "После полипэктомии: соблюдать покой первые 24 часа, избегать физических нагрузок 1-2 недели, не принимать ванну 3-5 дней, использовать прокладки вместо тампонов, принимать назначенные препараты, явиться на контрольный осмотр.",
+      "serviceKey": null,
+      "questionCategorySlug": "polyp-removal"
+    },
+    {
+      "key": "восстановление после полипэктомии и профилактика.@@polyp-removal",
+      "question": "Восстановление после полипэктомии и профилактика.",
+      "answer": "Полное восстановление занимает 2-4 недели. Для профилактики рецидивов: регулярные гинекологические осмотры, своевременное лечение воспалительных заболеваний, контроль гормонального фона, здоровый образ жизни, отказ от курения.",
+      "serviceKey": null,
+      "questionCategorySlug": "polyp-removal"
+    },
+    {
+      "key": "можно ли предотвратить полипы шейки матки?@@polyp-removal",
+      "question": "Можно ли предотвратить полипы шейки матки?",
+      "answer": "Специфической профилактики нет, но риск можно снизить: регулярные осмотры у гинеколога, своевременное лечение инфекций, использование барьерных контрацептивов, поддержание иммунитета, отказ от курения, контроль веса.",
+      "serviceKey": null,
+      "questionCategorySlug": "polyp-removal"
+    },
+    {
+      "key": "на каком сроке можно узнать пол будущего ребёнка?@@ultrasound",
+      "question": "На каком сроке можно узнать пол будущего ребёнка?",
+      "answer": "Пол ребенка можно определить с 15-16 недель беременности, но наиболее достоверно - с 18-20 недель. Точность определения зависит от положения плода, опыта специалиста и качества оборудования.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "узи во время беременности: безопасно и как часто можно делать?@@ultrasound",
+      "question": "УЗИ во время беременности: безопасно и как часто можно делать?",
+      "answer": "УЗИ безопасно для матери и плода при соблюдении медицинских показаний. Стандартно проводят 3 плановых УЗИ: в 11-14, 18-22 и 30-34 недели. Дополнительные исследования назначаются только по медицинским показаниям.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "что входит в органы женского таза?@@ultrasound",
+      "question": "Что входит в органы женского таза?",
+      "answer": "К органам малого таза у женщин относятся: матка, яичники, маточные трубы, шейка матки, влагалище, мочевой пузырь, прямая кишка. При УЗИ оценивают их размеры, структуру, положение и патологические изменения.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "как работает ультразвуковой аппарат?@@ultrasound",
+      "question": "Как работает ультразвуковой аппарат?",
+      "answer": "УЗИ-аппарат излучает высокочастотные звуковые волны, которые отражаются от тканей организма и возвращаются к датчику. Компьютер обрабатывает эти сигналы и создает изображение внутренних органов в режиме реального времени.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "что происходит во время детского абдоминального узи?@@ultrasound",
+      "question": "Что происходит во время детского абдоминального УЗИ?",
+      "answer": "Ребенок лежит на кушетке, на живот наносится специальный гель, врач водит датчиком по коже. Процедура безболезненна и длится 15-20 минут. Исследуются печень, желчный пузырь, поджелудочная железа, селезенка, почки.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "есть ли какие-либо последствия детского узи брюшной полости?@@ultrasound",
+      "question": "Есть ли какие-либо последствия детского УЗИ брюшной полости?",
+      "answer": "УЗИ абсолютно безопасно для детей любого возраста, включая новорожденных. Ультразвуковые волны не оказывают вредного воздействия на организм. Процедура не имеет противопоказаний и побочных эффектов.",
+      "serviceKey": null,
+      "questionCategorySlug": "ultrasound"
+    },
+    {
+      "key": "цитология обычная и жидкостная, в чём разница?@@womens-health",
+      "question": "Цитология обычная и жидкостная, в чём разница?",
+      "answer": "Обычная цитология - традиционный мазок на стекле. Жидкостная цитология - более современный метод, при котором материал помещается в специальную жидкость. Жидкостная цитология дает более четкие результаты, позволяет дополнительно проводить ВПЧ-тестирование и снижает количество неинформативных результатов.",
+      "serviceKey": null,
+      "questionCategorySlug": "womens-health"
+    },
+    {
+      "key": "противопоказания к проведению раздельного диагностического выскабливания.@@curettage",
+      "question": "Противопоказания к проведению раздельного диагностического выскабливания.",
+      "answer": "Противопоказания: острые воспалительные заболевания половых органов, подозрение на беременность, тяжелые заболевания сердечно-сосудистой системы, нарушения свертываемости крови, общие инфекционные заболевания в острой стадии.",
+      "serviceKey": null,
+      "questionCategorySlug": "curettage"
+    },
+    {
+      "key": "подготовка к раздельному диагностическому выскабливанию.@@curettage",
+      "question": "Подготовка к раздельному диагностическому выскабливанию.",
+      "answer": "Подготовка включает: анализы крови, мочи, мазок на флору, ЭКГ, консультацию анестезиолога, воздержание от пищи за 8-12 часов до процедуры, гигиенические процедуры, отказ от половой жизни за 3 дня до процедуры.",
+      "serviceKey": null,
+      "questionCategorySlug": "curettage"
+    },
+    {
+      "key": "восстановление после раздельного диагностического выскабливания.@@curettage",
+      "question": "Восстановление после раздельного диагностического выскабливания.",
+      "answer": "После процедуры: постельный режим в день операции, исключение физических нагрузок 2 недели, запрет на половую жизнь 3-4 недели, использование прокладок вместо тампонов, прием назначенных препаратов, контрольный осмотр через 2 недели.",
+      "serviceKey": null,
+      "questionCategorySlug": "curettage"
+    }
+  ],
+  "feedbacks": [
+    {
+      "key": "мария иванова@2024-03-12@отличная клиника! лечение кариеса прошло быстро и без боли. врач очень вниматель",
+      "name": "Мария Иванова",
+      "text": "Отличная клиника! Лечение кариеса прошло быстро и без боли. Врач очень внимательный, всё объяснил. Пломба выглядит отлично, не видно, что она там есть.",
+      "date": "2024-03-12",
+      "grade": 5,
+      "image_url": "/images/avatars/maria.jpg",
+      "verified": false,
+      "serviceKey": "лечение кариеса@caries-treatment"
+    },
+    {
+      "key": "дмитрий петров@2024-03-20@очень доволен лечением. врач профессионал, использовал микроскоп, что говорит о ",
+      "name": "Дмитрий Петров",
+      "text": "Очень доволен лечением. Врач профессионал, использовал микроскоп, что говорит о качестве работы. Безболезненная процедура, рекомендую!",
+      "date": "2024-03-20",
+      "grade": 5,
+      "image_url": "/images/avatars/dmitry.jpg",
+      "verified": false,
+      "serviceKey": "лечение кариеса@caries-treatment"
+    },
+    {
+      "key": "елена смирнова@2024-04-01@пришла с болью, ушла без боли. лечение прошло быстро, врач всё сделал аккуратно.",
+      "name": "Елена Смирнова",
+      "text": "Пришла с болью, ушла без боли. Лечение прошло быстро, врач всё сделал аккуратно. Спасибо за профессионализм!",
+      "date": "2024-04-01",
+      "grade": 5,
+      "image_url": "/images/avatars/elena.jpg",
+      "verified": false,
+      "serviceKey": "лечение кариеса@caries-treatment"
+    },
+    {
+      "key": "алексей козлов@2024-04-05@грамотный кардиолог, всё подробно объяснила. результаты исследования готовы сраз",
+      "name": "Алексей Козлов",
+      "text": "Грамотный кардиолог, всё подробно объяснила. Результаты исследования готовы сразу, врач провел консультацию. Рекомендую!",
+      "date": "2024-04-05",
+      "grade": 5,
+      "image_url": "/images/avatars/alexey.jpg",
+      "verified": false,
+      "serviceKey": "эхо-кг (узи сердца)@echo-kg"
+    },
+    {
+      "key": "наталья волкова@2024-04-10@очень профессиональный врач. исследование провели на современном аппарате, всё о",
+      "name": "Наталья Волкова",
+      "text": "Очень профессиональный врач. Исследование провели на современном аппарате, всё объяснили подробно. Чувствую себя в безопасности.",
+      "date": "2024-04-10",
+      "grade": 5,
+      "image_url": "/images/avatars/natalia.jpg",
+      "verified": false,
+      "serviceKey": "эхо-кг (узи сердца)@echo-kg"
+    },
+    {
+      "key": "анна соколова@2024-03-15@спасибо врачу за терпение и профессионализм! ребенок не боялся, лечение прошло в",
+      "name": "Анна Соколова",
+      "text": "Спасибо врачу за терпение и профессионализм! Ребенок не боялся, лечение прошло в игровой форме. Молочные зубы сохранены, всё отлично.",
+      "date": "2024-03-15",
+      "grade": 5,
+      "image_url": "/images/avatars/anna.jpg",
+      "verified": false,
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment"
+    },
+    {
+      "key": "ольга морозова@2024-03-25@дочка боялась стоматолога, но врач нашла подход. лечение прошло без слез, ребено",
+      "name": "Ольга Морозова",
+      "text": "Дочка боялась стоматолога, но врач нашла подход. Лечение прошло без слез, ребенок даже не заметил, когда всё закончилось. Рекомендую!",
+      "date": "2024-03-25",
+      "grade": 5,
+      "image_url": "/images/avatars/olga.jpg",
+      "verified": false,
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment"
+    },
+    {
+      "key": "ирина лебедева@2024-04-08@отличный детский стоматолог! лечение молочных зубов прошло быстро и безболезненн",
+      "name": "Ирина Лебедева",
+      "text": "Отличный детский стоматолог! Лечение молочных зубов прошло быстро и безболезненно. Врач очень внимательная, всё объяснила ребенку и мне.",
+      "date": "2024-04-08",
+      "grade": 5,
+      "image_url": "/images/avatars/irina.jpg",
+      "verified": false,
+      "serviceKey": "лечение молочных зубов@milk-teeth-treatment"
+    },
+    {
+      "key": "виктория новикова@2024-03-18@результат превзошел ожидания! зубы стали светлее на несколько тонов. процедура б",
+      "name": "Виктория Новикова",
+      "text": "Результат превзошел ожидания! Зубы стали светлее на несколько тонов. Процедура безболезненна, врач всё объяснил. Очень довольна!",
+      "date": "2024-03-18",
+      "grade": 5,
+      "image_url": "/images/avatars/viktoria.jpg",
+      "verified": false,
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening"
+    },
+    {
+      "key": "мария кузнецова@2024-03-28@долго думала об отбеливании, теперь не жалею. процедура прошла комфортно, резуль",
+      "name": "Мария Кузнецова",
+      "text": "Долго думала об отбеливании, теперь не жалею. Процедура прошла комфортно, результат виден сразу. Зубы стали намного белее!",
+      "date": "2024-03-28",
+      "grade": 5,
+      "image_url": "/images/avatars/maria_k.jpg",
+      "verified": false,
+      "serviceKey": "отбеливание зубов beyond polus@teeth-whitening"
+    },
+    {
+      "key": "сергей орлов@2024-03-22@профессиональная чистка air flow - это то, что нужно! зубы стали чище, глаже, ис",
+      "name": "Сергей Орлов",
+      "text": "Профессиональная чистка Air Flow - это то, что нужно! Зубы стали чище, глаже, исчез налет. Процедура безболезненна, рекомендую делать регулярно.",
+      "date": "2024-03-22",
+      "grade": 5,
+      "image_url": "/images/avatars/sergey.jpg",
+      "verified": false,
+      "serviceKey": "профессиональная чистка зубов air flow@professional-cleaning"
+    },
+    {
+      "key": "татьяна федорова@2024-04-03@отличная чистка! зубы стали светлее, исчез зубной камень. врач всё сделал аккура",
+      "name": "Татьяна Федорова",
+      "text": "Отличная чистка! Зубы стали светлее, исчез зубной камень. Врач всё сделал аккуратно, процедура комфортна. Буду делать регулярно.",
+      "date": "2024-04-03",
+      "grade": 5,
+      "image_url": "/images/avatars/tatiana.jpg",
+      "verified": false,
+      "serviceKey": "профессиональная чистка зубов air flow@professional-cleaning"
+    },
+    {
+      "key": "екатерина романова@2024-03-30@очень внимательный и профессиональный врач. прием прошел комфортно, врач ответил",
+      "name": "Екатерина Романова",
+      "text": "Очень внимательный и профессиональный врач. Прием прошел комфортно, врач ответил на все вопросы. Рекомендую для всех женщин!",
+      "date": "2024-03-30",
+      "grade": 5,
+      "image_url": "/images/avatars/ekaterina.jpg",
+      "verified": false,
+      "serviceKey": "приём гинеколога@gynecologist-appointment"
+    },
+    {
+      "key": "анастасия белова@2024-04-12@отличный гинеколог! врач очень внимательный, всё объяснил подробно. прием прошел",
+      "name": "Анастасия Белова",
+      "text": "Отличный гинеколог! Врач очень внимательный, всё объяснил подробно. Прием прошел в комфортной обстановке, без дискомфорта.",
+      "date": "2024-04-12",
+      "grade": 5,
+      "image_url": "/images/avatars/anastasia.jpg",
+      "verified": false,
+      "serviceKey": "приём гинеколога@gynecologist-appointment"
+    },
+    {
+      "key": "юлия григорьева@2024-04-07@узи провели на современном аппарате, врач всё объяснил. результаты готовы сразу,",
+      "name": "Юлия Григорьева",
+      "text": "УЗИ провели на современном аппарате, врач всё объяснил. Результаты готовы сразу, врач провел консультацию. Очень довольна!",
+      "date": "2024-04-07",
+      "grade": 5,
+      "image_url": "/images/avatars/yulia.jpg",
+      "verified": false,
+      "serviceKey": "узи органов малого таза@pelvic-ultrasound"
+    },
+    {
+      "key": "светлана данилова@2024-04-15@профессиональный врач узи-диагностики. исследование прошло комфортно, врач всё о",
+      "name": "Светлана Данилова",
+      "text": "Профессиональный врач УЗИ-диагностики. Исследование прошло комфортно, врач всё объяснил подробно. Результаты точные и понятные.",
+      "date": "2024-04-15",
+      "grade": 5,
+      "image_url": "/images/avatars/svetlana.jpg",
+      "verified": false,
+      "serviceKey": "узи органов малого таза@pelvic-ultrasound"
+    },
+    {
+      "key": "ирина семенова@2024-04-02@узи молочных желез провели быстро и профессионально. врач всё объяснил, ответил ",
+      "name": "Ирина Семенова",
+      "text": "УЗИ молочных желез провели быстро и профессионально. Врач всё объяснил, ответил на все вопросы. Чувствую себя в безопасности.",
+      "date": "2024-04-02",
+      "grade": 5,
+      "image_url": "/images/avatars/irina_s.jpg",
+      "verified": false,
+      "serviceKey": "узи молочных желез@breast-ultrasound"
+    },
+    {
+      "key": "мария андреева@2024-04-11@очень важно делать узи молочных желез регулярно. врач профессионал, исследование",
+      "name": "Мария Андреева",
+      "text": "Очень важно делать УЗИ молочных желез регулярно. Врач профессионал, исследование прошло комфортно. Рекомендую всем женщинам!",
+      "date": "2024-04-11",
+      "grade": 5,
+      "image_url": "/images/avatars/maria_a.jpg",
+      "verified": false,
+      "serviceKey": "узи молочных желез@breast-ultrasound"
+    },
+    {
+      "key": "елена васильева@2024-04-06@узи щитовидной железы провели быстро. врач всё объяснил, результаты готовы сразу",
+      "name": "Елена Васильева",
+      "text": "УЗИ щитовидной железы провели быстро. Врач всё объяснил, результаты готовы сразу. Очень довольна качеством обслуживания.",
+      "date": "2024-04-06",
+      "grade": 5,
+      "image_url": "/images/avatars/elena_v.jpg",
+      "verified": false,
+      "serviceKey": "узи щитовидной железы@thyroid-ultrasound"
+    },
+    {
+      "key": "александр новиков@2024-03-25@лечение пульпита прошло безболезненно. врач использовал микроскоп, что говорит о",
+      "name": "Александр Новиков",
+      "text": "Лечение пульпита прошло безболезненно. Врач использовал микроскоп, что говорит о качестве работы. Зуб сохранен, всё отлично!",
+      "date": "2024-03-25",
+      "grade": 5,
+      "image_url": "/images/avatars/alexander.jpg",
+      "verified": false,
+      "serviceKey": "лечение пульпита@pulpitis-treatment"
+    },
+    {
+      "key": "дмитрий соколов@2024-04-09@пришел с острой болью, ушел без боли. лечение пульпита прошло быстро, врач всё с",
+      "name": "Дмитрий Соколов",
+      "text": "Пришел с острой болью, ушел без боли. Лечение пульпита прошло быстро, врач всё сделал аккуратно. Рекомендую!",
+      "date": "2024-04-09",
+      "grade": 5,
+      "image_url": "/images/avatars/dmitry_s.jpg",
+      "verified": false,
+      "serviceKey": "лечение пульпита@pulpitis-treatment"
+    },
+    {
+      "key": "ольга семенова@2024-04-14@отличный детский хирург! удалил молочный зуб быстро и безболезненно. ребенок даж",
+      "name": "Ольга Семенова",
+      "text": "Отличный детский хирург! Удалил молочный зуб быстро и безболезненно. Ребенок даже не заметил, когда всё закончилось. Спасибо!",
+      "date": "2024-04-14",
+      "grade": 5,
+      "image_url": "/images/avatars/olga_s.jpg",
+      "verified": false,
+      "serviceKey": "детский хирург-стоматолог@pediatric-surgeon"
+    },
+    {
+      "key": "андрей лебедев@2024-04-18@врач профессионал, нашел подход к ребенку. удаление прошло без слез и страха. ре",
+      "name": "Андрей Лебедев",
+      "text": "Врач профессионал, нашел подход к ребенку. Удаление прошло без слез и страха. Рекомендую всем родителям!",
+      "date": "2024-04-18",
+      "grade": 5,
+      "image_url": "/images/avatars/andrey.jpg",
+      "verified": false,
+      "serviceKey": "детский хирург-стоматолог@pediatric-surgeon"
+    },
+    {
+      "key": "татьяна морозова@2024-04-10@дочке поставили брекеты, врач очень внимательная. всё объяснила, показала, как у",
+      "name": "Татьяна Морозова",
+      "text": "Дочке поставили брекеты, врач очень внимательная. Всё объяснила, показала, как ухаживать. Ребенок доволен, лечение идет хорошо.",
+      "date": "2024-04-10",
+      "grade": 5,
+      "image_url": "/images/avatars/tatiana_m.jpg",
+      "verified": false,
+      "serviceKey": "детский ортодонт@pediatric-orthodontist"
+    },
+    {
+      "key": "игорь волков@2024-04-16@сын начал ортодонтическое лечение. врач профессионал, всё делается аккуратно. уж",
+      "name": "Игорь Волков",
+      "text": "Сын начал ортодонтическое лечение. Врач профессионал, всё делается аккуратно. Уже видны первые результаты. Рекомендую!",
+      "date": "2024-04-16",
+      "grade": 5,
+      "image_url": "/images/avatars/igor.jpg",
+      "verified": false,
+      "serviceKey": "детский ортодонт@pediatric-orthodontist"
+    },
+    {
+      "key": "елена ковалева@2024-04-12@лечение под наркозом прошло отлично! ребенок не испугался, всё прошло быстро. вр",
+      "name": "Елена Ковалева",
+      "text": "Лечение под наркозом прошло отлично! Ребенок не испугался, всё прошло быстро. Врачи профессионалы, всё под контролем. Спасибо!",
+      "date": "2024-04-12",
+      "grade": 5,
+      "image_url": "/images/avatars/elena_k.jpg",
+      "verified": false,
+      "serviceKey": "лечение молочных зубов под наркозом@milk-teeth-anesthesia"
+    },
+    {
+      "key": "сергей новиков@2024-04-20@дочке вылечили все зубы за один раз под наркозом. безопасно, быстро, качественно",
+      "name": "Сергей Новиков",
+      "text": "Дочке вылечили все зубы за один раз под наркозом. Безопасно, быстро, качественно. Ребенок не помнит процедуру, что очень хорошо. Рекомендую!",
+      "date": "2024-04-20",
+      "grade": 5,
+      "image_url": "/images/avatars/sergey_n.jpg",
+      "verified": false,
+      "serviceKey": "лечение молочных зубов под наркозом@milk-teeth-anesthesia"
+    },
+    {
+      "key": "анна соколова@2024-04-13@прошла комплексное диагностическое исследование. врач всё объяснил, процедуры пр",
+      "name": "Анна Соколова",
+      "text": "Прошла комплексное диагностическое исследование. Врач всё объяснил, процедуры прошли комфортно. Результаты точные, лечение назначено правильно.",
+      "date": "2024-04-13",
+      "grade": 5,
+      "image_url": "/images/avatars/anna_s.jpg",
+      "verified": false,
+      "serviceKey": "диагностические исследования@diagnostic-studies"
+    },
+    {
+      "key": "мария петрова@2024-04-17@очень довольна диагностикой. врач внимательный, всё сделал аккуратно. ранняя диа",
+      "name": "Мария Петрова",
+      "text": "Очень довольна диагностикой. Врач внимательный, всё сделал аккуратно. Ранняя диагностика помогла выявить проблему вовремя. Спасибо!",
+      "date": "2024-04-17",
+      "grade": 5,
+      "image_url": "/images/avatars/maria_p.jpg",
+      "verified": false,
+      "serviceKey": "диагностические исследования@diagnostic-studies"
+    },
+    {
+      "key": "владимир иванов@2024-04-15@узи органов брюшной полости провели быстро и профессионально. врач всё объяснил,",
+      "name": "Владимир Иванов",
+      "text": "УЗИ органов брюшной полости провели быстро и профессионально. Врач всё объяснил, результаты готовы сразу. Очень доволен!",
+      "date": "2024-04-15",
+      "grade": 5,
+      "image_url": "/images/avatars/vladimir.jpg",
+      "verified": false,
+      "serviceKey": "узи органов брюшной полости@abdominal-ultrasound"
+    },
+    {
+      "key": "наталья сидорова@2024-04-19@отличное узи! врач профессионал, исследование прошло комфортно. результаты точны",
+      "name": "Наталья Сидорова",
+      "text": "Отличное УЗИ! Врач профессионал, исследование прошло комфортно. Результаты точные, всё объяснили подробно. Рекомендую!",
+      "date": "2024-04-19",
+      "grade": 5,
+      "image_url": "/images/avatars/natalia_s.jpg",
+      "verified": false,
+      "serviceKey": "узи органов брюшной полости@abdominal-ultrasound"
+    },
+    {
+      "key": "юлия козлова@2024-04-11@узи плода провели на современном аппарате. врач всё показала, объяснила. видели ",
+      "name": "Юлия Козлова",
+      "text": "УЗИ плода провели на современном аппарате. Врач всё показала, объяснила. Видели малыша, это незабываемые эмоции! Очень довольна!",
+      "date": "2024-04-11",
+      "grade": 5,
+      "image_url": "/images/avatars/yulia_k.jpg",
+      "verified": false,
+      "serviceKey": "узи плода@fetal-ultrasound"
+    },
+    {
+      "key": "екатерина волкова@2024-04-21@отличное узи при беременности! врач профессионал, всё объяснила, показала. ребен",
+      "name": "Екатерина Волкова",
+      "text": "Отличное УЗИ при беременности! Врач профессионал, всё объяснила, показала. Ребенок развивается хорошо. Спасибо за внимательность!",
+      "date": "2024-04-21",
+      "grade": 5,
+      "image_url": "/images/avatars/ekaterina_v.jpg",
+      "verified": false,
+      "serviceKey": "узи плода@fetal-ultrasound"
+    },
+    {
+      "key": "александр петров@2024-04-14@экспертное узи провели на аппарате экспертного класса. очень детальное исследова",
+      "name": "Александр Петров",
+      "text": "Экспертное УЗИ провели на аппарате экспертного класса. Очень детальное исследование, врач всё объяснил. Результаты точные, рекомендую!",
+      "date": "2024-04-14",
+      "grade": 5,
+      "image_url": "/images/avatars/alexander_p.jpg",
+      "verified": false,
+      "serviceKey": "экспертное узи@expert-ultrasound"
+    },
+    {
+      "key": "ольга новикова@2024-04-13@сдала анализы, всё быстро и качественно. результаты получила онлайн, очень удобн",
+      "name": "Ольга Новикова",
+      "text": "Сдала анализы, всё быстро и качественно. Результаты получила онлайн, очень удобно. Лаборатория современная, результаты точные.",
+      "date": "2024-04-13",
+      "grade": 5,
+      "image_url": "/images/avatars/olga_n.jpg",
+      "verified": false,
+      "serviceKey": "лабораторные анализы@analyses"
+    },
+    {
+      "key": "дмитрий козлов@2024-04-17@отличная лаборатория! анализы готовы быстро, результаты точные. удобная система ",
+      "name": "Дмитрий Козлов",
+      "text": "Отличная лаборатория! Анализы готовы быстро, результаты точные. Удобная система получения результатов онлайн. Рекомендую!",
+      "date": "2024-04-17",
+      "grade": 5,
+      "image_url": "/images/avatars/dmitry_k.jpg",
+      "verified": false,
+      "serviceKey": "лабораторные анализы@analyses"
+    },
+    {
+      "key": "ирина смирнова@2024-04-12@рентген зубов сделали быстро. современный аппарат, низкая доза облучения. резуль",
+      "name": "Ирина Смирнова",
+      "text": "Рентген зубов сделали быстро. Современный аппарат, низкая доза облучения. Результаты помогли врачу точно поставить диагноз. Спасибо!",
+      "date": "2024-04-12",
+      "grade": 5,
+      "image_url": "/images/avatars/irina_sm.jpg",
+      "verified": false,
+      "serviceKey": "рентген зубов@tooth-xray"
+    },
+    {
+      "key": "андрей федоров@2024-04-15@3d сканирование помогло точно спланировать имплантацию. качественные снимки, вра",
+      "name": "Андрей Федоров",
+      "text": "3D сканирование помогло точно спланировать имплантацию. Качественные снимки, врач всё объяснил. Очень доволен результатом!",
+      "date": "2024-04-15",
+      "grade": 5,
+      "image_url": "/images/avatars/andrey_f.jpg",
+      "verified": false,
+      "serviceKey": "3d сканирование зубов@3d-dental-scan"
+    },
+    {
+      "key": "елена орлова@2024-04-18@отличное 3d сканирование! трехмерная картина помогла врачу точно диагностировать",
+      "name": "Елена Орлова",
+      "text": "Отличное 3D сканирование! Трехмерная картина помогла врачу точно диагностировать проблему. Современное оборудование, профессионализм врачей.",
+      "date": "2024-04-18",
+      "grade": 5,
+      "image_url": "/images/avatars/elena_o.jpg",
+      "verified": false,
+      "serviceKey": "3d сканирование зубов@3d-dental-scan"
+    },
+    {
+      "key": "сергей морозов@2024-04-16@панорамный снимок сделали быстро. видно все зубы, челюсти. помог врачу спланиров",
+      "name": "Сергей Морозов",
+      "text": "Панорамный снимок сделали быстро. Видно все зубы, челюсти. Помог врачу спланировать лечение. Удобно и информативно!",
+      "date": "2024-04-16",
+      "grade": 5,
+      "image_url": "/images/avatars/sergey_m.jpg",
+      "verified": false,
+      "serviceKey": "панорамный снимок зубов@panoramic-dental-scan"
+    },
+    {
+      "key": "татьяна лебедева@2024-04-19@отличный панорамный снимок! врач всё объяснил, показал проблемные места. необход",
+      "name": "Татьяна Лебедева",
+      "text": "Отличный панорамный снимок! Врач всё объяснил, показал проблемные места. Необходим для планирования ортодонтического лечения. Рекомендую!",
+      "date": "2024-04-19",
+      "grade": 5,
+      "image_url": "/images/avatars/tatiana_l.jpg",
+      "verified": false,
+      "serviceKey": "панорамный снимок зубов@panoramic-dental-scan"
+    },
+    {
+      "key": "анна петрова@2025-01-15@замечательная клиника! современное оборудование, профессиональные врачи. особенн",
+      "name": "Анна Петрова",
+      "text": "Замечательная клиника! Современное оборудование, профессиональные врачи. Особенно хочу отметить детского стоматолога - ребенок впервые не боялся лечить зубы.",
+      "date": "2025-01-15",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "дмитрий сидоров@2025-01-12@прошел полное обследование в клинике. очень доволен качеством услуг и отношением",
+      "name": "Дмитрий Сидоров",
+      "text": "Прошел полное обследование в клинике. Очень доволен качеством услуг и отношением персонала. Все процедуры выполнены на высшем уровне.",
+      "date": "2025-01-12",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "елена козлова@2025-01-10@хорошая клиника с современным оборудованием. врачи профессиональные, но иногда п",
+      "name": "Елена Козлова",
+      "text": "Хорошая клиника с современным оборудованием. Врачи профессиональные, но иногда приходится долго ждать приема.",
+      "date": "2025-01-10",
+      "grade": 4,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "максим иванов@2025-01-08@делал имплантацию зубов. результат превзошел все ожидания! врач объяснил каждый ",
+      "name": "Максим Иванов",
+      "text": "Делал имплантацию зубов. Результат превзошел все ожидания! Врач объяснил каждый этап, процедура прошла безболезненно.",
+      "date": "2025-01-08",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "ольга николаева@2025-01-05@отличная гинекология! врач очень внимательная и деликатная. современное узи обор",
+      "name": "Ольга Николаева",
+      "text": "Отличная гинекология! Врач очень внимательная и деликатная. Современное УЗИ оборудование дало точные результаты.",
+      "date": "2025-01-05",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "андрей михайлов@2025-01-03@качественное лечение, но цены немного выше среднего. в целом рекомендую клинику.",
+      "name": "Андрей Михайлов",
+      "text": "Качественное лечение, но цены немного выше среднего. В целом рекомендую клинику.",
+      "date": "2025-01-03",
+      "grade": 4,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "светлана федорова@2025-01-01@прекрасная детская урология! врач нашел подход к ребенку, все прошло спокойно и ",
+      "name": "Светлана Федорова",
+      "text": "Прекрасная детская урология! Врач нашел подход к ребенку, все прошло спокойно и профессионально.",
+      "date": "2025-01-01",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "валерий смирнов@2024-12-29@современная диагностика, точные анализы. персонал вежливый и профессиональный. р",
+      "name": "Валерий Смирнов",
+      "text": "Современная диагностика, точные анализы. Персонал вежливый и профессиональный. Рекомендую!",
+      "date": "2024-12-29",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "татьяна белова@2024-12-27@хорошая клиника, но запись только по телефону. хотелось бы онлайн-запись.",
+      "name": "Татьяна Белова",
+      "text": "Хорошая клиника, но запись только по телефону. Хотелось бы онлайн-запись.",
+      "date": "2024-12-27",
+      "grade": 4,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "роман тихонов@2024-12-25@отличные условия в дневном стационаре. все процедуры выполнены качественно, перс",
+      "name": "Роман Тихонов",
+      "text": "Отличные условия в дневном стационаре. Все процедуры выполнены качественно, персонал заботливый.",
+      "date": "2024-12-25",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "мария орлова@2024-11-22@эндокринолог в клинике - настоящий профессионал! подобрал эффективное лечение, р",
+      "name": "Мария Орлова",
+      "text": "Эндокринолог в клинике - настоящий профессионал! Подобрал эффективное лечение, регулярно контролирует состояние.",
+      "date": "2024-11-22",
+      "grade": 5,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    },
+    {
+      "key": "игорь павлов@2024-11-20@качественная стоматология, но хотелось бы больше парковочных мест возле клиники.",
+      "name": "Игорь Павлов",
+      "text": "Качественная стоматология, но хотелось бы больше парковочных мест возле клиники.",
+      "date": "2024-11-20",
+      "grade": 4,
+      "image_url": "/images/avatars/default.jpg",
+      "verified": true,
+      "serviceKey": null
+    }
+  ],
+  "partners": [
+    {
+      "key": "swissdental@dental-labs",
+      "categorySlug": "dental-labs",
+      "name": "SwissDental",
+      "description": "Поставщик стоматологических материалов премиум-класса",
+      "image_url": "/images/partner_swiss.jpg",
+      "number": 1,
+      "website_url": "https://swissdental.example.com"
+    },
+    {
+      "key": "kidsdental@dental-labs",
+      "categorySlug": "dental-labs",
+      "name": "KidsDental",
+      "description": "Специализированные материалы для детской стоматологии",
+      "image_url": "/images/partner_kids_dental.jpg",
+      "number": 2,
+      "website_url": "https://kidsdental.example.com"
+    },
+    {
+      "key": "gynectech@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "GynecTech",
+      "description": "Современное гинекологическое оборудование и инструменты",
+      "image_url": "/images/partner_gynec.jpg",
+      "number": 3,
+      "website_url": "https://gynectech.example.com"
+    },
+    {
+      "key": "ultrasound pro@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "UltraSound Pro",
+      "description": "Экспертное ультразвуковое оборудование для диагностики",
+      "image_url": "/images/partner_ultrasound.jpg",
+      "number": 4,
+      "website_url": "https://ultrasoundpro.example.com"
+    },
+    {
+      "key": "diagnostics plus@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "Diagnostics Plus",
+      "description": "Лабораторное оборудование и диагностические системы",
+      "image_url": "/images/partner_diagnostics.jpg",
+      "number": 5,
+      "website_url": "https://diagnosticsplus.example.com"
+    },
+    {
+      "key": "cardiotech@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "CardioTech",
+      "description": "Инновационное кардиологическое оборудование",
+      "image_url": "/images/partner_cardio.jpg",
+      "number": 6,
+      "website_url": "https://cardiotech.example.com"
+    },
+    {
+      "key": "рнпц онкологии@dental-labs",
+      "categorySlug": "dental-labs",
+      "name": "РНПЦ онкологии",
+      "description": "Республиканский научно-практический центр онкологии и медицинской радиологии им. Н.Н. Александрова - ведущее медицинское учреждение Беларуси в области онкологии.",
+      "image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
+      "number": 1,
+      "website_url": "https://oncology.by"
+    },
+    {
+      "key": "рнпц спорта@dental-labs",
+      "categorySlug": "dental-labs",
+      "name": "РНПЦ спорта",
+      "description": "Республиканский научно-практический центр спорта - специализированное медицинское учреждение, занимающееся спортивной медициной и реабилитацией.",
+      "image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
+      "number": 2,
+      "website_url": "https://rcsport.by"
+    },
+    {
+      "key": "helix@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "Helix",
+      "description": "Крупнейшая частная сеть лабораторий в России и СНГ. Более 1000 видов исследований, современное оборудование, высокое качество.",
+      "image_url": "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=300&fit=crop",
+      "number": 1,
+      "website_url": "https://helix.ru"
+    },
+    {
+      "key": "invitro@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "Invitro",
+      "description": "Независимая медицинская лаборатория №1 в России. Более 1700 видов исследований. Результаты онлайн в личном кабинете.",
+      "image_url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop",
+      "number": 2,
+      "website_url": "https://www.invitro.ru"
+    },
+    {
+      "key": "белгосстрах@insurance",
+      "categorySlug": "insurance",
+      "name": "Белгосстрах",
+      "description": "Крупнейшая страховая компания Беларуси. Полный спектр услуг медицинского страхования. Надежность и опыт с 1921 года.",
+      "image_url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop",
+      "number": 1,
+      "website_url": "https://belgosstrakh.by"
+    },
+    {
+      "key": "таск@insurance",
+      "categorySlug": "insurance",
+      "name": "Таск",
+      "description": "Страховая компания Таск - один из лидеров белорусского рынка страхования. Добровольное медицинское страхование, страхование от несчастных случаев.",
+      "image_url": "https://images.unsplash.com/photo-1554224311-beee2c446e58?w=400&h=300&fit=crop",
+      "number": 2,
+      "website_url": "https://www.task.by"
+    },
+    {
+      "key": "денталюкс@medical-labs",
+      "categorySlug": "medical-labs",
+      "name": "ДентаЛюкс",
+      "description": "Современная зуботехническая лаборатория. Изготовление коронок, мостов, виниров. Цифровое моделирование, высокая точность.",
+      "image_url": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop",
+      "number": 1,
+      "website_url": "https://dentalux.example.by"
+    },
+    {
+      "key": "смайлтех@dental-labs",
+      "categorySlug": "dental-labs",
+      "name": "СмайлТех",
+      "description": "Профессиональная зуботехническая лаборатория полного цикла. CAD/CAM технологии, индивидуальный подход, гарантия качества.",
+      "image_url": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop",
+      "number": 2,
+      "website_url": "https://smiletech.example.by"
+    }
+  ],
+  "letters": [
+    {
+      "key": "admin@smartmedical.local@проблемы@2026-03-04T15:24:41.320Z",
+      "patientEmail": "admin@smartmedical.local",
+      "subject": "проблемы",
+      "content": "арпаргпаогапошащлш",
+      "created_at": "2026-03-04T15:24:41.320Z",
+      "reply": null,
+      "replied_at": null,
+      "is_read": false,
+      "is_reply_read": false,
+      "has_new_patient_message": false
+    }
+  ],
+  "letterMessages": [],
+  "operatorChats": [
+    {
+      "key": "fedortorgonsky@gmail.com@2026-06-07T14:10:28.408Z",
+      "patientEmail": "fedortorgonsky@gmail.com",
+      "operatorEmail": null,
+      "status": "WAITING",
+      "created_at": "2026-06-07T14:10:28.408Z",
+      "updated_at": "2026-06-07T14:23:40.316Z",
+      "last_message_at": "2026-06-07T14:10:28.407Z",
+      "has_unread_operator": true,
+      "has_unread_patient": false
+    }
+  ],
+  "operatorChatMessages": [
+    {
+      "key": "fedortorgonsky@gmail.com@2026-06-07T14:10:28.408Z@fedortorgonsky@gmail.com@2026-06-07T14:10:28.408Z@привет",
+      "chatKey": "fedortorgonsky@gmail.com@2026-06-07T14:10:28.408Z",
+      "senderEmail": "fedortorgonsky@gmail.com",
+      "sender_type": "patient",
+      "content": "Привет",
+      "created_at": "2026-06-07T14:10:28.408Z",
+      "is_read": false
+    }
+  ],
+  "appointments": [
+    {
+      "key": "patient1@example.com@иванов иван иванович@dentistry@2026-02-23T07:00:00.000Z",
+      "patientEmail": "patient1@example.com",
+      "specialistKey": "иванов иван иванович@dentistry",
+      "serviceKey": "лечение кариеса@caries-treatment",
+      "scheduled_at": "2026-02-23T07:00:00.000Z",
+      "duration_minutes": 30,
+      "status": "completed",
+      "note": "Плановый осмотр",
+      "admin_comment": null,
+      "created_at": "2026-02-21T10:29:39.328Z",
+      "updated_at": "2026-02-21T10:29:39.328Z"
+    },
+    {
+      "key": "patient2@example.com@иванов иван иванович@dentistry@2026-02-26T11:30:00.000Z",
+      "patientEmail": "patient2@example.com",
+      "specialistKey": "иванов иван иванович@dentistry",
+      "serviceKey": null,
+      "scheduled_at": "2026-02-26T11:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-02-21T10:29:39.328Z",
+      "updated_at": "2026-02-21T10:29:39.328Z"
+    },
+    {
+      "key": "admin@smartmedical.local@волкова ольга петровна@ultrasound@2026-03-04T09:30:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "волкова ольга петровна@ultrasound",
+      "serviceKey": "детский ортодонт@pediatric-orthodontist",
+      "scheduled_at": "2026-03-04T09:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "cancelled",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-03-03T14:01:34.675Z",
+      "updated_at": "2026-03-03T14:01:34.675Z"
+    },
+    {
+      "key": "patient1@example.com@петрова анна сергеевна@cardiology@2026-03-04T10:10:00.000Z",
+      "patientEmail": "patient1@example.com",
+      "specialistKey": "петрова анна сергеевна@cardiology",
+      "serviceKey": "узи молочных желез@breast-ultrasound",
+      "scheduled_at": "2026-03-04T10:10:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": "ku",
+      "admin_comment": null,
+      "created_at": "2026-03-03T15:28:45.837Z",
+      "updated_at": "2026-03-03T15:28:45.837Z"
+    },
+    {
+      "key": "admin@smartmedical.local@иванов иван иванович@dentistry@2026-03-11T19:18:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "иванов иван иванович@dentistry",
+      "serviceKey": null,
+      "scheduled_at": "2026-03-11T19:18:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-03-04T15:18:09.610Z",
+      "updated_at": "2026-03-04T15:18:09.610Z"
+    },
+    {
+      "key": "admin@smartmedical.local@волкова ольга петровна@ultrasound@2026-03-05T09:20:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "волкова ольга петровна@ultrasound",
+      "serviceKey": "лабораторные анализы@analyses",
+      "scheduled_at": "2026-03-05T09:20:00.000Z",
+      "duration_minutes": 30,
+      "status": "cancelled",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-03-04T15:24:25.667Z",
+      "updated_at": "2026-03-04T15:24:25.667Z"
+    },
+    {
+      "key": "admin@smartmedical.local@белова наталья сергеевна@pediatric-gynecology@2026-05-15T11:27:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "белова наталья сергеевна@pediatric-gynecology",
+      "serviceKey": "детский ортодонт@pediatric-orthodontist",
+      "scheduled_at": "2026-05-15T11:27:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-05-11T09:27:43.474Z",
+      "updated_at": "2026-05-11T09:27:43.474Z"
+    },
+    {
+      "key": "admin@smartmedical.local@новикова екатерина александровна@pediatric-dentistry@2026-05-20T08:30:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "новикова екатерина александровна@pediatric-dentistry",
+      "serviceKey": "детский хирург-стоматолог@pediatric-surgeon",
+      "scheduled_at": "2026-05-20T08:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "confirmed",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-05-17T12:11:18.734Z",
+      "updated_at": "2026-05-17T12:12:00.541Z"
+    },
+    {
+      "key": "admin@smartmedical.local@волкова ольга петровна@ultrasound@2026-05-17T16:30:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "волкова ольга петровна@ultrasound",
+      "serviceKey": "узи молочных желез@breast-ultrasound",
+      "scheduled_at": "2026-05-17T16:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-05-17T12:38:51.472Z",
+      "updated_at": "2026-05-17T12:38:51.472Z"
+    },
+    {
+      "key": "admin@smartmedical.local@соколов андрей викторович@diagnostics@2026-08-02T11:30:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "соколов андрей викторович@diagnostics",
+      "serviceKey": "3d сканирование зубов@3d-dental-scan",
+      "scheduled_at": "2026-08-02T11:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "cancelled",
+      "note": "Зубная боль, очень больно, нужна консультация и лечение",
+      "admin_comment": "Нет",
+      "created_at": "2026-05-17T12:40:28.048Z",
+      "updated_at": "2026-06-06T20:04:15.425Z"
+    },
+    {
+      "key": "admin@smartmedical.local@белова наталья сергеевна@pediatric-gynecology@2026-06-01T05:00:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "белова наталья сергеевна@pediatric-gynecology",
+      "serviceKey": "детский гинеколог@pediatric-gynecologist",
+      "scheduled_at": "2026-06-01T05:00:00.000Z",
+      "duration_minutes": 30,
+      "status": "completed",
+      "note": "Уважаемый доктор! Запишите меня, пожалуйста, на прием, потому что мой организм, кажется, объявил мне суверенитет. Мой цикл живет по своему собственному календарю, который не совпадает ни с лунным, ни с григорианским. Настроение меняется быстрее, чем курсы валют: я могу заплакать от вида красивого помидора в магазине, а через минуту захотеть захватить мир. Внутри происходят какие-то странные тектонические сдвиги, и мне нужен опытный геолог вашего уровня, чтобы провести разведку в этой темной пещере и объяснить, почему там всё бунтует.",
+      "admin_comment": "Оказана помощь, ждем от вас новых результатов",
+      "created_at": "2026-05-17T13:22:28.809Z",
+      "updated_at": "2026-05-17T13:27:42.685Z"
+    },
+    {
+      "key": "admin@smartmedical.local@соколов андрей викторович@diagnostics@2026-06-12T11:00:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "соколов андрей викторович@diagnostics",
+      "serviceKey": "3d сканирование зубов@3d-dental-scan",
+      "scheduled_at": "2026-06-12T11:00:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-06-06T20:03:36.459Z",
+      "updated_at": "2026-06-06T20:03:36.459Z"
+    },
+    {
+      "key": "admin@smartmedical.local@белова наталья сергеевна@pediatric-gynecology@2026-06-18T11:00:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "белова наталья сергеевна@pediatric-gynecology",
+      "serviceKey": "детский гинеколог@pediatric-gynecologist",
+      "scheduled_at": "2026-06-18T11:00:00.000Z",
+      "duration_minutes": 30,
+      "status": "cancelled",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-06-07T10:58:36.500Z",
+      "updated_at": "2026-06-07T11:00:18.728Z"
+    },
+    {
+      "key": "admin@smartmedical.local@соколов андрей викторович@diagnostics@2026-06-25T10:30:00.000Z",
+      "patientEmail": "admin@smartmedical.local",
+      "specialistKey": "соколов андрей викторович@diagnostics",
+      "serviceKey": "3d сканирование зубов@3d-dental-scan",
+      "scheduled_at": "2026-06-25T10:30:00.000Z",
+      "duration_minutes": 30,
+      "status": "pending",
+      "note": null,
+      "admin_comment": null,
+      "created_at": "2026-06-07T14:02:15.401Z",
+      "updated_at": "2026-06-07T14:02:15.401Z"
+    }
+  ]
+}
