@@ -1,10 +1,61 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, Role } from '@prisma/client';
 import bcrypt from 'bcryptjs';
+import { seedCatalog } from './seed-catalog';
 
 const prisma = new PrismaClient();
 
+type CategorySeed = {
+  name: string;
+  slug: string;
+  icon?: string;
+  order: number;
+  children?: CategorySeed[];
+};
+
+const TEST_ACCOUNTS: Array<{
+  login: string;
+  email: string;
+  password: string;
+  name: string;
+  phone: string;
+  role: Role;
+}> = [
+  {
+    login: 'admin',
+    email: 'admin@test.local',
+    password: 'admin123',
+    name: 'Администратор',
+    phone: '+375290000001',
+    role: 'ADMIN',
+  },
+  {
+    login: 'operator',
+    email: 'operator@test.local',
+    password: 'operator123',
+    name: 'Оператор',
+    phone: '+375290000002',
+    role: 'OPERATOR',
+  },
+  {
+    login: 'chief',
+    email: 'chief@test.local',
+    password: 'chief123',
+    name: 'Главный врач',
+    phone: '+375290000003',
+    role: 'CHIEF_DOCTOR',
+  },
+  {
+    login: 'doctor',
+    email: 'doctor@test.local',
+    password: 'doctor123',
+    name: 'Тестовый пациент',
+    phone: '+375290000004',
+    role: 'USER',
+  },
+];
+
 // Полная структура категорий из SMServicesMenuData.json
-const serviceCategories = [
+const serviceCategories: CategorySeed[] = [
   {
     name: 'Детская стоматология',
     slug: 'pediatric-dentistry',
@@ -188,87 +239,87 @@ const serviceCategories = [
   },
 ];
 
-async function main() {
-  console.log('🌱 Starting seed...');
+async function upsertCategoryTree(category: CategorySeed, parentId: number | null = null): Promise<number> {
+  const record = await prisma.serviceCategory.upsert({
+    where: { slug: category.slug },
+    create: {
+      name: category.name,
+      slug: category.slug,
+      icon: category.icon ?? null,
+      order: category.order,
+      parent_id: parentId,
+      is_active: true,
+    },
+    update: {
+      name: category.name,
+      icon: category.icon ?? null,
+      order: category.order,
+      parent_id: parentId,
+      is_active: true,
+    },
+  });
 
-  // Очистка существующих категорий услуг
-  await prisma.serviceCategory.deleteMany({});
-  console.log('✅ Cleared existing service categories');
+  let count = 1;
+  for (const child of category.children ?? []) {
+    count += await upsertCategoryTree(child, record.id);
+  }
+  return count;
+}
 
-  let totalCreated = 0;
-
-  // Создаем категории с подкатегориями
+async function seedServiceCategories() {
+  console.log('🌱 Seeding service categories (upsert by slug)...');
+  let total = 0;
   for (const category of serviceCategories) {
-    // Создаем корневую категорию
-    const rootCategory = await prisma.serviceCategory.create({
-      data: {
-        name: category.name,
-        slug: category.slug,
-        icon: category.icon,
-        order: category.order,
-        is_active: true,
+    total += await upsertCategoryTree(category);
+    console.log(`  ✓ ${category.name}`);
+  }
+  console.log(`✅ Service categories: ${total} rows upserted`);
+}
+
+async function seedTestAccounts() {
+  console.log('🌱 Seeding test accounts...');
+  for (const account of TEST_ACCOUNTS) {
+    const hashedPassword = await bcrypt.hash(account.password, 10);
+    await prisma.patient.upsert({
+      where: { email: account.email },
+      create: {
+        login: account.login,
+        email: account.email,
+        password: hashedPassword,
+        name: account.name,
+        phone: account.phone,
+        registration_date: new Date(),
+        role: account.role,
+      },
+      update: {
+        login: account.login,
+        password: hashedPassword,
+        name: account.name,
+        phone: account.phone,
+        role: account.role,
       },
     });
-    totalCreated++;
-    console.log(`  ✓ Created: ${category.name}`);
+    console.log(`  ✓ ${account.role.padEnd(12)} ${account.email} / ${account.password}`);
+  }
+  console.log('✅ Test accounts ready');
+  console.log('   Note: отдельной роли «врач» нет — doctor@test.local это USER (пациент/ЛК)');
+}
 
-    // Создаем подкатегории первого уровня
-    if (category.children && category.children.length > 0) {
-      for (const child of category.children) {
-        const childCategory = await prisma.serviceCategory.create({
-          data: {
-            name: child.name,
-            slug: child.slug,
-            icon: child.icon || null,
-            order: child.order,
-            parent_id: rootCategory.id,
-            is_active: true,
-          },
-        });
-        totalCreated++;
-        console.log(`    ✓ Created: ${child.name}`);
+async function main() {
+  console.log('🌱 Starting seed...\n');
 
-        // Создаем подкатегории второго уровня (если есть)
-        if (child.children && child.children.length > 0) {
-          for (const grandChild of child.children) {
-            await prisma.serviceCategory.create({
-              data: {
-                name: grandChild.name,
-                slug: grandChild.slug,
-                icon: grandChild.icon || null,
-                order: grandChild.order,
-                parent_id: childCategory.id,
-                is_active: true,
-              },
-            });
-            totalCreated++;
-            console.log(`      ✓ Created: ${grandChild.name}`);
-          }
-        }
-      }
-    }
+  const accountsOnly =
+    process.env.SEED_ACCOUNTS_ONLY === 'true' || process.argv.includes('--accounts-only');
+  const skipCategories = process.env.SEED_SKIP_CATEGORIES === 'true';
+
+  if (!accountsOnly && !skipCategories) {
+    await seedServiceCategories();
+    console.log('');
+    await seedCatalog(prisma);
+    console.log('');
   }
 
-  console.log('\n✅ Service categories seeded successfully');
-  console.log(`📊 Total categories created: ${totalCreated}`);
-
-  // Админ по умолчанию (логин: admin, пароль: Admin123!)
-  const adminEmail = 'admin@smartmedical.local';
-  const hashedPassword = await bcrypt.hash('Admin123!', 10);
-  await prisma.patient.upsert({
-    where: { email: adminEmail },
-    create: {
-      login: 'admin',
-      email: adminEmail,
-      password: hashedPassword,
-      name: 'Администратор',
-      phone: '+375290000000',
-      registration_date: new Date(),
-      role: 'ADMIN',
-    },
-    update: { role: 'ADMIN' },
-  });
-  console.log('✅ Admin user created/updated:', adminEmail);
+  await seedTestAccounts();
 }
 
 main()
